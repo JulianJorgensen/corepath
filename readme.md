@@ -17,4 +17,5 @@ By Denim & Steel
 
 
 ## Style Plugins: ##
+* Foundation
 * Normalize
