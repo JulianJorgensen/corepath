@@ -1,12 +1,13 @@
-# Swingloop Front-end #
+# Avenue #
 
-9Shot Golf Innovations Inc.
+By Denim & Steel
 
 
 ## Frameworks: ##
 * Jekyll (static site compiler) + Jekyll assets
 * jQuery
 * Foundation framework
+* AngularJS
 * Bourbon (sass mixins)
 
 
