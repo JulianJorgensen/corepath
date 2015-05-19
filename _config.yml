@@ -1,6 +1,7 @@
 title: Avenue
 source: ./_source
 destination: ./_site
+baseurl: 
 permalink: pretty
 
 assets:

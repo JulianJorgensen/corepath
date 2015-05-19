@@ -2,7 +2,7 @@
 require "jekyll"
 
 # Github pages publishing.
-namespace :blog do
+namespace :deploy do
   #
   # Because we are using 3rd party plugins for jekyll to manage the asset pipeline
   # and suchlike we are unable to just branch the code, we have to process the site
@@ -13,12 +13,13 @@ namespace :blog do
 
   # Usaage:
   # bundle exec rake blog:publish
-  desc "Publish blog to gh-pages"
-  task :publish do
+  desc "Publishing site to staging (gh-pages)"
+  task :staging do
     # Compile the Jekyll site using the config.
     Jekyll::Site.new(Jekyll.configuration({
       "source"      => "./_source",
       "destination" => "_site",
+      "baseurl"     => "/avenue",
       "config" => "_config.yml"
     })).process
 
