@@ -1,0 +1,95 @@
+---
+---
+
+<!-- MARQUEE LANDING -->
+<!-- =============== -->
+<section class="marquee">
+  <div class="container">
+    <div class="marquee-landing">
+      <div class="marquee-landing-headline text-right">
+        <h2>Skip the showroom</h2>
+        <p>Custom-Furnished living spaces at up to 50% below retail, delivered to your door.</p>
+      </div>
+
+      <div class="marquee-landing-tabs">
+        <div ng-model="tabs" ng-init="tabs = 'tab1'">
+          <div class="tabs-content">
+            <div role="tabpanel" aria-hidden="false" class="content" ng-class="{'active': tabs == 'tab1'}">
+              <h2>First panel content goes here...</h2>
+            </div>
+            <div role="tabpanel" aria-hidden="true" class="content" ng-class="{'active': tabs == 'tab2'}">
+              <h2>Second panel content goes here...</h2>
+            </div>
+            <div role="tabpanel" aria-hidden="true" class="content" ng-class="{'active': tabs == 'tab3'}">
+              <h2>Third panel content goes here...</h2>
+            </div>
+          </div>
+          <ul class="tabs" data-tab role="tablist">
+            <li class="tab-title" role="presentational" ng-class="{'active': tabs == 'tab1'}"><a ng-click="tabs = 'tab1'" role="tab" tabindex="0" aria-selected="true" controls="panel2-1">Tab 1</a></li>
+            <li class="tab-title" role="presentational" ng-class="{'active': tabs == 'tab2'}"><a ng-click="tabs = 'tab2'" role="tab" tabindex="0"aria-selected="false" controls="panel2-2">Tab 2</a></li>
+            <li class="tab-title" role="presentational" ng-class="{'active': tabs == 'tab3'}"><a ng-click="tabs = 'tab3'" role="tab" tabindex="0" aria-selected="false" controls="panel2-3">Tab 3</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section>
+  <div class="content">
+    <div class="row">
+      <div class="column small-7 text-right">
+        <div>High-quality furnishings</div>
+        <div>selected for you and your home tailored to your style</div>
+      </div>
+      <div class="column small-1 text-center">
+        or
+      </div>
+      <div class="column small-4">
+        <small>Need to fill a space yesterday?</small>
+        <h3>Try our fast track service</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section>
+  <div class="container">
+    <ul class="small-block-grid-3">
+      <li><img src="{% asset_path placeholder.png %}" /></li>
+      <li><img src="{% asset_path placeholder.png %}" /></li>
+      <li><img src="{% asset_path placeholder.png %}" /></li>
+    </ul>
+  </div>
+</section>
+
+
+<section>
+  <div class="container text-center">
+    The key to find a good personal style is to start with how you live.
+    <h3>Use avenue's lifestyle guide to tune into your true style</h3>
+  </div>
+</section>
+
+
+<!-- MARQUEE -->
+<!-- =============== -->
+<section class="marquee">
+  <div class="container">
+    How you live is made up of a lot of things. For example, what's your ideal spot to dine?
+  </div>
+</section>
+
+
+<section>
+  <div class="container">
+    <ul class="small-block-grid-3">
+      <li><a class="button hollow" href="#">Some place serving an interesting Thai/Japanese fusion dish</a></li>
+      <li><a class="button hollow" href="#">My local cafe</a></li>
+      <li><a class="button hollow" href="#">The newest fine dining restaurant in town</a></li>
+    </ul>
+  </div>
+</section>

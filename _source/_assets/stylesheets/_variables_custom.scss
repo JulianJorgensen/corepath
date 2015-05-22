@@ -1,0 +1,44 @@
+$black: #000000;
+$white: #ffffff;
+
+$orange: #F05323; // Orange
+$blue: #319ECC; // Blue
+$yellow: #F9C944; // Yellow
+$light-blue: #C0E6F6; // light blue
+$dark-gray: #222222;
+$light-gray: #f1f1f1; // light gray
+$violet: #136992;  // Violet
+$red: #ff0000;  // red
+$purple: #71539E;
+$green: #82C250;
+$redish: #AD332A;
+
+// spacings
+$spacing-xsmall: 4px;
+$spacing-small: 10px;
+$spacing-medium: 20px;
+$spacing-large: 30px;
+$spacing-xlarge: 60px;
+$spacing-default: $spacing-medium;
+
+
+// grays
+$gray5:         darken(white, 5);
+$gray10:        darken(white, 10);
+$gray20:        darken(white, 20);
+$gray30:        darken(white, 30);
+$gray40:        darken(white, 40);
+$gray50:        darken(white, 50);
+$gray60:        darken(white, 60);
+$gray70:        darken(white, 70);
+$gray80:        darken(white, 80);
+$gray90:        darken(white, 90);
+
+
+// fonts
+$primary-font: 'Helvetica Neue', serif;
+$secondary-font: 'Helvetica Neue', sans-serif;
+
+
+// transitions
+$transition-speed-default: 0.3s;

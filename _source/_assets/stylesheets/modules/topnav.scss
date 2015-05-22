@@ -1,0 +1,12 @@
+@import 'bourbon';
+@import '../variables_custom';
+@import '../variables_foundation';
+
+.top-bar{
+  padding: $spacing-xlarge 0;
+
+  .logo{
+    float: left;
+    width: 150px;
+  }
+}

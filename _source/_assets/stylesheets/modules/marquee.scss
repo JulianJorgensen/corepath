@@ -1,0 +1,29 @@
+@import 'bourbon';
+@import 'variables_foundation';
+@import 'variables_custom';
+
+// DEFAULT MARQUEE
+.marquee{
+  background-color: green;
+  padding: $spacing-large 0;
+  margin-bottom: $spacing-default;
+}
+
+
+// MARQUEE LANDING (FIRST ONE)
+.marquee-landing{
+  height: 600px;
+  @include display(flex);
+  @include justify-content(flex-end);
+
+  .marquee-landing-headline{
+    @include flex(1);
+    max-width: 300px;
+    padding-right: $spacing-default;
+  }
+  .marquee-landing-tabs{
+    @include flex(1);
+    max-width: 400px;
+    padding-left: $spacing-default;
+  }
+}

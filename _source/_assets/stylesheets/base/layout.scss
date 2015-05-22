@@ -1,0 +1,10 @@
+@import 'bourbon';
+@import '../mixins';
+@import '../variables_custom';
+@import '../variables_foundation';
+
+
+.container{
+  max-width: 1000px;
+  margin: 0 auto;
+}
