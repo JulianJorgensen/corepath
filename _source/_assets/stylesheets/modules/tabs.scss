@@ -1,0 +1,20 @@
+@import 'bourbon';
+@import 'variables_foundation';
+@import 'variables_custom';
+@import 'mixins';
+
+.tabs-naked{
+  @include no-bullets;
+  .tab-title{
+    display: inline-block;
+
+    &.active{
+      border-bottom: 2px solid;
+    }
+  }
+  &.white{
+    .tab-title.active{
+      border-color: $white;
+    }
+  }
+}

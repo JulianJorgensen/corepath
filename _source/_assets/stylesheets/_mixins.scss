@@ -6,32 +6,8 @@
   box-shadow: rgba($color, $opacity) 0 0 10px;
 }
 
-//
-// @TODO: Custon Media
-//
-@mixin custom_media($size) {
-  @media screen and (max-width: #{$size}px){
-    @content;
-  }
-}
-
-//
-// @TODO: Add docs to media!
-//
-@mixin media($size) {
-
-  $small: "(max-width: 640px)";
-  $medium: "(max-width: 1024px)";
-  $large: "(max-width: 1440px)";
-
-  @if $size == large {
-    @media #{$large} { @content; }
-  }
-  @else if $size == medium {
-    @media #{$medium} { @content; }
-  }
-  @else if $size == small {
-    @media #{$small}  { @content; }
-  }
-
+@mixin no-bullets{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
 }

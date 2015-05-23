@@ -1,3 +1,43 @@
 @import 'bourbon';
 @import '../variables_custom';
 @import '../variables_foundation';
+
+
+$button-height: 100px;
+
+.buttons{
+  .button{
+    @include align-items(center);
+    @include display(flex);
+    @include justify-content(center);
+    height: $button-height;
+
+    &.active{
+      background-color: $portage;
+      a{
+        color: $white;
+      }
+    }
+
+    .button-content{
+      padding: 0;
+      color: $black;
+      @include transition(color $transition-speed-default);
+    }
+
+    &:hover{
+      .button-content{
+        color: $white;
+      }
+    }
+  }
+
+  &.active{
+    .button:not(.active){
+      opacity: 0.6;
+      &:hover{
+        opacity: 1;
+      }
+    }
+  }
+}

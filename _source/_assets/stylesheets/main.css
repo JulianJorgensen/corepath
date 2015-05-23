@@ -16,9 +16,14 @@
   MODULES
   *= require './modules/topnav.scss'
   *= require './modules/marquee.scss'
+  *= require './modules/tabs.scss'
 
 
   PAGES/SECTIONS
   *= require './index.scss'
+
+
+  ROOT
+  *= require './misc.scss'
 
 */

@@ -15,19 +15,86 @@
         <div ng-model="tabs" ng-init="tabs = 'tab1'">
           <div class="tabs-content">
             <div role="tabpanel" aria-hidden="false" class="content" ng-class="{'active': tabs == 'tab1'}">
-              <h2>First panel content goes here...</h2>
+              <h2>Leave the sales talk behind</h2>
+              <p>A modern, swedish inspired multi-use space: Sofa, dining table & chairs</p>
+              <div class="row">
+                <div class="column small-6">
+                  <h5>On your own</h5>
+                  <ul>
+                    <li>14hrs in showrooms</li>
+                    <li>129km driving</li>
+                    <li>Delivery $80</li>
+                    <li>Installation 3hrs</li>
+                    <li>Retail price $4875</li>
+                  </ul>
+                </div>
+                <div class="column small-6">
+                  <h5>By Avenue</h5>
+                  <ul>
+                    <li>30 minutes total time</li>
+                    <li>$3000, delivered and installed</li>
+                  </ul>
+                </div>
+              </div>
             </div>
             <div role="tabpanel" aria-hidden="true" class="content" ng-class="{'active': tabs == 'tab2'}">
-              <h2>Second panel content goes here...</h2>
+              <h2>Contemporary panel</h2>
+              <p>Lorem ipsum dolar et lama</p>
+              <div class="row">
+                <div class="column small-6">
+                  <h5>On your own</h5>
+                  <ul>
+                    <li>14hrs in showrooms</li>
+                    <li>129km driving</li>
+                    <li>Delivery $80</li>
+                    <li>Installation 3hrs</li>
+                    <li>Retail price $4875</li>
+                  </ul>
+                </div>
+                <div class="column small-6">
+                  <h5>By Avenue</h5>
+                  <ul>
+                    <li>30 minutes total time</li>
+                    <li>$3000, delivered and installed</li>
+                  </ul>
+                </div>
+              </div>
             </div>
             <div role="tabpanel" aria-hidden="true" class="content" ng-class="{'active': tabs == 'tab3'}">
-              <h2>Third panel content goes here...</h2>
+              <h2>Modern panel</h2>
+              <p>Lorem ipsum dolar et lama</p>
+              <div class="row">
+                <div class="column small-6">
+                  <h5>On your own</h5>
+                  <ul>
+                    <li>14hrs in showrooms</li>
+                    <li>129km driving</li>
+                    <li>Delivery $80</li>
+                    <li>Installation 3hrs</li>
+                    <li>Retail price $4875</li>
+                  </ul>
+                </div>
+                <div class="column small-6">
+                  <h5>By Avenue</h5>
+                  <ul>
+                    <li>30 minutes total time</li>
+                    <li>$3000, delivered and installed</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
-          <ul class="tabs" data-tab role="tablist">
-            <li class="tab-title" role="presentational" ng-class="{'active': tabs == 'tab1'}"><a ng-click="tabs = 'tab1'" role="tab" tabindex="0" aria-selected="true" controls="panel2-1">Tab 1</a></li>
-            <li class="tab-title" role="presentational" ng-class="{'active': tabs == 'tab2'}"><a ng-click="tabs = 'tab2'" role="tab" tabindex="0"aria-selected="false" controls="panel2-2">Tab 2</a></li>
-            <li class="tab-title" role="presentational" ng-class="{'active': tabs == 'tab3'}"><a ng-click="tabs = 'tab3'" role="tab" tabindex="0" aria-selected="false" controls="panel2-3">Tab 3</a></li>
+          <ul class="tabs-naked white margin-top-xxlarge" data-tab role="tablist">
+            <div class="row">
+              <div class="column small-3">
+                <li class="tab-title" role="presentational" ng-class="{'active': tabs == 'tab1'}"><h6><a ng-click="tabs = 'tab1'" role="tab" tabindex="0" aria-selected="true" controls="panel2-1">Classic</a></h6></li>
+              </div>
+              <div class="column small-6 text-center">
+                <li class="tab-title" role="presentational" ng-class="{'active': tabs == 'tab2'}"><h6><a ng-click="tabs = 'tab2'" role="tab" tabindex="0"aria-selected="false" controls="panel2-2">Contemporary</a></h6></li>
+              </div>
+              <div class="column small-3 text-right">
+                <li class="tab-title" role="presentational" ng-class="{'active': tabs == 'tab3'}"><h6><a ng-click="tabs = 'tab3'" role="tab" tabindex="0" aria-selected="false" controls="panel2-3">Modern</a></h6></li>
+              </div>
           </ul>
         </div>
       </div>
@@ -86,10 +153,10 @@
 
 <section>
   <div class="container">
-    <ul class="small-block-grid-3">
-      <li><a class="button hollow" href="#">Some place serving an interesting Thai/Japanese fusion dish</a></li>
-      <li><a class="button hollow" href="#">My local cafe</a></li>
-      <li><a class="button hollow" href="#">The newest fine dining restaurant in town</a></li>
+    <ul class="small-block-grid-3 buttons active">
+      <li><div class="button"><a class="button-content" href="#">Some place serving an interesting Thai/Japanese fusion dish</a></div></li>
+      <li><div class="button"><a class="button-content" href="#">My local cafe</a></div></li>
+      <li><div class="button active"><a class="button-content" href="#">The newest fine dining restaurant in town</a></div></li>
     </ul>
   </div>
 </section>
