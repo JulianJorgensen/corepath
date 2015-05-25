@@ -1,0 +1,43 @@
+@import 'bourbon';
+@import 'variables_foundation';
+@import 'variables_custom';
+@import 'mixins';
+
+
+.images-selector{
+  li{
+    position: relative;
+    min-height: 200px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include transform(scale(0.9));
+    @include transition(transform $transition-speed-default);
+
+    .overlay{
+      @include align-items(center);
+      @include display(flex);
+      @include justify-content(center);
+      opacity: 0;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($black, 0.5);
+      @include transition(all $transition-speed-default);
+
+      .overlay-text{
+        color: $white;
+        text-align: center;
+      }
+    }
+
+    &:hover{
+      @include transform(scale(1));
+      .overlay{
+        opacity: 1;
+      }
+    }
+  }
+}

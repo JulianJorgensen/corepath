@@ -3,23 +3,27 @@
 
 <!-- MARQUEE LANDING -->
 <!-- =============== -->
-<section class="marquee">
+<section class="marquee marquee-landing" ng-controller="tabsController as tab">
+  <div class="marquee-background bg-1" ng-class="{active: tab.isSelected(1)}"></div>
+  <div class="marquee-background bg-2" ng-class="{active: tab.isSelected(2)}"></div>
+  <div class="marquee-background bg-3" ng-class="{active: tab.isSelected(3)}"></div>
+
   <div class="container">
-    <div class="marquee-landing">
+    <div class="marquee-content">
       <div class="marquee-landing-headline text-right">
         <h2>Skip the showroom</h2>
         <p>Custom-Furnished living spaces at up to 50% below retail, delivered to your door.</p>
       </div>
 
       <div class="marquee-landing-tabs">
-        <div ng-model="tabs" ng-init="tabs = 'tab1'">
+        <div ng-model="tabs">
           <div class="tabs-content">
-            <div role="tabpanel" aria-hidden="false" class="content" ng-class="{'active': tabs == 'tab1'}">
-              <h2>Leave the sales talk behind</h2>
-              <p>A modern, swedish inspired multi-use space: Sofa, dining table & chairs</p>
+            <div role="tabpanel" aria-hidden="false" class="content" ng-class="{active: tab.isSelected(1)}">
+              <h2 class="light">Leave the sales<br>talk behind</h2>
+              <p class="margin-top-large margin-bottom-large">A modern, swedish inspired multi-use space: Sofa, dining table & chairs</p>
               <div class="row">
                 <div class="column small-6">
-                  <h5>On your own</h5>
+                  <h5 class="light">On your own</h5>
                   <ul>
                     <li>14hrs in showrooms</li>
                     <li>129km driving</li>
@@ -29,7 +33,7 @@
                   </ul>
                 </div>
                 <div class="column small-6">
-                  <h5>By Avenue</h5>
+                  <h5 class="light">By Avenue</h5>
                   <ul>
                     <li>30 minutes total time</li>
                     <li>$3000, delivered and installed</li>
@@ -37,12 +41,12 @@
                 </div>
               </div>
             </div>
-            <div role="tabpanel" aria-hidden="true" class="content" ng-class="{'active': tabs == 'tab2'}">
-              <h2>Contemporary panel</h2>
-              <p>Lorem ipsum dolar et lama</p>
+            <div role="tabpanel" aria-hidden="true" class="content" ng-class="{active: tab.isSelected(2)}">
+              <h2 class="light">Contemporary panel</h2>
+              <p class="margin-top-large margin-bottom-large">A modern, swedish inspired multi-use space: Sofa, dining table & chairs</p>
               <div class="row">
                 <div class="column small-6">
-                  <h5>On your own</h5>
+                  <h5 class="light">On your own</h5>
                   <ul>
                     <li>14hrs in showrooms</li>
                     <li>129km driving</li>
@@ -52,7 +56,7 @@
                   </ul>
                 </div>
                 <div class="column small-6">
-                  <h5>By Avenue</h5>
+                  <h5 class="light">By Avenue</h5>
                   <ul>
                     <li>30 minutes total time</li>
                     <li>$3000, delivered and installed</li>
@@ -60,12 +64,12 @@
                 </div>
               </div>
             </div>
-            <div role="tabpanel" aria-hidden="true" class="content" ng-class="{'active': tabs == 'tab3'}">
-              <h2>Modern panel</h2>
-              <p>Lorem ipsum dolar et lama</p>
+            <div role="tabpanel" aria-hidden="true" class="content" ng-class="{active: tab.isSelected(3)}">
+              <h2 class="light">Modern panel</h2>
+              <p class="margin-top-large margin-bottom-large">A modern, swedish inspired multi-use space: Sofa, dining table & chairs</p>
               <div class="row">
                 <div class="column small-6">
-                  <h5>On your own</h5>
+                  <h5 class="light">On your own</h5>
                   <ul>
                     <li>14hrs in showrooms</li>
                     <li>129km driving</li>
@@ -75,7 +79,7 @@
                   </ul>
                 </div>
                 <div class="column small-6">
-                  <h5>By Avenue</h5>
+                  <h5 class="light">By Avenue</h5>
                   <ul>
                     <li>30 minutes total time</li>
                     <li>$3000, delivered and installed</li>
@@ -87,13 +91,13 @@
           <ul class="tabs-naked white margin-top-xxlarge" data-tab role="tablist">
             <div class="row">
               <div class="column small-3">
-                <li class="tab-title" role="presentational" ng-class="{'active': tabs == 'tab1'}"><h6><a ng-click="tabs = 'tab1'" role="tab" tabindex="0" aria-selected="true" controls="panel2-1">Classic</a></h6></li>
+                <li class="tab-title" role="presentational" ng-click="tab.selectTab(1)" ng-class="{active: tab.isSelected(1)}"><h6><a role="tab" tabindex="0" aria-selected="true" controls="panel2-1">Classic</a></h6></li>
               </div>
               <div class="column small-6 text-center">
-                <li class="tab-title" role="presentational" ng-class="{'active': tabs == 'tab2'}"><h6><a ng-click="tabs = 'tab2'" role="tab" tabindex="0"aria-selected="false" controls="panel2-2">Contemporary</a></h6></li>
+                <li class="tab-title" role="presentational" ng-click="tab.selectTab(2)" ng-class="{active: tab.isSelected(2)}"><h6><a role="tab" tabindex="1" aria-selected="false" controls="panel2-2">Contemporary</a></h6></li>
               </div>
               <div class="column small-3 text-right">
-                <li class="tab-title" role="presentational" ng-class="{'active': tabs == 'tab3'}"><h6><a ng-click="tabs = 'tab3'" role="tab" tabindex="0" aria-selected="false" controls="panel2-3">Modern</a></h6></li>
+                <li class="tab-title" role="presentational" ng-click="tab.selectTab(3)" ng-class="{active: tab.isSelected(3)}"><h6><a role="tab" tabindex="2" aria-selected="false" controls="panel2-3">Modern</a></h6></li>
               </div>
           </ul>
         </div>
@@ -104,37 +108,50 @@
 
 
 
-<section>
-  <div class="content">
-    <div class="row">
-      <div class="column small-7 text-right">
-        <div>High-quality furnishings</div>
-        <div>selected for you and your home tailored to your style</div>
-      </div>
-      <div class="column small-1 text-center">
-        or
-      </div>
-      <div class="column small-4">
+<section class="section">
+  <div class="container vertical-center">
+    <div class="column small-6 text-right">
+      <h6>High-quality furnishings<br>selected for you and your home tailored to your style</h6>
+    </div>
+    <div class="column small-1 text-center">
+      <small>OR</small>
+    </div>
+    <div class="column small-5">
+      <div class="cta">
         <small>Need to fill a space yesterday?</small>
-        <h3>Try our fast track service</h3>
+        <h5>Try our fast track service <i class="fa fa-caret-right pull-right"></i></h5>
       </div>
     </div>
   </div>
+  <div class="clearfix"></div>
 </section>
 
 
-<section>
+<section class="section">
   <div class="container">
-    <ul class="small-block-grid-3">
-      <li><img src="{% asset_path placeholder.png %}" /></li>
-      <li><img src="{% asset_path placeholder.png %}" /></li>
-      <li><img src="{% asset_path placeholder.png %}" /></li>
+    <ul class="small-block-grid-3 images-selector">
+      <li style="background-image: url('{% asset_path 'placeholder.png' %}');">
+        <div class="overlay">
+          <h6 class="overlay-text">How do you know your style?</h6>
+        </div>
+      </li>
+      <li style="background-image: url('{% asset_path 'placeholder.png' %}');">
+        <div class="overlay">
+          <h6 class="overlay-text">How do you know your style?</h6>
+        </div>
+      </li>
+      <li style="background-image: url('{% asset_path 'placeholder.png' %}');">
+        <div class="overlay">
+          <h6 class="overlay-text">How do you know your style?</h6>
+        </div>
+      </li>
     </ul>
   </div>
+  <div class="clearfix"></div>
 </section>
 
 
-<section>
+<section class="section">
   <div class="container text-center">
     The key to find a good personal style is to start with how you live.
     <h3>Use avenue's lifestyle guide to tune into your true style</h3>
@@ -144,19 +161,57 @@
 
 <!-- MARQUEE -->
 <!-- =============== -->
-<section class="marquee">
+<section class="section marquee marquee-lets-begin white flex-bottom">
+  <div class="marquee-background active"></div>
   <div class="container">
-    How you live is made up of a lot of things. For example, what's your ideal spot to dine?
+    <h3>How you live is made up of a lot of things. For example, what's your ideal spot to dine?</h3>
   </div>
 </section>
 
 
-<section>
-  <div class="container">
-    <ul class="small-block-grid-3 buttons active">
-      <li><div class="button"><a class="button-content" href="#">Some place serving an interesting Thai/Japanese fusion dish</a></div></li>
-      <li><div class="button"><a class="button-content" href="#">My local cafe</a></div></li>
-      <li><div class="button active"><a class="button-content" href="#">The newest fine dining restaurant in town</a></div></li>
+<!-- CHOICES BUTTONS -->
+<section class="section">
+  <div class="container" ng-controller="choicesController as choice">
+    <ul class="small-block-grid-3 choices" ng-class="{active: choice.anyIsSelected()}">
+      <li><div class="button" ng-click="choice.selectChoice(1)" ng-class="{active: choice.isSelected(1)}"><a class="button-content">Some place serving an interesting Thai/Japanese fusion dish</a></div></li>
+      <li><div class="button" ng-click="choice.selectChoice(2)" ng-class="{active: choice.isSelected(2)}"><a class="button-content">My local cafe</a></div></li>
+      <li><div class="button" ng-click="choice.selectChoice(3)" ng-class="{active: choice.isSelected(3)}"><a class="button-content">The newest fine dining restaurant in town</a></div></li>
     </ul>
+
+    <div class="flex-right">
+      <div class="choice-description text-right" ng-show="choice.isSelected(1)">This tells us that lorem ipsum</div>
+      <div class="choice-description text-right" ng-show="choice.isSelected(2)">This tells us that dolar et lama</div>
+      <div class="choice-description text-right" ng-show="choice.isSelected(3)">This tells us that modern, perhaps more minimal settings, might be to your liking</div>
+    </div>
   </div>
+  <div class="clearfix"></div>
 </section>
+
+
+
+<section class="section">
+  <h2 class="text-center">How about your preferred way to get somewhere?</h2>
+
+
+  <!-- CHOICES BUTTONS -->
+  <section class="section">
+    <div class="container" ng-controller="choicesController as choice">
+      <ul class="small-block-grid-3 choices" ng-class="{active: choice.anyIsSelected()}">
+        <li><div class="button" ng-click="choice.selectChoice(1)" ng-class="{active: choice.isSelected(1)}"><a class="button-content">My Bike</a></div></li>
+        <li><div class="button" ng-click="choice.selectChoice(2)" ng-class="{active: choice.isSelected(2)}"><a class="button-content">An Airplane</a></div></li>
+        <li><div class="button" ng-click="choice.selectChoice(3)" ng-class="{active: choice.isSelected(3)}"><a class="button-content">My Car</a></div></li>
+      </ul>
+
+      <div class="flex-center">
+        <div class="choice-description text-center" ng-show="choice.isSelected(1)">This tells us that lorem ipsum</div>
+        <div class="choice-description text-center" ng-show="choice.isSelected(2)">This tells us that dolar et lama</div>
+        <div class="choice-description text-center" ng-show="choice.isSelected(3)">This tells us that modern, perhaps more minimal settings, might be to your liking</div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </section>
+
+</section>
+
+
+<div class="clearfix"></div>

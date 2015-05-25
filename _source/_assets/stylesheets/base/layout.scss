@@ -12,3 +12,16 @@ html{
   max-width: 1000px;
   margin: 0 auto;
 }
+
+
+.section{
+  margin-top: $spacing-xlarge;
+  margin-bottom: $spacing-xlarge;
+}
+
+
+.vertical-center{
+  @include align-items(center);
+  @include display(flex);
+  @include justify-content(center);
+}

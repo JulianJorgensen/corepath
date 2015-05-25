@@ -17,6 +17,7 @@
   *= require './modules/topnav.scss'
   *= require './modules/marquee.scss'
   *= require './modules/tabs.scss'
+  *= require './modules/images-selector.scss'
 
 
   PAGES/SECTIONS

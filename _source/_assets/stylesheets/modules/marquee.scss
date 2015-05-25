@@ -4,25 +4,91 @@
 
 // DEFAULT MARQUEE
 .marquee{
-  background-color: green;
+  position: relative;
   padding: $spacing-large 0;
   margin-bottom: $spacing-default;
-}
 
+  .marquee-background{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    opacity: 0;
 
-// MARQUEE LANDING (FIRST ONE)
-.marquee-landing{
-  @include display(flex);
-  @include justify-content(flex-end);
-
-  .marquee-landing-headline{
-    @include flex(1);
-    max-width: 300px;
-    padding-right: $spacing-default;
+    &.active{
+      opacity: 1;
+    }
   }
-  .marquee-landing-tabs{
-    @include flex(1);
-    max-width: 400px;
-    padding-left: $spacing-default;
+
+  &.white{
+    &, h1, h2, h3, h4, h5, h6{
+      color: $white;
+    }
+  }
+
+
+  // MARQUEE LANDING (FIRST ONE)
+  &.marquee-landing{
+    height: 600px;
+    @extend .white;
+
+    .marquee-background{
+      &.bg-1{
+        background-image: image-url('affordable-home-furniture-reviewhigh-resolution-image--home-design-ideas-online-furniture-stores-9gs7tx2h.jpg');
+      }
+      &.bg-2{
+        background-image: image-url('2048-3.jpg');
+      }
+      &.bg-3{
+        background-image: image-url('2048-4.jpg');
+      }
+    }
+
+    .marquee-content{
+      @include display(flex);
+      @include justify-content(flex-end);
+
+      .marquee-landing-headline{
+        @include flex(1);
+        max-width: 300px;
+        padding-right: $spacing-default;
+      }
+      .marquee-landing-tabs{
+        @include flex(1);
+        max-width: 400px;
+        padding-left: $spacing-default;
+      }
+    }
+  }
+
+
+  // MARQUEE LETS BEGIN (SECOND ONE)
+  &.marquee-lets-begin{
+    height: 600px;
+
+    .marquee-background{
+      background-image: image-url('av_moodboard.jpg');
+    }
+
+    .marquee-content{
+      @include display(flex);
+      @include justify-content(flex-end);
+
+      .marquee-landing-headline{
+        @include flex(1);
+        max-width: 300px;
+        padding-right: $spacing-default;
+      }
+      .marquee-landing-tabs{
+        @include flex(1);
+        max-width: 400px;
+        padding-left: $spacing-default;
+      }
+    }
   }
 }

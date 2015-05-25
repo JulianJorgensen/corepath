@@ -4,6 +4,8 @@
 @import 'mixins';
 
 .tabs-naked{
+  position: absolute;
+  bottom: $spacing-default;
   @include no-bullets;
   .tab-title{
     display: inline-block;
