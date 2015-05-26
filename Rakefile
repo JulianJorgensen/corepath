@@ -19,8 +19,7 @@ namespace :deploy do
     Jekyll::Site.new(Jekyll.configuration({
       "source"      => "./_source",
       "destination" => "_site",
-      "baseurl"     => "/avenue",
-      "config" => "_config.yml"
+      "config" => "_config.yml,_config_staging.yml"
     })).process
 
     # Get the origin to which we are going to push the site.
