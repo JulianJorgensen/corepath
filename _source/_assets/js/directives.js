@@ -3,7 +3,7 @@
 avenueApp.directive('choices', function() {
     return {
         restrict: 'E',
-        templateUrl: '/pages/templates/choices.html',
+        templateUrl: '../pages/templates/choices.html',
         scope: {
             first: '@',
             firstDescription: '@',
