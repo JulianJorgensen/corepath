@@ -4,6 +4,7 @@
 <!-- MARQUEE LANDING -->
 <!-- =============== -->
 <section class="marquee marquee-landing" ng-controller="tabsController as tab">
+  <div class="marquee-overlay"></div>
   <div class="marquee-background bg-1" ng-class="{active: tab.isSelected(1)}"></div>
   <div class="marquee-background bg-2" ng-class="{active: tab.isSelected(2)}"></div>
   <div class="marquee-background bg-3" ng-class="{active: tab.isSelected(3)}"></div>
@@ -171,46 +172,21 @@
 
 <!-- CHOICES BUTTONS -->
 <section class="section">
-  <div class="container" ng-controller="choicesController as choice">
-    <ul class="small-block-grid-3 choices" ng-class="{active: choice.anyIsSelected()}">
-      <li><div class="button" ng-click="choice.selectChoice(1)" ng-class="{active: choice.isSelected(1)}"><a class="button-content">Some place serving an interesting Thai/Japanese fusion dish</a></div></li>
-      <li><div class="button" ng-click="choice.selectChoice(2)" ng-class="{active: choice.isSelected(2)}"><a class="button-content">My local cafe</a></div></li>
-      <li><div class="button" ng-click="choice.selectChoice(3)" ng-class="{active: choice.isSelected(3)}"><a class="button-content">The newest fine dining restaurant in town</a></div></li>
-    </ul>
-
-    <div class="flex-right">
-      <div class="choice-description text-right" ng-show="choice.isSelected(1)">This tells us that lorem ipsum</div>
-      <div class="choice-description text-right" ng-show="choice.isSelected(2)">This tells us that dolar et lama</div>
-      <div class="choice-description text-right" ng-show="choice.isSelected(3)">This tells us that modern, perhaps more minimal settings, might be to your liking</div>
-    </div>
-  </div>
-  <div class="clearfix"></div>
+  <choices
+    first="Some place serving an interesting Thai/Japanese fusion dish" first-description="This tells us that lorem ipsum"
+    second="My local cafe" second-description="This tells us more that lorem ipsum"
+    third="The newest fine dining restaurant in town" third-description="This tells us that modern, perhaps more minimal settings, might be to your liking"/>
 </section>
-
 
 
 <section class="section">
   <h2 class="text-center">How about your preferred way to get somewhere?</h2>
 
-
   <!-- CHOICES BUTTONS -->
-  <section class="section">
-    <div class="container" ng-controller="choicesController as choice">
-      <ul class="small-block-grid-3 choices" ng-class="{active: choice.anyIsSelected()}">
-        <li><div class="button" ng-click="choice.selectChoice(1)" ng-class="{active: choice.isSelected(1)}"><a class="button-content">My Bike</a></div></li>
-        <li><div class="button" ng-click="choice.selectChoice(2)" ng-class="{active: choice.isSelected(2)}"><a class="button-content">An Airplane</a></div></li>
-        <li><div class="button" ng-click="choice.selectChoice(3)" ng-class="{active: choice.isSelected(3)}"><a class="button-content">My Car</a></div></li>
-      </ul>
-
-      <div class="flex-center">
-        <div class="choice-description text-center" ng-show="choice.isSelected(1)">This tells us that lorem ipsum</div>
-        <div class="choice-description text-center" ng-show="choice.isSelected(2)">This tells us that dolar et lama</div>
-        <div class="choice-description text-center" ng-show="choice.isSelected(3)">This tells us that modern, perhaps more minimal settings, might be to your liking</div>
-      </div>
-    </div>
-    <div class="clearfix"></div>
-  </section>
-
+  <choices
+    first="My Bike" first-description="This tells us that lorem ipsum"
+    second="An Airplane" second-description="This tells us more that lorem ipsum"
+    third="My Car" third-description="This tells us that modern, perhaps more minimal settings, might be to your liking"/>
 </section>
 
 

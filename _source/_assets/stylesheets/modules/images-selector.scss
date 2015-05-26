@@ -12,7 +12,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     @include transform(scale(0.9));
-    @include transition(transform $transition-speed-default);
 
     .overlay{
       @include align-items(center);
@@ -34,7 +33,6 @@
     }
 
     &:hover{
-      @include transform(scale(1));
       .overlay{
         opacity: 1;
       }

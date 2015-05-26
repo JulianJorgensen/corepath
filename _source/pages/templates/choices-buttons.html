@@ -1,0 +1,17 @@
+<div class="container" ng-controller="choicesController as choicesCtrl">
+  <ul class="small-block-grid-3 choices" ng-class="{active: choice.anyIsSelected()}">
+    <li><div class="button" ng-click="choice.selectChoice(1)" ng-class="{active: choice.isSelected(1)}"><a class="button-content">My Bike</a></div></li>
+    <li><div class="button" ng-click="choice.selectChoice(2)" ng-class="{active: choice.isSelected(2)}"><a class="button-content">An Airplane</a></div></li>
+    <li><div class="button" ng-click="choice.selectChoice(3)" ng-class="{active: choice.isSelected(3)}"><a class="button-content">My Car</a></div></li>
+  </ul>
+
+  <div class="choice-description flex-left" ng-show="choice.isSelected(1)">
+    <p class="text-left">This tells us that lorem ipsum</p>
+  </div>
+  <div class="choice-description flex-center" ng-show="choice.isSelected(2)">
+    <p class="text-center">This tells us that dolar et lama</p>
+  </div>
+  <div class="choice-description flex-right" ng-show="choice.isSelected(3)">
+    <p class="text-right">This tells us that modern, perhaps more minimal settings, might be to your liking</p>
+  </div>
+</div>

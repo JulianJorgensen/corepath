@@ -1,0 +1,19 @@
+<div class="container">
+  <ul class="small-block-grid-3 choices" ng-class="{active: anyIsSelected()}">
+    <li><div class="button" ng-click="selectChoice(1)" ng-class="{active: isSelected(1)}"><a class="button-content">{{ first }}</a></div></li>
+    <li><div class="button" ng-click="selectChoice(2)" ng-class="{active: isSelected(2)}"><a class="button-content">{{ second }}</a></div></li>
+    <li><div class="button" ng-click="selectChoice(3)" ng-class="{active: isSelected(3)}"><a class="button-content">{{ third }}</a></div></li>
+  </ul>
+
+  <div class="choice-description flex-left" ng-show="isSelected(1)">
+    <p class="text-left">{{ firstDescription }}</p>
+  </div>
+  <div class="choice-description flex-center" ng-show="isSelected(2)">
+    <p class="text-center">{{ secondDescription }}</p>
+  </div>
+  <div class="choice-description flex-right" ng-show="isSelected(3)">
+    <p class="text-right">{{ thirdDescription }}</p>
+  </div>
+</div>
+
+<div class="clearfix"></div>

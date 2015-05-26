@@ -46,9 +46,11 @@ $choices-button-height: 100px;
   }
 }
 .choice-description{
-  font-size: rem-calc(20);
-  font-style: italic;
-  max-width: 500px;
+  p{
+    font-size: rem-calc(20);
+    font-style: italic;
+    max-width: 500px;    
+  }
 }
 
 

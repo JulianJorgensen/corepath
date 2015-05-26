@@ -21,25 +21,6 @@ avenueApp.controller('tabsController', ['$scope', function ($scope){
 }]);
 
 
-// BUTTONS CONTROLLER
-avenueApp.controller('choicesController', ['$scope', function ($scope){
-  this.selectChoice = function (setChoice){
-  	this.choice = setChoice;
-  };
-  this.isSelected = function(checkChoice) {
-  	return this.choice === checkChoice;
-  };
-  this.anyIsSelected = function() {
-    return (this.choice === 1 || this.choice === 2 || this.choice === 3);
-  };
-}]);
-
-
-avenueApp.controller('buttonSelector', ['$scope', function($scope) {
-
-}]);
-
-
 // ABOUT CONTROLLER
 avenueApp.controller('aboutController', ['$scope', function($scope) {
 
