@@ -9,10 +9,10 @@
 
     <title>{{ page.title }} - {{ site.title }}</title>
 
-    <script src="{{ site.baseurl }}{% asset_path init.js %}"></script>
+    <script src="{% asset_path init.js %}"></script>
 
     <!-- Styles -->
-    <link rel="stylesheet" href="{{ site.baseurl }}{% asset_path main.css %}">
+    <link rel="stylesheet" href="{% asset_path main.css %}">
 
     <!-- Font awesome -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -32,18 +32,18 @@
 
 
     <!-- AngularJS Foundation -->
-    <script src="{{ site.baseurl }}{% asset_path vendor/foundation.min.js %}"></script>
+    <script src="{% asset_path vendor/foundation.min.js %}"></script>
 
     <!-- Angular JS -->
-    <script src="{{ site.baseurl }}{% asset_path app.js %}"></script>
-    <script src="{{ site.baseurl }}{% asset_path routes.js %}"></script>
-    <script src="{{ site.baseurl }}{% asset_path controllers.js %}"></script>
-    <script src="{{ site.baseurl }}{% asset_path directives.js %}"></script>
+    <script src="{% asset_path app.js %}"></script>
+    <script src="{% asset_path routes.js %}"></script>
+    <script src="{% asset_path controllers.js %}"></script>
+    <script src="{% asset_path directives.js %}"></script>
 
     <!-- PAGE SPECIFIC JS -->
     {% if page.include_js %}
       {% for js_file in page.include_js %}
-        <script src="{{ site.baseurl }}{{ js_file | asset_path }}" type="text/javascript"></script>
+        <script src="{{ js_file | asset_path }}" type="text/javascript"></script>
       {% endfor %}
     {% endif %}
 

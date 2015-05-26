@@ -1,4 +1,23 @@
+title: Avenue
+source: ./_source
+destination: ./_site
 baseurl: /avenue/
+permalink: pretty
 
 assets:
+  dirname: assets
   baseurl: /avenue/assets/
+  sources:
+    - _assets/js
+    - _assets/stylesheets
+    - _assets/images
+  bundles:
+    - 'application.css'
+    - 'application.js'
+  compress:
+    #css: sass
+    # js: uglifier
+  cachebust: soft
+  gzip:
+  # - text/css
+  # - application/javascript
