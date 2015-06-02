@@ -18,6 +18,7 @@
   *= require './modules/marquee.scss'
   *= require './modules/tabs.scss'
   *= require './modules/images-selector.scss'
+  *= require './modules/choices.scss'
 
 
   PAGES/SECTIONS

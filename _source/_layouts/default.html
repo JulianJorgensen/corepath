@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 
 <html class="no-js" lang="en" ng-app="avenueApp">
-  <head>
+<head>
+    <base href="{{ site.baseurl }}" target="_blank">
+
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
 
     <!-- Set the viewport width to device width for mobile -->
@@ -16,9 +18,13 @@
 
     <!-- Font awesome -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  </head>
 
-  <body>
+    <!-- tyepkit -->
+    <script src="//use.typekit.net/tvw4jri.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+</head>
+
+<body>
 
     {% include nav.html %}
 
@@ -42,11 +48,11 @@
 
     <!-- PAGE SPECIFIC JS -->
     {% if page.include_js %}
-      {% for js_file in page.include_js %}
-        <script src="{{ js_file | asset_path }}" type="text/javascript"></script>
-      {% endfor %}
+    {% for js_file in page.include_js %}
+    <script src="{{ js_file | asset_path }}" type="text/javascript"></script>
+    {% endfor %}
     {% endif %}
 
     {{ page.custom_js }}
-  </body>
+</body>
 </html>

@@ -1,0 +1,35 @@
+<!-- VERTICAL ALIGNED CHOICES -->
+<!-- ========================== -->
+<div class="choices-container vertical color-{{ choicesColor || 'default' }}">
+  <div class="row choices-background padding-xlarge" style="background-image: url('{{ currentImage }}');">
+    <div class="container">
+
+      <div class="row">
+        <div class="column small-8">
+          <h2 class="choices-question text-left margin-bottom-xlarge">{{ question }}</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column small-5">
+          <choices-buttons />
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column small-12 margin-top-large">
+      <div class="choice-description flex-center" ng-show="isSelected(1)">
+        <p class="text-center">{{ firstDescription }}</p>
+      </div>
+      <div class="choice-description flex-center" ng-show="isSelected(2)">
+        <p class="text-center">{{ secondDescription }}</p>
+      </div>
+      <div class="choice-description flex-center" ng-show="isSelected(3)">
+        <p class="text-center">{{ thirdDescription }}</p>
+      </div>
+    </div>
+  </div>
+</div>

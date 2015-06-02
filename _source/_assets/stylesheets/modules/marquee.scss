@@ -74,30 +74,4 @@
       }
     }
   }
-
-
-  // MARQUEE LETS BEGIN (SECOND ONE)
-  &.marquee-lets-begin{
-    height: 600px;
-
-    .marquee-background{
-      background-image: image-url('av_moodboard.jpg');
-    }
-
-    .marquee-content{
-      @include display(flex);
-      @include justify-content(flex-end);
-
-      .marquee-landing-headline{
-        @include flex(1);
-        max-width: 300px;
-        padding-right: $spacing-default;
-      }
-      .marquee-landing-tabs{
-        @include flex(1);
-        max-width: 400px;
-        padding-left: $spacing-default;
-      }
-    }
-  }
 }

@@ -10,24 +10,9 @@
   }
 }
 
-
-// position styles
-.flex-bottom{
-  @include display(flex);
-  @include align-items(flex-end);
-  @include justify-content(flex-end);
-}
-
-.flex-right{
-  @include display(flex);
-  @include align-items(flex-end);
-  @include justify-content(flex-end);
-}
-
-.flex-center{
-  @include display(flex);
-  @include align-items(center);
-  @include justify-content(center);
+// images
+.rounded{
+  border-radius: 50%;
 }
 
 

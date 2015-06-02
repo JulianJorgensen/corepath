@@ -15,13 +15,50 @@ html{
 
 
 .section{
-  margin-top: $spacing-xlarge;
-  margin-bottom: $spacing-xlarge;
 }
 
 
-.vertical-center{
-  @include align-items(center);
+// separator
+.separator{
+  margin: $spacing-large 0;
+  clear: both;
+
+  &.large{
+    margin: $spacing-xxlarge 0;
+  }
+
+  &.line{
+    border-bottom: 2px solid $gray20;
+    @include display(flex);
+    @include align-items(center);
+    @include justify-content(center);
+
+    .separator-text{
+      position: relative;
+      bottom: -18px;
+      height: 30px;
+      padding: 0 $spacing-default;
+      background-color: $white;
+    }
+  }
+}
+
+
+// position styles
+.flex-bottom{
   @include display(flex);
+  @include align-items(flex-end);
+  @include justify-content(flex-end);
+}
+
+.flex-right{
+  @include display(flex);
+  @include align-items(flex-end);
+  @include justify-content(flex-end);
+}
+
+.flex-center{
+  @include display(flex);
+  @include align-items(center);
   @include justify-content(center);
 }

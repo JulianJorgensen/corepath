@@ -1,57 +1,7 @@
 @import 'bourbon';
 @import '../variables_custom';
 @import '../variables_foundation';
-
-
-// CHOICES BUTTONS
-// =====================
-$choices-button-height: 100px;
-
-.choices{
-  .button{
-    @include align-items(center);
-    @include display(flex);
-    @include justify-content(center);
-    @include transition(opacity $transition-speed-default);
-    height: $choices-button-height;
-
-    &.active{
-      background-color: $portage;
-      a{
-        color: $white;
-      }
-    }
-
-    .button-content{
-      padding: 0;
-      color: $black;
-      @include transition(color $transition-speed-default);
-    }
-
-    &:hover{
-      .button-content{
-        color: $white;
-      }
-    }
-  }
-
-  &.active{
-    .button:not(.active){
-      opacity: 0.2;
-      border-color: $black;
-      &:hover{
-        opacity: 0.6;
-      }
-    }
-  }
-}
-.choice-description{
-  p{
-    font-size: rem-calc(20);
-    font-style: italic;
-    max-width: 500px;    
-  }
-}
+@import '../mixins';
 
 
 // CTAs (almost like buttons but different)

@@ -1,0 +1,200 @@
+@import 'bourbon';
+@import '../variables_custom';
+@import '../variables_foundation';
+@import '../mixins';
+@import "../vendor/foundation/components/block-grid";
+
+
+// CHOICES BUTTONS
+// =====================
+$choices-button-height: 100px;
+
+.choices{
+  @include no-bullets();
+
+  li{
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .button{
+    @include align-items(center);
+    @include display(flex);
+    @include justify-content(center);
+    @include transition(opacity $transition-speed-default);
+    height: $choices-button-height;
+
+    .button-content{
+      padding: 0;
+      color: $black;
+      @include transition(color $transition-speed-default);
+    }
+  }
+}
+
+
+// CHOICES CONTAINER
+.choices-container{
+  &.horizontal{
+    .choices{
+      @include block-grid(
+          // This controls how many elements will be on each row of the block grid. Set this to whatever number you need, up to the max allowed in the variable.
+          // Available options: 1-12 by default, and false.
+          $per-row: 3,
+
+          // This controls how much space is between each item in the block grid.
+          // Use a variable or any pixel or em values.
+          $spacing: $block-grid-default-spacing,
+
+          // This controls whether or not base styles come through, set to false to leave out.
+          $base-style: true
+        );
+
+      > li{
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  &.vertical{
+    .choices{
+      .button{
+        margin-bottom: $spacing-default;
+      }
+    }
+  }
+}
+
+
+// CHOICES COLORS
+.choices-container{
+  &.color-white{
+    .choices-question{
+      color: $white;
+    }
+
+    .choices{
+      .button{
+        border-color: $white;
+
+        .button-content{
+          color: $white;
+        }
+      }
+
+
+      // active white choices
+      &.active{
+        .button:not(.active){
+          border-color: $white;
+
+            .button-content{
+              color: $black;
+            }
+        }
+
+        .button{
+          background-color: $white;
+
+          &.active{
+            .button-content{
+                color: $polo;
+            }
+          }
+        }
+
+      }
+
+      &.color-default{
+        .choices{
+          .button{
+            &:hover{
+              .button-content{
+                color: $white;
+              }
+            }
+          }
+
+          &.active{
+            background-color: $polo;
+            a{
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.choices.active{
+  .button:not(.active){
+    opacity: 0.3;
+    border-color: $black;
+    &:hover{
+      opacity: 0.6;
+    }
+  }
+}
+
+
+
+// choices image
+// =====================
+.choices-container .choices-image{
+  height: 500px;
+  width: 500px;
+}
+
+
+
+// choices description
+// =====================
+
+.choice-description{
+  p{
+    font-size: rem-calc(20);
+    font-style: italic;
+    max-width: 500px;
+    margin-bottom: 0;
+  }
+}
+
+
+
+// CHOICES BG
+// =================
+.choices-background{
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+// CHOICES MARQUEE
+// =================
+
+.choices-marquee{
+  position: relative;
+  margin-bottom: $spacing-default;
+
+  img{
+    width: 100%;
+  }
+
+  &.bleed{
+    height: 600px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .choices-question{
+      position: absolute;
+      bottom: $spacing-xlarge;
+      max-width: inherit;
+    }
+  }
+}

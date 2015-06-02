@@ -89,7 +89,7 @@ $include-html-global-classes: $include-html-classes;
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
 // We use these to define default font stacks
-// $font-family-sans-serif: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+$font-family-sans-serif: "brandon-grotesque", Helvetica, Roboto, Arial, sans-serif;
 // $font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
 // $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
 
@@ -223,11 +223,11 @@ $include-html-global-classes: $include-html-classes;
 
 // We use these to control header font sizes
 // $h1-font-size: rem-calc(44);
-// $h2-font-size: rem-calc(37);
-// $h3-font-size: rem-calc(27);
-// $h4-font-size: rem-calc(23);
-// $h5-font-size: rem-calc(18);
-// $h6-font-size: 1rem;
+// $h2-font-size: rem-calc(36);
+// $h3-font-size: rem-calc(36);
+// $h4-font-size: rem-calc(33);
+// $h5-font-size: rem-calc(29);
+// $h6-font-size: rem-calc(18);
 
 // We use these to control header size reduction on small screens
 // $h1-font-reduction: rem-calc(10);
@@ -464,10 +464,10 @@ $button-font-color: $black;
 // $button-function-factor: -20%;
 
 // We use these to control button border styles.
-$button-border-width: 1px;
+$button-border-width: 2px;
 // $button-border-style: solid;
 $button-bg-color: transparent;
-$button-bg-hover: $portage;
+$button-bg-hover: $polo;
 // $button-border-color: $button-bg-hover;
 // $secondary-button-bg-hover: scale-color($secondary-color, $lightness: $button-function-factor);
 // $secondary-button-border-color: $secondary-button-bg-hover;

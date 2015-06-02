@@ -107,10 +107,10 @@
   </div>
 </section>
 
-
+<div class="separator"></div>
 
 <section class="section">
-  <div class="container vertical-center">
+  <div class="container flex-center">
     <div class="column small-6 text-right">
       <h6>High-quality furnishings<br>selected for you and your home tailored to your style</h6>
     </div>
@@ -127,6 +127,7 @@
   <div class="clearfix"></div>
 </section>
 
+<div class="separator"></div>
 
 <section class="section">
   <div class="container">
@@ -151,6 +152,7 @@
   <div class="clearfix"></div>
 </section>
 
+<div class="separator large"></div>
 
 <section class="section">
   <div class="container text-center">
@@ -159,56 +161,97 @@
   </div>
 </section>
 
+<div class="separator large"></div>
 
-<!-- MARQUEE -->
-<!-- =============== -->
-<section class="section marquee marquee-lets-begin white flex-bottom">
-  <div class="marquee-background active"></div>
-  <div class="container">
-    <h3>How you live is made up of a lot of things. For example, what's your ideal spot to dine?</h3>
-  </div>
-</section>
-
-
-<!-- CHOICES BUTTONS -->
-<section class="section">
+<!-- QUESTION: CUISINE -->
+<section id="question-cuisine" class="section">
   <choices
-    first="Some place serving an interesting Thai/Japanese fusion dish" first-description="This tells us that lorem ipsum"
-    second="My local cafe" second-description="This tells us more that lorem ipsum"
-    third="The newest fine dining restaurant in town" third-description="This tells us that modern, perhaps more minimal settings, might be to your liking"/>
+    question="How you live is made up of a lot of things. For example, what's your ideal spot to dine?"
+    first="Some place serving an interesting Thai/Japanese fusion dish" first-description="This tells us that lorem ipsum" first-image="{{ 'av_moodboard.jpg' | asset_path }}"
+    second="My local cafe" second-description="This tells us more that lorem ipsum" second-image="{{ '5-2.jpg' | asset_path }}"
+    third="The newest fine dining restaurant in town" third-description="This tells us that modern, perhaps more minimal settings, might be to your liking" third-image="{{ '2048-3.jpg' | asset_path }}"
+    marquee-bleed="true"
+    />
 </section>
 
+<div class="separator large"></div>
 
-<section class="section">
+<!-- QUESTION: TRANSPORTATION -->
+<section id="question-transportation" class="section">
   <h2 class="text-center">How about your preferred way to get somewhere?</h2>
-
-  <!-- CHOICES BUTTONS -->
   <choices
     first="My Bike" first-description="This tells us that lorem ipsum"
     second="An Airplane" second-description="The adventure of travel to far off places informs your taste with global sensibility. You might also be on the road a lot, shaping a lot of your home life."
     third="My Car" third-description="This tells us that modern, perhaps more minimal settings, might be to your liking"
-    activate-content="section#jules" />
+    activate-content="#question-groceries" />
 </section>
 
+
+<!-- QUESTION: GROCERIES -->
+<section id="question-groceries" class="section hide">
+  <div class="container text-center">
+
+    <div class="separator large line">
+      <div class="separator-text">3</div>
+    </div>
+
+    <choices
+      question="Let's talk home basics: where do you buy your groceries?"
+      first="An Organic food shop" first-description="This tells us that lorem ipsum" first-image="{{ '5.jpg' | asset_path }}"
+      second="A local fresh produce market" second-description="The adventure of travel to far off places informs your taste with global sensibility. You might also be on the road a lot, shaping a lot of your home life." second-image="{{ '5-1.jpg' | asset_path }}"
+      third="A Grocery Store" third-description="This tells us that modern, perhaps more minimal settings, might be to your liking" third-image="{{ '5-2.jpg' | asset_path }}"
+      template-url="choices-vertical" align="right" activate-content="#question-free-time" />
+  </div>
+</section>
+
+<!-- QUESTION: FREE TIME -->
+<section id="question-free-time" class="section hide">
+  <div class="container text-center">
+
+    <div class="separator large line">
+      <div class="separator-text">4</div>
+    </div>
+
+    <choices
+      question="What's your favourite way to spend free time?"
+      first="Reading the paper or a good book while listening to my favourite music" first-description="This tells us that lorem ipsum" first-image="{{ '2048-1.jpg' | asset_path }}"
+      second="Having a drink with friends" second-description="The adventure of travel to far off places informs your taste with global sensibility. You might also be on the road a lot, shaping a lot of your home life." second-image="{{ '2048-2.jpg' | asset_path }}"
+      third="Yoga or a good run through the park" third-description="This tells us that modern, perhaps more minimal settings, might be to your liking" third-image="{{ '2048.jpg' | asset_path }}"
+      template-url="choices-vertical-background" activate-content="#question-furniture" choices-color="white" />
+  </div>
+</section>
+
+
+<!-- QUESTION: FURNITURE -->
+<section id="question-furniture" class="section hide">
+  <div class="container">
+    <div class="separator large line">
+      <div class="separator-text">A quick break</div>
+    </div>
+
+    <div class="row">
+      <div class="column small-6">
+        <img src="{{ '5.jpg' | asset_path }}" />
+      </div>
+
+      <div class="column small-6 text-center">
+        <h3>We're about half-way there. Now that we've talked about how you like to live, let's spend a bit of time talking about your furniture preferences.</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="container text-center">
+    <div class="separator large line">
+      <div class="separator-text">5</div>
+    </div>
+
+    <choices
+      question="When you buy furniture, what do you consider most important?"
+      first="Function" first-description="This tells us that lorem ipsum" first-image="{{ '2048-4.jpg' | asset_path }}"
+      second="Comfort & Affordability" second-description="The adventure of travel to far off places informs your taste with global sensibility. You might also be on the road a lot, shaping a lot of your home life." second-image="{{ '2048-3.jpg' | asset_path }}"
+      third="Quality & Style" third-description="This tells us that modern, perhaps more minimal settings, might be to your liking" third-image="{{ '2048-6.jpg' | asset_path }}"
+      template-url="choices-vertical" align="left" activate-content="section#free-time" />
+  </div>
+</section>
 
 <div class="clearfix"></div>
-
-
-<section id="jules" class="section hide">
-    <div class="container text-center">
-        <hr>
-
-        <div class="row">
-            <div class="column small-7">
-                apple img
-            </div>
-            <div class="column small-5">
-                <choices
-                  first="My Bike" first-description="This tells us that lorem ipsum"
-                  second="An Airplane" second-description="The adventure of travel to far off places informs your taste with global sensibility. You might also be on the road a lot, shaping a lot of your home life."
-                  third="My Car" third-description="This tells us that modern, perhaps more minimal settings, might be to your liking"
-                  activate-content="section#jules" />
-            </div>
-        </div>
-    </div>
-</section>

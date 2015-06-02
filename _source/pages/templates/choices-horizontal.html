@@ -1,0 +1,38 @@
+<!-- HORIZONTAL ALIGNED CHOICES -->
+<!-- ========================== -->
+<div class="choices-container horizontal">
+
+
+  <div ng-if="marqueeBleed" class="choices-marquee bleed" style="background-image: url('{{ currentImage }}');">
+    <div class="container">
+      <h3 class="choices-question white">{{ question }}</h3>
+    </div>
+  </div>
+
+  <div ng-if="{currentImage && !marqueeBleed}" class="choices-marquee">
+    <img ng-src="currentImage">
+  </div>
+
+
+  <div class="container">
+    <choices-buttons />
+  </div>
+
+  <div class="separator"></div>
+
+  <div class="row">
+    <div class="column small-12">
+
+      <div class="choice-description flex-left" ng-show="isSelected(1)">
+        <p class="text-left">{{ firstDescription }}</p>
+      </div>
+      <div class="choice-description flex-center" ng-show="isSelected(2)">
+        <p class="text-center">{{ secondDescription }}</p>
+      </div>
+      <div class="choice-description flex-right" ng-show="isSelected(3)">
+        <p class="text-right">{{ thirdDescription }}</p>
+      </div>
+    </div>
+  </div>
+
+</div>
