@@ -1,8 +1,9 @@
 # Avenue #
 
-By Denim & Steel
+By Denim & Steel (http://denimandsteel.com)
 
 Staging: http://denimandsteel.github.io/avenue/
+Live: http://avenuespaces.com
 
 ## Frameworks: ##
 * Jekyll (static site compiler) + Jekyll assets
@@ -23,8 +24,9 @@ Staging: http://denimandsteel.github.io/avenue/
 
 
 
+
 ###CHOICES DIRECTIVE VARIABLES
-===========================
+------
 
 
 **`question`** : The question
@@ -39,7 +41,7 @@ Staging: http://denimandsteel.github.io/avenue/
 
 **`choices-color`** : It's the color theme. Either `white` or anything else (default).
 
-------
+---
 
 **`first`** : The first choice (button)
 
@@ -49,7 +51,7 @@ Staging: http://denimandsteel.github.io/avenue/
 
 **`first-icon`** : The icon associated with the first choice
 
-------
+---
 
 **`second`** : The second choice (button)
 
@@ -59,7 +61,7 @@ Staging: http://denimandsteel.github.io/avenue/
 
 **`second-icon`** : The icon associated with the second choice
 
-------
+---
 
 **`third`** : The third choice (button)
 
