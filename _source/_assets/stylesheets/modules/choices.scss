@@ -5,6 +5,73 @@
 @import "../vendor/foundation/components/block-grid";
 
 
+// CHOICES HORIZONTAL
+// ==========================
+.choices-container{
+  &.horizontal{
+    .choices{
+      @include block-grid(
+          // This controls how many elements will be on each row of the block grid. Set this to whatever number you need, up to the max allowed in the variable.
+          // Available options: 1-12 by default, and false.
+          $per-row: 3,
+
+          // This controls how much space is between each item in the block grid.
+          // Use a variable or any pixel or em values.
+          $spacing: $block-grid-default-spacing,
+
+          // This controls whether or not base styles come through, set to false to leave out.
+          $base-style: true
+        );
+
+      > li{
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
+
+// CHOICES VERTICAL
+// ==========================
+.choices-container.vertical{
+  .choices{
+    .button{
+      margin-bottom: $spacing-default;
+    }
+  }
+}
+
+
+
+// CHOICES ICONS
+// ==========================
+.choices-container{
+  .choices-icon{
+    text-align: center;
+    height: 150px;
+    margin: $spacing-xlarge 0;
+    cursor: pointer;
+
+    svg{
+      height: 100%;
+      max-width: 100%;
+      @include transition(transform $transition-speed-default);
+    }
+
+    &.active{
+      svg{
+        @include transform(scale(1.3));
+
+        g{
+          fill: $black;
+        }
+      }
+    }
+  }
+}
+
+
 // CHOICES BUTTONS
 // =====================
 $choices-button-height: 100px;
@@ -33,42 +100,23 @@ $choices-button-height: 100px;
 }
 
 
-// CHOICES CONTAINER
-.choices-container{
-  &.horizontal{
-    .choices{
-      @include block-grid(
-          // This controls how many elements will be on each row of the block grid. Set this to whatever number you need, up to the max allowed in the variable.
-          // Available options: 1-12 by default, and false.
-          $per-row: 3,
-
-          // This controls how much space is between each item in the block grid.
-          // Use a variable or any pixel or em values.
-          $spacing: $block-grid-default-spacing,
-
-          // This controls whether or not base styles come through, set to false to leave out.
-          $base-style: true
-        );
-
-      > li{
-        padding-top: 0;
-        padding-bottom: 0;
-      }
-    }
-  }
-
-  &.vertical{
-    .choices{
-      .button{
-        margin-bottom: $spacing-default;
-      }
-    }
-  }
-}
-
-
 // CHOICES COLORS
+// ==========================
 .choices-container{
+
+  // shared
+  .choices.active{
+    .button:not(.active){
+      opacity: 0.3;
+      border-color: $black;
+      &:hover{
+        opacity: 0.6;
+      }
+    }
+  }
+
+
+  // white buttons
   &.color-white{
     .choices-question{
       color: $white;
@@ -103,25 +151,25 @@ $choices-button-height: 100px;
             }
           }
         }
+      }
+    }
+  }
 
+  // default buttons
+  &.color-default{
+    .choices{
+      .button{
+        &:hover{
+          .button-content{
+            color: $white;
+          }
+        }
       }
 
-      &.color-default{
-        .choices{
-          .button{
-            &:hover{
-              .button-content{
-                color: $white;
-              }
-            }
-          }
-
-          &.active{
-            background-color: $polo;
-            a{
-              color: $white;
-            }
-          }
+      &.active{
+        background-color: $polo;
+        a{
+          color: $white;
         }
       }
     }
@@ -129,19 +177,7 @@ $choices-button-height: 100px;
 }
 
 
-.choices.active{
-  .button:not(.active){
-    opacity: 0.3;
-    border-color: $black;
-    &:hover{
-      opacity: 0.6;
-    }
-  }
-}
-
-
-
-// choices image
+// CHOICES IMAGE
 // =====================
 .choices-container .choices-image{
   height: 500px;
@@ -149,10 +185,8 @@ $choices-button-height: 100px;
 }
 
 
-
-// choices description
+// CHOICES DESCRIPTION
 // =====================
-
 .choice-description{
   p{
     font-size: rem-calc(20);
@@ -163,7 +197,6 @@ $choices-button-height: 100px;
 }
 
 
-
 // CHOICES BG
 // =================
 .choices-background{
@@ -171,7 +204,6 @@ $choices-button-height: 100px;
   background-size: cover;
   background-repeat: no-repeat;
 }
-
 
 
 // CHOICES MARQUEE

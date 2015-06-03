@@ -179,10 +179,11 @@
 <!-- QUESTION: TRANSPORTATION -->
 <section id="question-transportation" class="section">
   <h2 class="text-center">How about your preferred way to get somewhere?</h2>
+
   <choices
-    first="My Bike" first-description="This tells us that lorem ipsum"
-    second="An Airplane" second-description="The adventure of travel to far off places informs your taste with global sensibility. You might also be on the road a lot, shaping a lot of your home life."
-    third="My Car" third-description="This tells us that modern, perhaps more minimal settings, might be to your liking"
+    first="My Bike" first-description="This tells us that lorem ipsum" first-icon="{% asset_path 'icons/bike.svg' %}"
+    second="An Airplane" second-description="The adventure of travel to far off places informs your taste with global sensibility. You might also be on the road a lot, shaping a lot of your home life." second-icon="{% asset_path 'icons/airplane.svg' %}"
+    third="My Car" third-description="This tells us that modern, perhaps more minimal settings, might be to your liking" third-icon="{% asset_path 'icons/car.svg' %}"
     activate-content="#question-groceries" />
 </section>
 
@@ -250,8 +251,24 @@
       first="Function" first-description="This tells us that lorem ipsum" first-image="{{ '2048-4.jpg' | asset_path }}"
       second="Comfort & Affordability" second-description="The adventure of travel to far off places informs your taste with global sensibility. You might also be on the road a lot, shaping a lot of your home life." second-image="{{ '2048-3.jpg' | asset_path }}"
       third="Quality & Style" third-description="This tells us that modern, perhaps more minimal settings, might be to your liking" third-image="{{ '2048-6.jpg' | asset_path }}"
-      template-url="choices-vertical" align="left" activate-content="section#free-time" />
+      template-url="choices-vertical" align="left" activate-content="section#question-furniture-old-new" />
   </div>
 </section>
 
-<div class="clearfix"></div>
+
+
+<!-- QUESTION: FURNITURE -->
+<section id="question-furniture-old-new" class="section hide">
+  <div class="container text-center">
+    <div class="separator large line">
+      <div class="separator-text">6</div>
+    </div>
+
+    <choices
+      question="Do you prefer old or new furniture?"
+      first="Love my antiques and vintage finds" first-description="Every antique item carries a story. Vintage furniture is both unique and beautiful" first-image="{{ 'grid-marquee.png' | asset_path }}"
+      second="I would definitely visit a high-end furniture store" second-description="The adventure of travel to far off places informs your taste with global sensibility. You might also be on the road a lot, shaping a lot of your home life." second-image="{{ '2048-3.jpg' | asset_path }}"
+      third="I plan to reupholster my grandma's chair" third-description="This tells us that modern, perhaps more minimal settings, might be to your liking" third-image="{{ '2048-6.jpg' | asset_path }}"
+      template-url="choices-vertical" align="right" activate-content="section#free-time" />
+  </div>
+</section>
