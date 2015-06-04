@@ -12,7 +12,45 @@
 
   .nav-items{
     .nav-item{
+      margin-right: $spacing-large;
+      border-bottom: 2px solid transparent;
+
+      a{
+        color: $black;
+      }
+
+      &:hover{
+        border-bottom-color: $black;
+      }
+    }
+
+    .nav-item, .nav-contact{
       display: inline-block;
+    }
+
+    // contact nav item
+    .nav-contact{
+      &.active{
+        position: relative;
+
+        &:after, &:before{
+          content: "";
+          position: absolute;
+          left: 50%;
+        }
+
+        &:before{
+          @include triangle(16px, $gray40, down);
+          margin-left: -11px;
+          bottom: -14px;
+        }
+
+        &:after{
+          @include triangle(12px, $white, down);
+          margin-left: -9px;
+          bottom: -12px;
+        }
+      }
     }
   }
 }

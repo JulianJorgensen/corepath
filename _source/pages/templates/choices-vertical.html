@@ -6,10 +6,9 @@
     <div class="row collapse">
 
         <div class="column small-6" ng-class="{'small-push-6' : align == 'left'}">
-          <img class="rounded choices-image" ng-src="{{ currentImage }}" />
+          <div class="choices-image {{ align }}" ng-class="bleed ? 'bleed' : 'rounded'" style="background-image: url('{{ currentImage }}');"></div>
         </div>
-        <div class="column small-1"></div>
-        <div class="column small-5" ng-class="{'small-pull-7': align == 'left'}">
+        <div class="column small-6" ng-class="{'small-pull-6': align == 'left'}">
           <h2 class="text-center choices-question">{{ question }}</h2>
           <choices-buttons />
 

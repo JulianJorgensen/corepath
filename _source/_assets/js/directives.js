@@ -9,20 +9,23 @@ avenueApp.directive('choices', function() {
             firstDescription: '@',
             firstImage: '@',
             firstIcon: '@',
+            firstThumb: '@',
             second: '@',
             secondDescription: '@',
             secondImage: '@',
             secondIcon: '@',
+            secondThumb: '@',
             third: '@',
             thirdDescription: '@',
             thirdImage: '@',
             thirdIcon: '@',
+            thirdThumb: '@',
             activateContent: '@',
             template: '@',
             align: '@',
             currentImage: '@',
-            marqueeBleed: '@',
-            choicesColor: '@'
+            choicesColor: '@',
+            bleed: '@'
         },
         templateUrl: function(elem,attrs) {
           if (attrs.templateUrl){

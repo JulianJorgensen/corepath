@@ -5,6 +5,13 @@ avenueApp.controller('marqueeAccordionCtrl', ['$scope', function($scope) {
 
 // INDEX CONTROLLER
 avenueApp.controller('indexController', ['$scope', function($scope) {
+
+  // cta links (divs that are clickable)
+  $('[data-href]').click(function(e){
+    var href = $(this).attr('data-href');
+    window.location.href = href;
+  });
+
 }]);
 
 

@@ -17,4 +17,9 @@ avenueApp.config(function ($routeProvider) {
         templateUrl: 'pages/how.html',
         controller: 'howController'
     })
+
+    .when('/fast-track', {
+        templateUrl: 'pages/fast-track.html',
+        controller: 'howController'
+    })
 });

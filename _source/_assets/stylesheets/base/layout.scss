@@ -2,23 +2,41 @@
 @import '../mixins';
 @import '../variables_custom';
 @import '../variables_foundation';
+@import "../vendor/foundation/components/grid";
 
-
+// HTML
 html{
   font-size: 14px;
 }
 
+body{
+  overflow-x: hidden;
+}
+
+
+// MAIN CONTAINER
+.main-container{
+  padding-bottom: $spacing-xxlarge;
+}
+
+// INNER CONTAINER
 .container{
   max-width: 1000px;
   margin: 0 auto;
 }
 
 
-.section{
+// ROW FULL WIDTH
+.row-full-width {
+  @include grid-row();
+  max-width: 100%;
+
+  .custom-column-class {
+    @include grid-column(12);
+  }
 }
 
-
-// separator
+// SEPARATOR
 .separator{
   margin: $spacing-large 0;
   clear: both;
@@ -39,12 +57,13 @@ html{
       height: 30px;
       padding: 0 $spacing-default;
       background-color: $white;
+      text-transform: uppercase;
     }
   }
 }
 
 
-// position styles
+// FLEX POSITIONING CLASSES
 .flex-bottom{
   @include display(flex);
   @include align-items(flex-end);

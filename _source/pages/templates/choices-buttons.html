@@ -2,13 +2,16 @@
   <li ng-click="selectChoice(1)">
     <div class="choices-icon" ng-if="firstIcon" ng-class="{active: isSelected(1)}"><ng-include src="firstIcon" /></div>
     <div class="button" ng-class="{active: isSelected(1)}"><a class="button-content">{{ first }}</a></div>
+      <div class="choices-thumb-image" ng-if="firstThumb" ng-class="{active: isSelected(1)}" style="background-image: url('{{ firstThumb }}');"></div>
   </li>
   <li ng-click="selectChoice(2)">
     <div class="choices-icon" ng-if="secondIcon" ng-class="{active: isSelected(2)}"><ng-include src="secondIcon" /></div>
     <div class="button" ng-class="{active: isSelected(2)}"><a class="button-content">{{ second }}</a></div>
+    <div class="choices-thumb-image" ng-if="secondThumb" ng-class="{active: isSelected(2)}" style="background-image: url('{{ secondThumb }}');"></div>
   </li>
   <li ng-click="selectChoice(3)">
     <div class="choices-icon" ng-if="thirdIcon" ng-class="{active: isSelected(3)}"><ng-include src="thirdIcon" /></div>
     <div class="button" ng-class="{active: isSelected(3)}"><a class="button-content">{{ third }}</a></div>
+    <div class="choices-thumb-image" ng-if="thirdThumb" ng-class="{active: isSelected(3)}" style="background-image: url('{{ thirdThumb }}');"></div>
   </li>
 </ul>

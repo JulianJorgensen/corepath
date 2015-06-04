@@ -4,13 +4,23 @@
       <div class="logo"><a href="#/"><img src="{% asset_path avenue_logo.svg %}" name="Avenue"></a></div>
     </div>
     <div class="column small-8">
-      <div class="top-bar-section">
-        <ul class="nav-items pull-right">
-            <li class="nav-item"><a href="#/about">About us</a></li>
-            <li class="nav-item"><a href="#/how">How it works</a></li>
-            <li class="nav-item"><a href="#"><i class="fa fa-envelope"></i></a></li>
-        </ul>
-      </div>
+      <ul class="nav-items pull-right">
+          <li class="nav-item"><a href="#/about">About Us</a></li>
+          <li class="nav-item"><a href="#/how">How it Works</a></li>
+          <li class="nav-contact"><a><img src="{% asset_path 'icons/contact.svg' %}" /></a></li>
+      </ul>
     </div>
   </nav>
 </div>
+
+<!-- CONTACT US -->
+<!-- ========== -->
+<section id="contact">
+  <div class="container">
+    <h3>email@email.com</h3>
+
+    <input type="text" placeholder="name" />
+    <input type="text" placeholder="email" />
+    <a class="button" href="#">Send</a>
+  </div>
+</section>

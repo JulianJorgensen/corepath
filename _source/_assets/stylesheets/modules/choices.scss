@@ -36,6 +36,11 @@
 // ==========================
 .choices-container.vertical{
   .choices{
+    li{
+      max-width: 300px;
+      margin: 0 auto;
+    }
+
     .button{
       margin-bottom: $spacing-default;
     }
@@ -72,6 +77,15 @@
 }
 
 
+// CHOICES QUESTION
+// =====================
+.choices-container{
+  .choices-question{
+    margin-bottom: $spacing-xlarge;
+  }
+}
+
+
 // CHOICES BUTTONS
 // =====================
 $choices-button-height: 100px;
@@ -88,7 +102,7 @@ $choices-button-height: 100px;
     @include align-items(center);
     @include display(flex);
     @include justify-content(center);
-    @include transition(opacity $transition-speed-default);
+    @include transition(all $transition-speed-default);
     height: $choices-button-height;
 
     .button-content{
@@ -182,8 +196,46 @@ $choices-button-height: 100px;
 .choices-container .choices-image{
   height: 500px;
   width: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  &.bleed{
+    position: absolute;
+    width: 50vw;
+
+    &.right{
+      right: 0;
+    }
+    &.left{
+      left: 0;
+    }
+  }
 }
 
+
+
+// CHOICES THUMB IMAGE
+// =====================
+.choices-container .choices-thumb-image{
+  position: relative;
+  margin-top: $spacing-xlarge;
+  cursor: pointer;
+  @include filter(grayscale(100%));
+  @include transition(all $transition-speed-default);
+  height: 320px;
+  width: 320px;
+  border-radius: 50%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &.active{
+    z-index: 999;
+    @include filter(grayscale(0%));
+    @include transform(scale(1.1));
+  }
+}
 
 // CHOICES DESCRIPTION
 // =====================
@@ -212,17 +264,12 @@ $choices-button-height: 100px;
 .choices-marquee{
   position: relative;
   margin-bottom: $spacing-default;
-
-  img{
-    width: 100%;
-  }
+  height: 600px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   &.bleed{
-    height: 600px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
     .choices-question{
       position: absolute;
       bottom: $spacing-xlarge;
