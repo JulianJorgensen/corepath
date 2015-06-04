@@ -2,7 +2,6 @@ title: Avenue
 source: ./_source
 destination: ./_site
 baseurl: /avenue/
-permalink: pretty
 
 assets:
   dirname: assets
