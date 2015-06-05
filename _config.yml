@@ -16,7 +16,7 @@ assets:
   compress:
     #css: sass
     # js: uglifier
-  cachebust: soft
+  cachebust: hard
   gzip:
   # - text/css
   # - application/javascript

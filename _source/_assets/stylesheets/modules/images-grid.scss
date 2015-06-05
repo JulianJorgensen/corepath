@@ -2,16 +2,45 @@
 @import 'variables_foundation';
 @import 'variables_custom';
 @import 'mixins';
+@import "../vendor/foundation/components/block-grid";
 
 
-.images-selector{
-  li{
+.images-grid{
+
+  &.grid-2{
+    @include block-grid(
+      $per-row: 2,
+      $spacing: $spacing-large,
+      $base-style: true
+    );
+  }
+
+  &.grid-3{
+    @include block-grid(
+      $per-row: 3,
+      $spacing: $spacing-default,
+      $base-style: true
+    );
+  }
+
+  &.grid-5{
+    @include block-grid(
+      $per-row: 5,
+      $spacing: 5px,
+      $base-style: true
+    );
+  }
+
+  > li{
+    padding-bottom: 0 !important;
+  }
+
+  .images-grid-inner{
     position: relative;
     min-height: 200px;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    @include transform(scale(0.9));
 
     .overlay{
       @include align-items(center);
@@ -38,4 +67,11 @@
       }
     }
   }
+}
+
+
+
+// suggested thumbnails (5 small little images below the 2 major suggested styles)
+.images-grid .suggested-thumbnails{
+  margin: $spacing-default;
 }

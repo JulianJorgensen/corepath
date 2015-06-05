@@ -11,9 +11,32 @@
 }
 
 
+.block{
+  display: block;
+}
+
+// block links cursor (like an actual link)
+[data-href]{
+  cursor: pointer;
+}
+
 // images
 .rounded{
   border-radius: 50%;
+}
+
+
+// LABEL
+.label{
+  color: $black;
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid $black;
+  padding: $spacing-small $spacing-default;
+  text-transform: uppercase;
+  background-color: transparent;
+  font-size: rem-calc(20);
+  opacity: 0.6;
 }
 
 

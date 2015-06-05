@@ -2,7 +2,7 @@
   <li ng-click="selectChoice(1)">
     <div class="choices-icon" ng-if="firstIcon" ng-class="{active: isSelected(1)}"><ng-include src="firstIcon" /></div>
     <div class="button" ng-class="{active: isSelected(1)}"><a class="button-content">{{ first }}</a></div>
-      <div class="choices-thumb-image" ng-if="firstThumb" ng-class="{active: isSelected(1)}" style="background-image: url('{{ firstThumb }}');"></div>
+    <div class="choices-thumb-image" ng-if="firstThumb" ng-class="{active: isSelected(1)}" style="background-image: url('{{ firstThumb }}');"></div>
   </li>
   <li ng-click="selectChoice(2)">
     <div class="choices-icon" ng-if="secondIcon" ng-class="{active: isSelected(2)}"><ng-include src="secondIcon" /></div>

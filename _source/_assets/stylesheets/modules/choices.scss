@@ -88,8 +88,6 @@
 
 // CHOICES BUTTONS
 // =====================
-$choices-button-height: 100px;
-
 .choices{
   @include no-bullets();
 
@@ -103,7 +101,7 @@ $choices-button-height: 100px;
     @include display(flex);
     @include justify-content(center);
     @include transition(all $transition-speed-default);
-    height: $choices-button-height;
+    height: $button-height;
 
     .button-content{
       padding: 0;

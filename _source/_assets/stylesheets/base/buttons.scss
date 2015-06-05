@@ -3,11 +3,7 @@
 @import '../variables_foundation';
 @import '../mixins';
 
-
-// CTAs (almost like buttons but different)
-// =====================
-.cta{
-  cursor: pointer;
-  border: 1px solid $black;
-  padding: $spacing-small;
+.button.light{
+  border-color: $gray20;
+  padding: $spacing-small $spacing-default;
 }

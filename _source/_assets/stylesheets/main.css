@@ -17,9 +17,10 @@
   *= require './modules/topnav.scss'
   *= require './modules/marquee.scss'
   *= require './modules/tabs.scss'
-  *= require './modules/images-selector.scss'
+  *= require './modules/images-grid.scss'
   *= require './modules/choices.scss'
   *= require './modules/contact.scss'
+  *= require './modules/cta.scss'
 
 
   PAGES/SECTIONS

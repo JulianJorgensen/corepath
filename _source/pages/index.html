@@ -118,7 +118,7 @@
       <small>OR</small>
     </div>
     <div class="column small-5">
-      <div class="cta" data-href="#/fast-track">
+      <div class="button light block text-left" data-href="#/fast-track">
         <small>Need to fill a space yesterday?</small>
         <h5>Try our fast track service <i class="fa fa-caret-right pull-right"></i></h5>
       </div>
@@ -131,20 +131,26 @@
 
 <section class="section">
   <div class="container">
-    <ul class="small-block-grid-3 images-selector">
-      <li style="background-image: url('{% asset_path 'placeholder.png' %}');">
-        <div class="overlay">
-          <h6 class="overlay-text">How do you know your style?</h6>
+    <ul class="images-grid grid-3">
+      <li>
+        <div class="images-grid-inner" style="background-image: url('{% asset_path 'placeholder.png' %}');">
+          <div class="overlay">
+            <h6 class="overlay-text">How do you know your style?</h6>
+          </div>
         </div>
       </li>
-      <li style="background-image: url('{% asset_path 'placeholder.png' %}');">
-        <div class="overlay">
-          <h6 class="overlay-text">How do you know your style?</h6>
+      <li>
+        <div class="images-grid-inner" style="background-image: url('{% asset_path 'placeholder.png' %}');">
+          <div class="overlay">
+            <h6 class="overlay-text">How do you know your style?</h6>
+          </div>
         </div>
       </li>
-      <li style="background-image: url('{% asset_path 'placeholder.png' %}');">
-        <div class="overlay">
-          <h6 class="overlay-text">How do you know your style?</h6>
+      <li>
+        <div class="images-grid-inner" style="background-image: url('{% asset_path 'placeholder.png' %}');">
+          <div class="overlay">
+            <h6 class="overlay-text">How do you know your style?</h6>
+          </div>
         </div>
       </li>
     </ul>
@@ -337,6 +343,115 @@
       first="Jeans and a tee" first-description="Every antique item carries a story. Vintage furniture is both unique and beautiful" first-image="{{ '2048-1231.jpg' | asset_path }}"
       second="Whatever suits the occasion" second-description="The adventure of travel to far off places informs your taste with global sensibility. You might also be on the road a lot, shaping a lot of your home life." second-image="{{ '2048-3.jpg' | asset_path }}"
       third="Something dressy or professional" third-description="This tells us that modern, perhaps more minimal settings, might be to your liking" third-image="{{ '2048-6.jpg' | asset_path }}"
-      template-url="choices-horizontal" activate-content="section#free-time" />
+      template-url="choices-horizontal" activate-content="section#final" />
+  </div>
+</section>
+
+
+<section id="final" class="section hide">
+  <div class="container text-center">
+
+    <div class="separator large"></div>
+
+    <div class="row">
+      <div class="column small-8 small-centered">
+        <span class="label">Great!</span>
+
+        <div class="separator large"></div>
+
+        <h4>We've made an educated guess about home styles that will really work for you.</h4>
+        <p>What do you think of these styles?</p>
+
+        <div class="separator large"></div>
+      </div>
+    </div>
+
+
+    <ul class="images-grid grid-2">
+      <li>
+        <div class="images-grid-inner">
+          <div class="overlay">
+            <h6 class="overlay-text">How do you know your style?</h6>
+          </div>
+
+          <img src="{% asset_path '5.jpg' %}" />
+        </div>
+
+        <ul class="images-grid grid-5 suggested-thumbnails">
+          <li><img src="http://placehold.it/100x100" /></li>
+          <li><img src="http://placehold.it/100x100" /></li>
+          <li><img src="http://placehold.it/100x100" /></li>
+          <li><img src="http://placehold.it/100x100" /></li>
+          <li><img src="http://placehold.it/100x100" /></li>
+        </ul>
+      </li>
+
+      <li>
+        <div class="images-grid-inner">
+          <div class="overlay">
+            <h6 class="overlay-text">How do you know your style?</h6>
+          </div>
+
+          <img src="{% asset_path '5.jpg' %}" />
+        </div>
+
+        <ul class="images-grid grid-5 suggested-thumbnails">
+          <li><img src="http://placehold.it/100x100" /></li>
+          <li><img src="http://placehold.it/100x100" /></li>
+          <li><img src="http://placehold.it/100x100" /></li>
+          <li><img src="http://placehold.it/100x100" /></li>
+          <li><img src="http://placehold.it/100x100" /></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+
+
+  <div class="container text-center">
+
+    <div class="separator large"></div>
+
+    <div class="row">
+      <div class="column small-8 small-centered">
+        <span class="label">Now what?</span>
+        <p>With an understanding of how you live and your tastes, we can design furnishing solution sets that fit your home, budget, and lifestyle for a space that's perfectly you.</p>
+
+        <div class="separator large"></div>
+
+        <h2>Take your next step,<br>your way</h2>
+      </div>
+    </div>
+
+    <div class="separator large"></div>
+
+    <div class="row">
+      <div class="column small-4 cta" data-href="#/email">
+        <div class="cta-icon">{% asset icons/email.svg %}</div>
+        <div class="button cta-button">
+          <span class="button-content">Send my results</span>
+        </div>
+        <p>We'll email your style recommendations to discuss with others or just think about.</p>
+      </div>
+
+      <div class="column small-4 cta" data-href="#/email">
+        <div class="cta-icon">{% asset icons/check.svg %}</div>
+        <div class="button cta-button">
+          <span class="button-content">Furnish my Space</span>
+        </div>
+        <p>Starting your project is painless. We'll collect some information, and create a visual proposal of pieces that work for you at incredible prices and delivered to your home.</p>
+      </div>
+
+      <div class="column small-4 cta" data-href="#/email">
+        <div class="cta-icon">{% asset icons/calendar.svg %}</div>
+        <div class="button cta-button">
+          <span class="button-content">Book a visit</span>
+        </div>
+        <p>An Avenue representative will visit your home and discuss the world of possibilities for your living space. $150 one-time fee.
+      </div>
+    </div>
+
+    <div class="separator large"></div>
+
   </div>
 </section>
