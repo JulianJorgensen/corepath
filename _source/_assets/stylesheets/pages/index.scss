@@ -1,0 +1,27 @@
+@import 'bourbon';
+@import '../mixins';
+@import '../variables_custom';
+@import '../variables_foundation';
+
+#lets-begin{
+  @include align-items(center);
+  @include display(flex);
+  @include justify-content(center);
+  z-index: 999;
+  position: relative;
+  margin-bottom: -40px;
+
+  &:after{
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    background-color: rgba($black, 0.6);
+    height: 70px;
+    width: 1px;
+  }
+
+  .label{
+    margin-bottom: -100px;
+  }
+}

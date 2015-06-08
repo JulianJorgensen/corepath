@@ -270,7 +270,7 @@
   &.bleed{
     .choices-question{
       position: absolute;
-      bottom: $spacing-xlarge;
+      bottom: 0;
       max-width: inherit;
     }
   }

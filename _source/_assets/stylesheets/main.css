@@ -24,7 +24,7 @@
 
 
   PAGES/SECTIONS
-  *= require './index.scss'
+  *= require './pages/index.scss'
 
 
   ROOT

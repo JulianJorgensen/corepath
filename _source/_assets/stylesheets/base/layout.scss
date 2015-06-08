@@ -38,7 +38,8 @@ body{
 
 // SEPARATOR
 .separator{
-  margin: $spacing-large 0;
+  position: relative;
+  margin: $spacing-xlarge 0;
   clear: both;
 
   &.large{
@@ -62,6 +63,61 @@ body{
   }
 }
 
+.separator-tree{
+  position: relative;
+  margin: $spacing-large 0;
+  clear: both;
+  width: 100%;
+  @include display(flex);
+  @include align-items(center);
+  @include justify-content(center);
+
+  &:before{
+    position: absolute;
+    left: 50%;
+    top: -30px;
+    content: "";
+    width: 1px;
+    height: 30px;
+    background-color: $gray20;
+  }
+
+  &:after{
+    content: "";
+    border: 1px solid $gray20;
+    border-bottom-width: 0;
+    width: 50%;
+    height: 100px;
+  }
+
+  &.flipped{
+    &:before{
+      top: auto;
+      bottom: -30px;
+    }
+
+    &:after{
+      border-bottom-width: 1px;
+      border-top-width: 0;
+    }
+  }
+}
+
+.vertical-line{
+  position: relative;
+  height: $spacing-xxlarge;
+  margin: $spacing-large 0;
+  clear: both;
+
+  span{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background-color: $gray20;
+    height: 100%;
+    width: 1px;
+  }
+}
 
 // FLEX POSITIONING CLASSES
 .flex-bottom{
