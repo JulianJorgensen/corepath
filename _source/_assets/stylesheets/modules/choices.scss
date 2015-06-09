@@ -239,8 +239,10 @@
 // =====================
 .choice-description{
   p{
+    font-family: $font-family-serif;
     font-size: rem-calc(20);
     font-style: italic;
+    color: $gray80;
     max-width: 500px;
     margin-bottom: 0;
   }

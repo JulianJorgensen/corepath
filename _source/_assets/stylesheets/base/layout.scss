@@ -39,10 +39,18 @@ body{
 // SEPARATOR
 .separator{
   position: relative;
-  margin: $spacing-xlarge 0;
+  margin: $spacing-large 0;
   clear: both;
 
   &.large{
+    margin: $spacing-large 0;
+  }
+
+  &.xlarge{
+    margin: $spacing-xlarge 0;
+  }
+
+  &.xxlarge{
     margin: $spacing-xxlarge 0;
   }
 
@@ -90,9 +98,19 @@ body{
 
 .vertical-line{
   position: relative;
-  height: $spacing-xxlarge;
-  margin: $spacing-large 0;
+  margin: $spacing-small 0;
+  height: $spacing-large;
   clear: both;
+
+  &.xlarge{
+    height: $spacing-xlarge;
+    margin: $spacing-large 0;
+  }
+
+  &.xxlarge{
+    height: $spacing-xxlarge;
+    margin: $spacing-large 0;
+  }
 
   span{
     position: absolute;
