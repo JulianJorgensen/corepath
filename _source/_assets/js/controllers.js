@@ -22,10 +22,22 @@ avenueApp.controller('tabsController', ['$scope', function ($scope){
   this.selectTab = function (setTab){
   	this.tab = setTab;
   };
-  this.isSelected = function(checkTab) {
+  this.isSelected = function(checkTab){
   	return this.tab === checkTab;
   };
 }]);
+
+
+// IMAGE SELECTOR CONTROLLER
+avenueApp.controller('imageController', ['$scope', function ($scope){
+
+  $scope.setImage = function(src){
+    $scope.currImage = src;
+  };
+
+}]);
+
+
 
 
 // ABOUT CONTROLLER

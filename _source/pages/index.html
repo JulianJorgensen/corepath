@@ -366,47 +366,50 @@
       </div>
     </div>
 
-    <div class="separator-tree large"></div>
+    <div class="vertical-line margin-bottom-none"><span></span></div>
+    <div class="separator-tree margin-top-none"></div>
 
     <ul class="images-grid grid-2">
-      <li>
+      <li ng-controller="imageController">
         <div class="images-grid-inner">
           <div class="overlay">
             <h6 class="overlay-text">How do you know your style?</h6>
           </div>
 
-          <img src="{% asset_path '5.jpg' %}" />
+          <img src="{% asset_path '5.jpg' %}" ng-src="{[ currImage ]}" />
         </div>
 
         <ul class="images-grid grid-5 suggested-thumbnails">
-          <li><img src="http://placehold.it/100x100" /></li>
-          <li><img src="http://placehold.it/100x100" /></li>
-          <li><img src="http://placehold.it/100x100" /></li>
-          <li><img src="http://placehold.it/100x100" /></li>
-          <li><img src="http://placehold.it/100x100" /></li>
+          <li><img src="http://placehold.it/100x100" ng-click="setImage('{% asset_path '5.jpg' %}')" alt="" /></li>
+          <li><img src="http://placehold.it/100x100" ng-click="setImage('http://placehold.it/400x400')" alt="" /></li>
+          <li><img src="http://placehold.it/100x100" ng-click="setImage('http://placehold.it/400x400')" alt="" /></li>
+          <li><img src="http://placehold.it/100x100" ng-click="setImage('http://placehold.it/400x400')" alt="" /></li>
+          <li><img src="http://placehold.it/100x100" ng-click="setImage('http://placehold.it/400x400')" alt="" /></li>
         </ul>
       </li>
 
-      <li>
+      <li ng-controller="imageController">
         <div class="images-grid-inner">
           <div class="overlay">
             <h6 class="overlay-text">How do you know your style?</h6>
           </div>
 
-          <img src="{% asset_path '5.jpg' %}" />
+          <img src="{% asset_path '5.jpg' %}" ng-src="{[ currImage ]}" />
         </div>
 
         <ul class="images-grid grid-5 suggested-thumbnails">
-          <li><img src="http://placehold.it/100x100" /></li>
-          <li><img src="http://placehold.it/100x100" /></li>
-          <li><img src="http://placehold.it/100x100" /></li>
-          <li><img src="http://placehold.it/100x100" /></li>
-          <li><img src="http://placehold.it/100x100" /></li>
+          <li><img src="http://placehold.it/100x100" ng-click="setImage('{% asset_path '5.jpg' %}')" alt="" /></li>
+          <li><img src="http://placehold.it/100x100" ng-click="setImage('http://placehold.it/400x400')" alt="" /></li>
+          <li><img src="http://placehold.it/100x100" ng-click="setImage('http://placehold.it/400x400')" alt="" /></li>
+          <li><img src="http://placehold.it/100x100" ng-click="setImage('http://placehold.it/400x400')" alt="" /></li>
+          <li><img src="http://placehold.it/100x100" ng-click="setImage('http://placehold.it/400x400')" alt="" /></li>
         </ul>
       </li>
     </ul>
 
-    <div class="separator-tree flipped large"></div>
+    <div class="separator-tree flipped margin-bottom-none"></div>
+    <div class="vertical-line margin-top-none"><span></span></div>
+
   </div>
 
 
