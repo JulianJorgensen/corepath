@@ -112,6 +112,20 @@ body{
     margin: $spacing-large 0;
   }
 
+  .number{
+    border: 1px solid $gray40;
+    border-radius: 50%;
+    height: 36px;
+    width: 36px;
+    text-align: center;
+    position: absolute;
+    bottom: -46px;
+    color: $gray40;
+    left: 50%;
+    margin-left: -18px;
+    line-height: 36px;
+  }
+
   span{
     position: absolute;
     top: 0;

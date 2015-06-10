@@ -1,0 +1,78 @@
+@import 'bourbon';
+@import '../mixins';
+@import '../variables_custom';
+@import '../variables_foundation';
+
+.page-how{
+  .marquee{
+    height: 500px;
+    background-size: cover;
+  }
+
+  #yes-please{
+    position: absolute;
+    top: -20px;
+    right: 20px;
+    font-size: rem-calc(30);
+    font-weight: 100;
+    color: $gray60;
+  }
+
+  #how-line-1{
+    position: absolute;
+    height: 200px;
+    right: 30px;
+    margin-bottom: 60px;
+
+    .how-line-headline{
+      position: absolute;
+      bottom: -40px;
+      left: 100%;
+      margin-left: 40px;
+      text-align: left;
+      width: 250px;
+    }
+  }
+
+  #how-line-2{
+    position: relative;
+    height: 180px;
+    margin-bottom: 60px;
+  }
+
+  #how-marquee-1{
+    background-image: image-url('how-1.png');
+    @include cover(center);
+    height: 400px;
+  }
+
+  #how-marquee-2{
+    background-image: image-url('how-2.png');
+    @include cover(center);
+    height: 400px;
+  }
+
+  #how-marquee-3{
+    background-image: image-url('how-3.png');
+    @include cover(center);
+    height: 300px;
+  }
+
+  #how-marquee-4{
+    background-image: image-url('how-4.png');
+    @include cover(center);
+    height: 300px;
+  }
+
+  #how-marquee-5{
+    background-image: image-url('how-5.png');
+    @include cover(center);
+    height: 400px;
+  }
+
+  #how-marquee-6{
+    background-image: image-url('how-6.png');
+    @include cover(center);
+    height: 500px;
+  }
+}

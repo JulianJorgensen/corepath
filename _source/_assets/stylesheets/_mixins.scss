@@ -11,3 +11,10 @@
     margin: 0;
     list-style-type: none;
 }
+
+
+@mixin cover($position){
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: $position $position;
+}

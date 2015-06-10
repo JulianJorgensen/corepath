@@ -39,10 +39,15 @@ h1, h2, h3, h4, h5, h6{
 }
 
 
+.serif{
+	&, p{
+		font-family: $font-family-serif;
+		font-style: italic;
+		color: $gray80;
+	}
+}
+
 .break-text{
-	font-family: $font-family-serif;
 	font-size: rem-calc(26);
-	font-style: italic;
-	color: $gray80;
 	margin-bottom: 0;
 }

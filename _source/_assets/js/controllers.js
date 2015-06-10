@@ -6,6 +6,8 @@ avenueApp.controller('marqueeAccordionCtrl', ['$scope', function($scope) {
 // INDEX CONTROLLER
 avenueApp.controller('indexController', ['$scope', function($scope) {
 
+  $scope.pageName = "home";
+
   // cta links (divs that are clickable)
   $('[data-href]').click(function(e){
     var href = $(this).attr('data-href');
@@ -43,10 +45,14 @@ avenueApp.controller('imageController', ['$scope', function ($scope){
 // ABOUT CONTROLLER
 avenueApp.controller('aboutController', ['$scope', function($scope) {
 
+  $scope.pageName = "about";
+
 }]);
 
 
 // HOW CONTROLLER
 avenueApp.controller('howController', ['$scope', function($scope) {
+
+  $scope.pageName = "how";
 
 }]);
