@@ -25,3 +25,17 @@
     margin-bottom: -100px;
   }
 }
+
+
+.separator-t-shape{
+  position: absolute;
+  border-top: 1px solid $gray20;
+  width: 50%;
+  right: 0;
+  margin-top: $spacing-small;
+
+  .vertical-line{
+    height: $spacing-xlarge;
+    left: 20%;
+  }
+}

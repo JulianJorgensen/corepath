@@ -7,3 +7,12 @@
   border-color: $gray20;
   padding: $spacing-small $spacing-default;
 }
+
+
+.button.gray{
+  background-color: $gray20;
+  color: $white;
+  text-transform: uppercase;
+  border: 0;
+  font-weight: 600;
+}
