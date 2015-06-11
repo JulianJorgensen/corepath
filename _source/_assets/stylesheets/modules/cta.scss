@@ -44,4 +44,12 @@
       }
     }
   }
+
+  &:active{
+    .cta-icon{
+      svg{
+        @include transform(scale(1));
+      }
+    }
+  }
 }

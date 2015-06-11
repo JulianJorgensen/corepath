@@ -25,6 +25,29 @@
   border-radius: 50%;
 }
 
+.desaturate{
+  @include transition(filter $transition-speed-default);
+  @include filter(grayscale(100%));
+}
+
+
+// LOADING SPINNER
+.loading{
+  position: relative;
+
+  &:before{
+    content: "\f1ce";
+    font-family: FontAwesome;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -20px;
+    margin-left: -20px;
+  }
+}
+
 
 // LABEL
 .label{

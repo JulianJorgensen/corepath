@@ -31,11 +31,17 @@ avenueApp.controller('tabsController', ['$scope', function ($scope){
 
 
 // IMAGE SELECTOR CONTROLLER
-avenueApp.controller('imageController', ['$scope', function ($scope){
+avenueApp.controller('imageController', ['$scope', '$element', function ($scope, $element){
 
-  $scope.setImage = function(src){
-    $scope.currImage = src;
+  $scope.currImage = 1;
+
+  $scope.setImage = function(imageNumber){
+    $scope.currImage = imageNumber;
+    $scope.currImageElement = $element.find('.images-grid li:nth-child(' + (imageNumber - 1) + ')');
+    $scope.currImageSrc = $scope.currImageElement.find('img').attr('data-large-src');
   };
+
+  $scope.setImage($scope.currImage);
 
 }]);
 

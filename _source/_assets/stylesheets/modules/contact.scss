@@ -15,7 +15,12 @@ section#contact{
   @include transition(max-height $transition-speed-default);
 
   .container{
-    padding: $spacing-xlarge 0;
+    padding: $spacing-xlarge 0 0;
+  }
+
+  .newsletter-image{
+    border: 4px solid $polo;
+    border-bottom: 0;
   }
 
   &.active{

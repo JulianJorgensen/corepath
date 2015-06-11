@@ -1,6 +1,7 @@
 ---
 ---
 
+
 <!-- MARQUEE LANDING -->
 <!-- =============== -->
 <section class="marquee marquee-landing margin-bottom-xlarge" ng-controller="tabsController as tab">
@@ -181,17 +182,17 @@
 <!-- QUESTION: CUISINE -->
 <section id="question-cuisine" class="section">
   <choices
-    question="How you live is made up of a lot of things. For example, what's your ideal spot to dine?"
+    default-image="{{ '5-2.jpg' | asset_path }}" question="How you live is made up of a lot of things. For example, what's your ideal spot to dine?"
     first="Some place serving an interesting Thai/Japanese fusion dish" first-description="This tells us that lorem ipsum" first-image="{{ 'av_moodboard.jpg' | asset_path }}"
     second="My local cafe" second-description="This tells us more that lorem ipsum" second-image="{{ '5-2.jpg' | asset_path }}"
     third="The newest fine dining restaurant in town" third-description="This tells us that modern, perhaps more minimal settings, might be to your liking" third-image="{{ '2048-3.jpg' | asset_path }}"
-    bleed="true" />
+    bleed="true" activate-content="#question-transportation" />
 </section>
 
 <div class="separator xxlarge"></div>
 
 <!-- QUESTION: TRANSPORTATION -->
-<section id="question-transportation" class="section">
+<section id="question-transportation" class="section hide">
   <h2 class="text-center">How about your preferred way to get somewhere?</h2>
 
   <choices
@@ -211,7 +212,7 @@
     </div>
 
     <choices
-      question="Let's talk home basics: where do you buy your groceries?"
+      default-image="{% asset_path '5.jpg' %}" question="Let's talk home basics: where do you buy your groceries?"
       first="An Organic food shop" first-description="This tells us that lorem ipsum" first-image="{{ '5.jpg' | asset_path }}"
       second="A local fresh produce market" second-description="The adventure of travel to far off places informs your taste with global sensibility. You might also be on the road a lot, shaping a lot of your home life." second-image="{{ '5-1.jpg' | asset_path }}"
       third="A Grocery Store" third-description="This tells us that modern, perhaps more minimal settings, might be to your liking" third-image="{{ '2048-4.jpg' | asset_path }}"
@@ -228,7 +229,7 @@
     </div>
 
     <choices
-      question="What's your favourite way to spend free time?"
+      default-image="{% asset_path '2048-1.jpg' %}" question="What's your favourite way to spend free time?"
       first="Reading the paper or a good book while listening to my favourite music" first-description="This tells us that lorem ipsum" first-image="{{ '2048-1.jpg' | asset_path }}"
       second="Having a drink with friends" second-description="The adventure of travel to far off places informs your taste with global sensibility. You might also be on the road a lot, shaping a lot of your home life." second-image="{{ '2048-2.jpg' | asset_path }}"
       third="Yoga or a good run through the park" third-description="This tells us that modern, perhaps more minimal settings, might be to your liking" third-image="{{ '2048.jpg' | asset_path }}"
@@ -246,7 +247,7 @@
 
     <div class="row">
       <div class="column small-6">
-        <img src="{{ '5.jpg' | asset_path }}" />
+        <img src="{{ '5.jpg' | asset_path }}" skrollr data-100-top="filter:grayscale(0%);" data-center-top="filter:grayscale(100%);" />
       </div>
 
       <div class="column small-6 text-center">
@@ -261,7 +262,7 @@
     </div>
 
     <choices
-      question="When you buy furniture, what do you consider most important?"
+      default-image="{% asset_path '2048-4.jpg' %}" question="When you buy furniture, what do you consider most important?"
       first="Function" first-description="This tells us that lorem ipsum" first-image="{{ '2048-4.jpg' | asset_path }}"
       second="Comfort & Affordability" second-description="The adventure of travel to far off places informs your taste with global sensibility. You might also be on the road a lot, shaping a lot of your home life." second-image="{{ '2048-3.jpg' | asset_path }}"
       third="Quality & Style" third-description="This tells us that modern, perhaps more minimal settings, might be to your liking" third-image="{{ '2048-6.jpg' | asset_path }}"
@@ -279,7 +280,7 @@
     </div>
 
     <choices
-      question="Do you prefer old or new furniture?"
+      default-image="{% asset_path 'grid-marquee.png' %}" question="Do you prefer old or new furniture?"
       first="Love my antiques and vintage finds" first-description="Every antique item carries a story. Vintage furniture is both unique and beautiful" first-image="{{ 'grid-marquee.png' | asset_path }}"
       second="I would definitely visit a high-end furniture store" second-description="The adventure of travel to far off places informs your taste with global sensibility. You might also be on the road a lot, shaping a lot of your home life." second-image="{{ '2048-3.jpg' | asset_path }}"
       third="I plan to reupholster my grandma's chair" third-description="This tells us that modern, perhaps more minimal settings, might be to your liking" third-image="{{ '2048-6.jpg' | asset_path }}"
@@ -319,7 +320,7 @@
       </div>
 
       <div class="column small-6">
-        <img src="{{ '5.jpg' | asset_path }}" />
+        <img src="{{ '5.jpg' | asset_path }}" skrollr data-100-top="filter:grayscale(0%);" data-center-top="filter:grayscale(100%);" />
       </div>
     </div>
   </div>
@@ -330,7 +331,7 @@
     </div>
 
     <choices
-      question="Where would you prefer to live?"
+      default-image="{{ '2048-123.jpg' | asset_path }}" question="Where would you prefer to live?"
       first="A converted warehouse" first-description="Every antique item carries a story. Vintage furniture is both unique and beautiful" first-image="{{ '2048-123.jpg' | asset_path }}"
       second="I need to be steps away from the latest and greatest in food and culture" second-description="The adventure of travel to far off places informs your taste with global sensibility. You might also be on the road a lot, shaping a lot of your home life." second-image="{{ '2048-3.jpg' | asset_path }}"
       third="I want to be near my friends and family" third-description="This tells us that modern, perhaps more minimal settings, might be to your liking" third-image="{{ '2048-6.jpg' | asset_path }}"
@@ -347,7 +348,7 @@
     </div>
 
     <choices
-      question="What are you most likely to be wearing?"
+      default-image="{{ '2048-1231.jpg' | asset_path }}" question="What are you most likely to be wearing?"
       first="Jeans and a tee" first-description="Every antique item carries a story. Vintage furniture is both unique and beautiful" first-image="{{ '2048-1231.jpg' | asset_path }}"
       second="Whatever suits the occasion" second-description="The adventure of travel to far off places informs your taste with global sensibility. You might also be on the road a lot, shaping a lot of your home life." second-image="{{ '2048-3.jpg' | asset_path }}"
       third="Something dressy or professional" third-description="This tells us that modern, perhaps more minimal settings, might be to your liking" third-image="{{ '2048-6.jpg' | asset_path }}"
@@ -377,38 +378,32 @@
 
     <ul class="images-grid grid-2">
       <li ng-controller="imageController">
+        <h5 class="text-center margin-bottom-default">How do you know your style?</h5>
         <div class="images-grid-inner">
-          <div class="overlay">
-            <h6 class="overlay-text">How do you know your style?</h6>
-          </div>
-
-          <img src="{% asset_path '5.jpg' %}" ng-src="{[ currImage ]}" />
+          <img src="{% asset_path '5.jpg' %}" ng-src="{[ currImageSrc ]}" />
         </div>
 
         <ul class="images-grid grid-5 suggested-thumbnails">
-          <li><img src="http://placehold.it/100x100" ng-click="setImage('{% asset_path '5.jpg' %}')" alt="" /></li>
-          <li><img src="http://placehold.it/100x100" ng-click="setImage('http://placehold.it/400x400')" alt="" /></li>
-          <li><img src="http://placehold.it/100x100" ng-click="setImage('http://placehold.it/400x400')" alt="" /></li>
-          <li><img src="http://placehold.it/100x100" ng-click="setImage('http://placehold.it/400x400')" alt="" /></li>
-          <li><img src="http://placehold.it/100x100" ng-click="setImage('http://placehold.it/400x400')" alt="" /></li>
+          <li ng-click="setImage(1)" ng-class="{active: currImage == 1}"><img src="http://placehold.it/100x100" alt="" /></li>
+          <li ng-click="setImage(2)" ng-class="{active: currImage == 2}"><img src="http://placehold.it/100x100" data-large-src="{% asset_path '5-1.jpg' %}" alt="" /></li>
+          <li ng-click="setImage(3)" ng-class="{active: currImage == 3}"><img src="http://placehold.it/100x100" data-large-src="{% asset_path '5-2.jpg' %}" alt="" /></li>
+          <li ng-click="setImage(4)" ng-class="{active: currImage == 4}"><img src="http://placehold.it/100x100" data-large-src="{% asset_path '5.jpg' %}" alt="" /></li>
+          <li ng-click="setImage(5)" ng-class="{active: currImage == 5}"><img src="http://placehold.it/100x100" data-large-src="{% asset_path '5-1.jpg' %}" alt="" /></li>
         </ul>
       </li>
 
       <li ng-controller="imageController">
+        <h5 class="text-center margin-bottom-default">How do you know your style?</h5>
         <div class="images-grid-inner">
-          <div class="overlay">
-            <h6 class="overlay-text">How do you know your style?</h6>
-          </div>
-
-          <img src="{% asset_path '5.jpg' %}" ng-src="{[ currImage ]}" />
+          <img src="{% asset_path '5.jpg' %}" ng-src="{[ currImageSrc ]}" />
         </div>
 
         <ul class="images-grid grid-5 suggested-thumbnails">
-          <li><img src="http://placehold.it/100x100" ng-click="setImage('{% asset_path '5.jpg' %}')" alt="" /></li>
-          <li><img src="http://placehold.it/100x100" ng-click="setImage('http://placehold.it/400x400')" alt="" /></li>
-          <li><img src="http://placehold.it/100x100" ng-click="setImage('http://placehold.it/400x400')" alt="" /></li>
-          <li><img src="http://placehold.it/100x100" ng-click="setImage('http://placehold.it/400x400')" alt="" /></li>
-          <li><img src="http://placehold.it/100x100" ng-click="setImage('http://placehold.it/400x400')" alt="" /></li>
+          <li ng-click="setImage(1)" ng-class="{active: currImage == 1}"><img src="http://placehold.it/100x100" alt="" /></li>
+          <li ng-click="setImage(2)" ng-class="{active: currImage == 2}"><img src="http://placehold.it/100x100" data-large-src="{% asset_path '5-1.jpg' %}" alt="" /></li>
+          <li ng-click="setImage(3)" ng-class="{active: currImage == 3}"><img src="http://placehold.it/100x100" data-large-src="{% asset_path '5-2.jpg' %}" alt="" /></li>
+          <li ng-click="setImage(4)" ng-class="{active: currImage == 4}"><img src="http://placehold.it/100x100" data-large-src="{% asset_path '5.jpg' %}" alt="" /></li>
+          <li ng-click="setImage(5)" ng-class="{active: currImage == 5}"><img src="http://placehold.it/100x100" data-large-src="{% asset_path '5-1.jpg' %}" alt="" /></li>
         </ul>
       </li>
     </ul>

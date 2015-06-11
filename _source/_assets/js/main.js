@@ -1,3 +1,6 @@
+var skrollr = skrollr.init();
+
+
 $(document).ready(function(){
 
   // disable contact when clicking on a nav item

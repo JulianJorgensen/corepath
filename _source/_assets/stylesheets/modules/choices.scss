@@ -37,7 +37,7 @@
 .choices-container.vertical{
   .choices{
     li{
-      max-width: 300px;
+      max-width: 340px;
       margin: 0 auto;
     }
 
@@ -108,6 +108,11 @@
       color: $black;
       @include transition(color $transition-speed-default);
     }
+    &.active{
+      .button-content{
+        color: $white;
+      }
+    }
   }
 }
 
@@ -122,7 +127,8 @@
       opacity: 0.3;
       border-color: $black;
       &:hover{
-        opacity: 0.6;
+        opacity: 1;
+        border-color: transparent;
       }
     }
   }
@@ -218,7 +224,6 @@
 .choices-container .choices-thumb-image{
   position: relative;
   margin-top: $spacing-xlarge;
-  cursor: pointer;
   @include filter(grayscale(100%));
   @include transition(all $transition-speed-default);
   height: 320px;

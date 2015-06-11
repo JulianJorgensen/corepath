@@ -3,11 +3,41 @@
 @import '../variables_foundation';
 @import '../mixins';
 
+// PUSH SCALE EFFECT ON BUTTON PRESS
+.cta, .choices li{
+  svg, .choices-thumb-image{
+    @include transition(transform $transition-speed-default);
+  }
+
+  &:active{
+    .button, svg, .choices-thumb-image{
+      @include transform(scale(0.9));
+    }
+  }
+}
+
+.button{
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  @include transition(transform $transition-speed-default);
+
+  &:active{
+    @include transform(scale(0.9));
+  }
+
+  &:hover{
+    border-color: transparent;
+  }
+
+  &.active{
+    background-color: $polo;
+  }
+}
+
 .button.light{
   border-color: $gray20;
   padding: $spacing-small $spacing-default;
 }
-
 
 .button.gray{
   background-color: $gray20;
