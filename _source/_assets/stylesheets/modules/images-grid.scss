@@ -42,30 +42,30 @@
     background-repeat: no-repeat;
     background-size: cover;
 
-    // .overlay{
-    //   @include align-items(center);
-    //   @include display(flex);
-    //   @include justify-content(center);
-    //   opacity: 0;
-    //   position: absolute;
-    //   left: 0;
-    //   top: 0;
-    //   width: 100%;
-    //   height: 100%;
-    //   background-color: rgba($black, 0.5);
-    //   @include transition(all $transition-speed-default);
-    //
-    //   .overlay-text{
-    //     color: $white;
-    //     text-align: center;
-    //   }
-    // }
-    //
-    // &:hover{
-    //   .overlay{
-    //     opacity: 1;
-    //   }
-    // }
+    .overlay{
+      @include align-items(center);
+      @include display(flex);
+      @include justify-content(center);
+      opacity: 0;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($black, 0.5);
+      @include transition(all $transition-speed-default);
+
+      .overlay-text{
+        color: $white;
+        text-align: center;
+      }
+    }
+
+    &:hover{
+      .overlay{
+        opacity: 1;
+      }
+    }
   }
 }
 
