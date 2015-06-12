@@ -1,10 +1,30 @@
 ---
 ---
 
-<img class="hero" src="{% asset_path '2048-5.jpg' %}" />
+<div class="hero" style="background-image: url('{% asset_path '2048-5.jpg' %}');" /></div>
 
 
 <div class="container">
-  <h1>{[pageInfo.name]}</h1>
-  <p>Copy here</p>
+
+  <div class="row">
+    <div class="column small-2 text-right">
+
+      <div class="intake-header">
+        <h5 class="white">Start your project in 15 minutes</h5>
+      </div>
+
+      <ul class="subnav">
+        <li ng-class="{active: ('intake.lifestyle' | routeSegmentStartsWith) && ('id' | routeSegmentParam) == i}"><a href="#/intake/lifestyle">1. lifestyle</a></li>
+        <li ng-class="{active: ('intake.place' | routeSegmentStartsWith) && ('id' | routeSegmentParam) == i}"><a href="#/intake/place">2. the place</a></li>
+        <li ng-class="{active: ('intake.project' | routeSegmentStartsWith) && ('id' | routeSegmentParam) == i}"><a href="#/intake/project">3. the project</a></li>
+        <li ng-class="{active: ('intake.contact' | routeSegmentStartsWith) && ('id' | routeSegmentParam) == i}"><a href="#/intake/contact">4. contact details</a></li>
+        <li ng-class="{active: ('intake.ready' | routeSegmentStartsWith) && ('id' | routeSegmentParam) == i}"><a href="#/intake/ready">5. ready to go</a></li>
+      </ul>
+    </div>
+    <div class="column small-10">
+
+      <div app-view-segment="1"></div>
+
+    </div>
+  </div>
 </div>

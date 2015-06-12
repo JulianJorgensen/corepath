@@ -5,10 +5,38 @@
 
 
 .page-intake{
+
+  .hero{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    z-index: -1;
+    @include cover(center);
+  }
+
+  .top-bar .logo svg{
+    g, path{
+      fill: $white;
+    }
+  }
+
+  .nav-contact{
+    visibility: hidden;
+  }
+
+
   .top-bar .nav-items .nav-item{
     border-bottom-color: $white;
     a{
       color: $white;
     }
+  }
+
+
+  .intake-header{
+    margin-top: $spacing-xxlarge;
+    height: 200px;
   }
 }

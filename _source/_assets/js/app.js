@@ -16,7 +16,7 @@ $(document).ready(function() {
 
 
 // initialize the angular app
-var avenueApp = angular.module('avenueApp', ['ngRoute', 'ngResource'])
+var avenueApp = angular.module('avenueApp', ['ngRoute', 'ngResource', 'route-segment', 'view-segment'])
   .config(function($interpolateProvider){
     $interpolateProvider.startSymbol('{[').endSymbol(']}');
   });
