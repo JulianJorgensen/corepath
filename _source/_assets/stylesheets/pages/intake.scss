@@ -1,0 +1,14 @@
+@import 'bourbon';
+@import '../mixins';
+@import '../variables_custom';
+@import '../variables_foundation';
+
+
+.page-intake{
+  .top-bar .nav-items .nav-item{
+    border-bottom-color: $white;
+    a{
+      color: $white;
+    }
+  }
+}

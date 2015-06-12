@@ -26,6 +26,7 @@
   PAGES/SECTIONS
   *= require './pages/index.scss'
   *= require './pages/how.scss'
+  *= require './pages/intake.scss'
 
 
   ROOT

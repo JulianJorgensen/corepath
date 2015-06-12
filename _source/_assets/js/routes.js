@@ -18,8 +18,8 @@ avenueApp.config(function ($routeProvider) {
         controller: 'howController'
     })
 
-    .when('/fast-track', {
-        templateUrl: 'pages/fast-track.html',
-        controller: 'howController'
+    .when('/intake', {
+        templateUrl: 'pages/intake.html',
+        controller: 'intakeController'
     })
 });

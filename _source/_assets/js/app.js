@@ -20,3 +20,19 @@ var avenueApp = angular.module('avenueApp', ['ngRoute', 'ngResource'])
   .config(function($interpolateProvider){
     $interpolateProvider.startSymbol('{[').endSymbol(']}');
   });
+
+
+avenueApp.factory('pageInfo', function($timeout) {
+
+  var info = { name: 'default' };
+
+  info.updateName = function(newName) {
+    this.name = newName;
+    console.log('changed page name to: ' + newName);
+  }
+
+  return {
+    info: info
+  };
+
+});

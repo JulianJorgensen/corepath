@@ -1,12 +1,13 @@
-avenueApp.controller('marqueeAccordionCtrl', ['$scope', function($scope) {
-  $scope.oneAtATime = true;
+// MAIN CONTROLLER
+avenueApp.controller('mainController', ['$scope', 'pageInfo', function($scope, pageInfo) {
+  $scope.pageInfo = pageInfo.info;
 }]);
 
 
 // INDEX CONTROLLER
-avenueApp.controller('indexController', ['$scope', function($scope) {
+avenueApp.controller('indexController', ['$scope', 'pageInfo', function($scope, pageInfo) {
 
-  $scope.pageName = "home";
+  pageInfo.info.updateName('index');
 
   // cta links (divs that are clickable)
   $('[data-href]').click(function(e){
@@ -16,6 +17,12 @@ avenueApp.controller('indexController', ['$scope', function($scope) {
 
 }]);
 
+
+
+// MARQUEE CONTROLLER
+avenueApp.controller('marqueeAccordionCtrl', ['$scope', function($scope) {
+  $scope.oneAtATime = true;
+}]);
 
 // TABS CONTROLLER
 avenueApp.controller('tabsController', ['$scope', function ($scope){
@@ -49,16 +56,18 @@ avenueApp.controller('imageController', ['$scope', '$element', function ($scope,
 
 
 // ABOUT CONTROLLER
-avenueApp.controller('aboutController', ['$scope', function($scope) {
-
-  $scope.pageName = "about";
-
+avenueApp.controller('aboutController', ['$scope', 'pageInfo', function($scope, pageInfo) {
+  pageInfo.info.updateName('about');
 }]);
 
 
 // HOW CONTROLLER
-avenueApp.controller('howController', ['$scope', function($scope) {
+avenueApp.controller('howController', ['$scope', 'pageInfo', function($scope, pageInfo) {
+  pageInfo.info.updateName('how');
+}]);
 
-  $scope.pageName = "how";
 
+// INTAKE CONTROLLER
+avenueApp.controller('intakeController', ['$scope', 'pageInfo', function($scope, pageInfo) {
+  pageInfo.info.updateName('intake');
 }]);
