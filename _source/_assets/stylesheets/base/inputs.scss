@@ -1,3 +1,86 @@
 @import 'bourbon';
 @import '../variables_custom';
 @import '../variables_foundation';
+
+
+label{
+  margin-bottom: $spacing-default;
+}
+
+textarea{
+  border: 1px solid $gray40;
+}
+
+input{
+  font-size: rem-calc(18);
+}
+
+
+
+// CUSTOM RADIOS AND CHECKBOXES
+// ============================
+
+input[type="radio"],
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  & + label{
+    @include user-select(none);
+    border: 1px solid $gray40;
+    padding: $spacing-xsmall $spacing-large;
+    text-transform: uppercase;
+    font-weight: 100;
+  }
+
+  &:checked{
+    & + label{
+      background-color: $gray40;
+      color: $white;
+    }
+  }
+}
+
+
+
+
+
+// CHECKBOX SPECIFIC STYLES
+// =========================
+input[type="checkbox"]{
+  & + label{
+    position: relative;
+    border-radius: 5px;
+    padding-left: 50px;
+
+    &:before{
+      content: "";
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      width: 27px;
+      height: 27px;
+      border-radius: 4px;
+      background-color: $gray10;
+    }
+  }
+
+  &:checked{
+    & + label{
+      &:before{
+        background-color: $gray20;
+      }
+
+      &:after{
+        position: absolute;
+        font-family: FontAwesome;
+        top: 5px;
+        left: 8px;
+        content: "\f00c";
+        color: $black;
+      }
+    }
+  }
+}
