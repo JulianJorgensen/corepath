@@ -182,10 +182,10 @@
 <!-- QUESTION: CUISINE -->
 <section id="question-cuisine" class="section">
   <choices
-    default-image="{{ '5-2.jpg' | asset_path }}" question="How you live is made up of a lot of things. For example, what's your ideal spot to dine?"
-    first="Some place serving an interesting Thai/Japanese fusion dish" first-description="This tells us that lorem ipsum" first-image="{{ 'av_moodboard.jpg' | asset_path }}"
-    second="My local cafe" second-description="This tells us more that lorem ipsum" second-image="{{ '5-2.jpg' | asset_path }}"
-    third="The newest fine dining restaurant in town" third-description="This tells us that modern, perhaps more minimal settings, might be to your liking" third-image="{{ '2048-3.jpg' | asset_path }}"
+    default-image="{{ 'questions/q1/food-salad-restaurant-person.jpg' | asset_path }}" question="How you live is made up of a lot of things. For example, what's your ideal spot to dine?"
+    first="Some place serving an interesting Thai/Japanese fusion dish" first-description="It sounds like international influences blended into something new are comfortable for you." first-image="{{ 'questions/q1/40835074_xl.jpg' | asset_path }}"
+    second="My local cafe" second-description="So, a comfortable, familiar, and somewhat intimate space might be good for you." second-image="{{ 'questions/q1/restaurant-man-person-coffee.jpeg' | asset_path }}"
+    third="The newest fine dining restaurant in town" third-description="This tells us that modern, well-appointed settings are more your style." third-image="{{ 'questions/q1/food-restaurant-lunch-cutlery.jpg' | asset_path }}"
     bleed="true" activate-content="#question-transportation" />
 </section>
 
@@ -196,9 +196,9 @@
   <h2 class="text-center">How about your preferred way to get somewhere?</h2>
 
   <choices
-    first="My Bike" first-description="This tells us that lorem ipsum" first-icon="{% asset_path 'icons/bike.svg' %}"
-    second="An Airplane" second-description="The adventure of travel to far off places informs your taste with global sensibility. You might also be on the road a lot, shaping a lot of your home life." second-icon="{% asset_path 'icons/airplane.svg' %}"
-    third="My Car" third-description="This tells us that modern, perhaps more minimal settings, might be to your liking" third-icon="{% asset_path 'icons/car.svg' %}"
+    first="My Bike" first-description="Travelling light, bikes show a desire for simple, sustainable options." first-icon="{% asset_path 'icons/bike.svg' %}"
+    second="An Airplane" second-description="Reaching far-off lands by air reflects a global outlook and a taste for adventure." second-icon="{% asset_path 'icons/airplane.svg' %}"
+    third="My Car" third-description="Practical and quick, going by car makes sense if you’re fitting a lot into your day." third-icon="{% asset_path 'icons/car.svg' %}"
     icon-types="svg" activate-content="#question-groceries" />
 </section>
 
@@ -212,10 +212,13 @@
     </div>
 
     <choices
-      default-image="{% asset_path '5.jpg' %}" question="Let's talk home basics: where do you buy your groceries?"
-      first="An Organic food shop" first-description="This tells us that lorem ipsum" first-image="{{ '5.jpg' | asset_path }}"
-      second="A local fresh produce market" second-description="The adventure of travel to far off places informs your taste with global sensibility. You might also be on the road a lot, shaping a lot of your home life." second-image="{{ '5-1.jpg' | asset_path }}"
-      third="A Grocery Store" third-description="This tells us that modern, perhaps more minimal settings, might be to your liking" third-image="{{ '2048-4.jpg' | asset_path }}"
+      default-image="{% asset_path 'questions/q3/16541938_xl.jpg' %}" question="Let's talk home basics: where do you buy your groceries?"
+      first="An Organic food shop" first-description="Your body is a temple, and you show it with a commitment to the quality of
+what you eat." first-image="{{ 'questions/q3/5-1.jpg' | asset_path }}"
+      second="A local fresh produce market" second-description="A preference for market shopping shows a love of freshness and variety. We
+can work with that." second-image="{{ 'questions/q3/food-healthy-vegetables-potatoes.jpg' | asset_path }}"
+      third="A Grocery Store" third-description="For maximum choice and efficiency, a trip to the grocery store gets the job done
+in one trip." third-image="{{ 'questions/q3/shutterstock_133259825.jpg' | asset_path }}"
       template-url="choices-vertical" align="right" activate-content="#question-free-time" />
   </div>
 </section>
@@ -229,10 +232,10 @@
     </div>
 
     <choices
-      default-image="{% asset_path '2048-1.jpg' %}" question="What's your favourite way to spend free time?"
-      first="Reading the paper or a good book while listening to my favourite music" first-description="This tells us that lorem ipsum" first-image="{{ '2048-1.jpg' | asset_path }}"
-      second="Having a drink with friends" second-description="The adventure of travel to far off places informs your taste with global sensibility. You might also be on the road a lot, shaping a lot of your home life." second-image="{{ '2048-2.jpg' | asset_path }}"
-      third="Yoga or a good run through the park" third-description="This tells us that modern, perhaps more minimal settings, might be to your liking" third-image="{{ '2048.jpg' | asset_path }}"
+      default-image="{% asset_path 'questions/q4/38488118_xl.jpg' %}" question="What's your favourite way to spend free time?"
+      first="Reading the paper or a good book while listening to my favourite music" first-description="Recharging yourself with quiet activities requires a space that’s supportive, comfortable, and flexible." first-image="{{ 'questions/q4/2048-1.jpg' | asset_path }}"
+      second="Having a drink with friends" second-description="If being social is your thing, we can consider how that fits into the design of your space." second-image="{{ 'questions/q4/restaurant-alcohol-bar-drinks.jpg' | asset_path }}"
+      third="Yoga or a good run through the park" third-description="An active lifestyle might take you outside, but your home should support that with some simple design touches." third-image="{{ 'questions/q4/32609597_xl.jpg' | asset_path }}"
       template-url="choices-vertical-background" activate-content="#question-furniture" choices-color="white" />
   </div>
 </section>
@@ -262,10 +265,10 @@
     </div>
 
     <choices
-      default-image="{% asset_path '2048-4.jpg' %}" question="When you buy furniture, what do you consider most important?"
-      first="Function" first-description="This tells us that lorem ipsum" first-image="{{ '2048-4.jpg' | asset_path }}"
-      second="Comfort & Affordability" second-description="The adventure of travel to far off places informs your taste with global sensibility. You might also be on the road a lot, shaping a lot of your home life." second-image="{{ '2048-3.jpg' | asset_path }}"
-      third="Quality & Style" third-description="This tells us that modern, perhaps more minimal settings, might be to your liking" third-image="{{ '2048-6.jpg' | asset_path }}"
+      default-image="{% asset_path 'questions/q5/37.jpg' %}" question="When you buy furniture, what do you consider most important?"
+      first="Function" first-description="Practical, no fuss. Got it." first-image="{{ 'questions/q5/photo-1422480415834-d7d30118ea06.jpeg' | asset_path }}"
+      second="Comfort & Affordability" second-description="Understood. You definitely won’t need to break the bank to make a livable space." second-image="{{ 'questions/q5/14809631_xl.jpg' | asset_path }}"
+      third="Quality & Style" third-description="Good sense and good taste go hand in hand." third-image="{{ 'questions/q5/stairs-home-loft-lifestyle.jpg' | asset_path }}"
       template-url="choices-vertical" align="left" activate-content="section#question-furniture-old-new" />
   </div>
 </section>
@@ -280,10 +283,10 @@
     </div>
 
     <choices
-      default-image="{% asset_path 'grid-marquee.png' %}" question="Do you prefer old or new furniture?"
-      first="Love my antiques and vintage finds" first-description="Every antique item carries a story. Vintage furniture is both unique and beautiful" first-image="{{ 'grid-marquee.png' | asset_path }}"
-      second="I would definitely visit a high-end furniture store" second-description="The adventure of travel to far off places informs your taste with global sensibility. You might also be on the road a lot, shaping a lot of your home life." second-image="{{ '2048-3.jpg' | asset_path }}"
-      third="I plan to reupholster my grandma's chair" third-description="This tells us that modern, perhaps more minimal settings, might be to your liking" third-image="{{ '2048-6.jpg' | asset_path }}"
+      default-image="{% asset_path 'questions/q6/photo-1417976528056-3c9bbbb5456c.jpeg' %}" question="Do you prefer old or new furniture?"
+      first="Love my antiques and vintage finds" first-description="We can do a lot to bring that feeling of authenticity and heritage." first-image="{{ 'questions/q6/house-window-chair-verandah.jpg' | asset_path }}"
+      second="I would definitely visit a high-end furniture store" second-description="The more modern and high end pieces aren’t necessarily out of reach." second-image="{{ 'questions/q6/inside-apartment-design-home.jpg' | asset_path }}"
+      third="I plan to reupholster my grandma's chair" third-description="Reclaimed and restored pieces can say a lot about what’s important to you. Noted." third-image="{{ 'questions/q6/shutterstock_197958920.jpg' | asset_path }}"
       template-url="choices-vertical" align="right" bleed="true" activate-content="section#question-living-preference" />
   </div>
 </section>
@@ -298,9 +301,9 @@
 
     <choices
       question="Where would you prefer to live?"
-      first="A converted warehouse" first-description="Every antique item carries a story. Vintage furniture is both unique and beautiful" first-thumb="{{ 'city-industry-lights-1153.png' | asset_path }}"
-      second="I need to be steps away from the latest and greatest in food and culture" second-description="The adventure of travel to far off places informs your taste with global sensibility. You might also be on the road a lot, shaping a lot of your home life." second-thumb="{{ 'blur-chilling-city-1698.png' | asset_path }}"
-      third="I want to be near my friends and family" third-description="This tells us that modern, perhaps more minimal settings, might be to your liking" third-thumb="{{ 'bench-flowerpot-seat-2562.png' | asset_path }}"
+      first="A converted warehouse" first-description="There’s nothing like the solid, industrial feel, poised to become something new and modern." first-thumb="{{ 'questions/q7/industry-bricks-wall.jpg' | asset_path }}"
+      second="I need to be steps away from the latest and greatest in food and culture" second-description="A taste for what’s new and incredible can help set your space apart." second-thumb="{{ 'questions/q7/hGibbjg0Rb2fUIoMtU5l__DSC8099.jpg' | asset_path }}"
+      third="I want to be near my friends and family" third-description="Welcoming in loved ones makes a house a home. We can make this possible." third-thumb="{{ 'questions/q7/restaurant-hands-people-coffee.jpg' | asset_path }}"
       template-url="choices-horizontal" activate-content="section#question-fair-activity" />
   </div>
 </section>
@@ -331,10 +334,10 @@
     </div>
 
     <choices
-      default-image="{{ '2048-123.jpg' | asset_path }}" question="Where would you prefer to live?"
-      first="A converted warehouse" first-description="Every antique item carries a story. Vintage furniture is both unique and beautiful" first-image="{{ '2048-123.jpg' | asset_path }}"
-      second="I need to be steps away from the latest and greatest in food and culture" second-description="The adventure of travel to far off places informs your taste with global sensibility. You might also be on the road a lot, shaping a lot of your home life." second-image="{{ '2048-3.jpg' | asset_path }}"
-      third="I want to be near my friends and family" third-description="This tells us that modern, perhaps more minimal settings, might be to your liking" third-image="{{ '2048-6.jpg' | asset_path }}"
+      default-image="{{ 'questions/q8/photo-1415033523948-6c31d010530d.jpeg' | asset_path }}" question="What's your favourite fair activity?"
+      first="Roller Coaster" first-description="Bringing some excitement into your space doesn’t have to be risky. Let’s add that touch to your style." first-image="{{ 'questions/q8/13414512_xl.jpg' | asset_path }}"
+      second="Ferris Wheel" second-description="A taste for the gentle majesty of this ride will help us set a tone for you." second-image="{{ 'questions/q8/2048-123.jpg' | asset_path }}"
+      third="Haunted House" third-description="Surprises and thrills! We’ll make sure a touch of excitement is added to your design." third-image="{{ 'questions/q8/21192912_xl.jpg' | asset_path }}"
       template-url="choices-vertical" bleed="true" align="left" activate-content="section#question-wearing" />
   </div>
 </section>
@@ -348,10 +351,10 @@
     </div>
 
     <choices
-      default-image="{{ '2048-1231.jpg' | asset_path }}" question="What are you most likely to be wearing?"
-      first="Jeans and a tee" first-description="Every antique item carries a story. Vintage furniture is both unique and beautiful" first-image="{{ '2048-1231.jpg' | asset_path }}"
-      second="Whatever suits the occasion" second-description="The adventure of travel to far off places informs your taste with global sensibility. You might also be on the road a lot, shaping a lot of your home life." second-image="{{ '2048-3.jpg' | asset_path }}"
-      third="Something dressy or professional" third-description="This tells us that modern, perhaps more minimal settings, might be to your liking" third-image="{{ '2048-6.jpg' | asset_path }}"
+      default-image="{{ 'questions/q9/89983109848.jpg' | asset_path }}" question="What are you most likely to be wearing?"
+      first="Jeans and a tee" first-description="Timeless, reliable, and comfortable. Your home can be just the same way." first-image="{{ 'questions/q9/photo-1419814193935-ddb634a0ddda.jpeg' | asset_path }}"
+      second="Whatever suits the occasion" second-description="Adaptability is key, and your space can be designed to suit many needs and moments." second-image="{{ 'questions/q9/shutterstock_126318380.jpg' | asset_path }}"
+      third="Something dressy or professional" third-description="A space that feels put together is one that impresses." third-image="{{ 'questions/q9/ysPfhVSzSP2m629CW0mw_selfPortrait.jpg' | asset_path }}"
       template-url="choices-horizontal" activate-content="section#final" />
   </div>
 </section>
@@ -385,10 +388,10 @@
 
         <ul class="images-grid grid-5 suggested-thumbnails">
           <li ng-click="setImage(1)" ng-class="{active: currImage == 1}"><img src="http://placehold.it/100x100" alt="" /></li>
-          <li ng-click="setImage(2)" ng-class="{active: currImage == 2}"><img src="http://placehold.it/100x100" data-large-src="{% asset_path '5-1.jpg' %}" alt="" /></li>
-          <li ng-click="setImage(3)" ng-class="{active: currImage == 3}"><img src="http://placehold.it/100x100" data-large-src="{% asset_path '5-2.jpg' %}" alt="" /></li>
+          <li ng-click="setImage(2)" ng-class="{active: currImage == 2}"><img src="http://placehold.it/100x100" data-large-src="{% asset_path '5.jpg' %}" alt="" /></li>
+          <li ng-click="setImage(3)" ng-class="{active: currImage == 3}"><img src="http://placehold.it/100x100" data-large-src="{% asset_path '5.jpg' %}" alt="" /></li>
           <li ng-click="setImage(4)" ng-class="{active: currImage == 4}"><img src="http://placehold.it/100x100" data-large-src="{% asset_path '5.jpg' %}" alt="" /></li>
-          <li ng-click="setImage(5)" ng-class="{active: currImage == 5}"><img src="http://placehold.it/100x100" data-large-src="{% asset_path '5-1.jpg' %}" alt="" /></li>
+          <li ng-click="setImage(5)" ng-class="{active: currImage == 5}"><img src="http://placehold.it/100x100" data-large-src="{% asset_path '5.jpg' %}" alt="" /></li>
         </ul>
       </li>
 
@@ -400,10 +403,10 @@
 
         <ul class="images-grid grid-5 suggested-thumbnails">
           <li ng-click="setImage(1)" ng-class="{active: currImage == 1}"><img src="http://placehold.it/100x100" alt="" /></li>
-          <li ng-click="setImage(2)" ng-class="{active: currImage == 2}"><img src="http://placehold.it/100x100" data-large-src="{% asset_path '5-1.jpg' %}" alt="" /></li>
-          <li ng-click="setImage(3)" ng-class="{active: currImage == 3}"><img src="http://placehold.it/100x100" data-large-src="{% asset_path '5-2.jpg' %}" alt="" /></li>
+          <li ng-click="setImage(2)" ng-class="{active: currImage == 2}"><img src="http://placehold.it/100x100" data-large-src="{% asset_path '5.jpg' %}" alt="" /></li>
+          <li ng-click="setImage(3)" ng-class="{active: currImage == 3}"><img src="http://placehold.it/100x100" data-large-src="{% asset_path '5.jpg' %}" alt="" /></li>
           <li ng-click="setImage(4)" ng-class="{active: currImage == 4}"><img src="http://placehold.it/100x100" data-large-src="{% asset_path '5.jpg' %}" alt="" /></li>
-          <li ng-click="setImage(5)" ng-class="{active: currImage == 5}"><img src="http://placehold.it/100x100" data-large-src="{% asset_path '5-1.jpg' %}" alt="" /></li>
+          <li ng-click="setImage(5)" ng-class="{active: currImage == 5}"><img src="http://placehold.it/100x100" data-large-src="{% asset_path '5.jpg' %}" alt="" /></li>
         </ul>
       </li>
     </ul>
@@ -425,7 +428,7 @@
 
         <h2>Take your next step,<br>your way</h2>
 
-        <div class="vertical-line xlarge"><span skrollr data--200-bottom="height: 60px;" data-bottom="height: 0px;"></span></div>
+        <div class="vertical-line xlarge"><span skrollr data--200-bottom="height: 120px;" data-bottom="height: 0px;"></span></div>
       </div>
     </div>
 
