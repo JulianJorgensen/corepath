@@ -2,14 +2,13 @@
 <!-- ========================== -->
 <div class="choices-container horizontal">
 
-
-  <div ng-if="bleed" class="choices-marquee bleed" style="background-image: url('{{ currentImage }}');">
+  <div ng-if="bleed" class="choices-marquee bleed" ng-class="anyIsSelected() ? 'active' : ''" style="background-image: url('{{ currentImage }}');">
     <div class="container">
       <h2 class="choices-question white">{{ question }}</h2>
     </div>
   </div>
 
-  <div ng-if="currentImage && !bleed" class="choices-marquee" style="background-image: url('{{ currentImage }}');"></div>
+  <div ng-if="currentImage && !bleed" class="choices-marquee" ng-class="anyIsSelected() ? 'active' : ''" style="background-image: url('{{ currentImage }}');"></div>
 
 
   <div class="container">

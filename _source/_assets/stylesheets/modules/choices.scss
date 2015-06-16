@@ -204,6 +204,12 @@
   background-size: cover;
   background-position: center center;
 
+  @include filter(grayscale(100%));
+
+  &.active{
+    @include filter(grayscale(0%));
+  }
+
   &.bleed{
     position: absolute;
     width: 50vw;
@@ -260,6 +266,11 @@
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  @include filter(grayscale(100%));
+
+  &.active{
+    @include filter(grayscale(0%));
+  }
 }
 
 
@@ -273,6 +284,11 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  @include filter(grayscale(100%));
+
+  &.active{
+    @include filter(grayscale(0%));
+  }
 
   &.bleed{
     .choices-question{

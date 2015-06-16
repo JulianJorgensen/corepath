@@ -1,7 +1,7 @@
 <!-- VERTICAL ALIGNED CHOICES -->
 <!-- ========================== -->
 <div class="choices-container vertical color-{{ choicesColor || 'default' }}">
-  <div class="row choices-background padding-xlarge" style="background-image: url('{{ currentImage }}');">
+  <div class="row choices-background padding-xlarge" ng-class="anyIsSelected() ? 'active' : ''" style="background-image: url('{{ currentImage }}');">
     <div class="container">
 
       <div class="row">
