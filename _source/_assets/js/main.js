@@ -3,6 +3,10 @@ var skrollr = skrollr.init();
 
 $(document).ready(function(){
 
+  setTimeout(function(){
+    skrollr.refresh();
+  }, 200);
+
   // disable contact when clicking on a nav item
   $('.nav-item').on('click', function(e){
     $('.nav-contact').removeClass('active');

@@ -28,7 +28,6 @@ avenueApp.factory('pageInfo', function($timeout) {
 
   info.updateName = function(newName) {
     this.name = newName;
-    console.log('changed page name to: ' + newName);
   }
 
   return {
