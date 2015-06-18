@@ -1,11 +1,21 @@
 // MAIN CONTROLLER
-avenueApp.controller('mainController', ['$scope', 'pageInfo', function($scope, pageInfo) {
+avenueApp.controller('mainController', ['$scope', 'pageInfo', 'skrollrService', function($scope, pageInfo, skrollrService) {
   $scope.pageInfo = pageInfo.info;
+
+
+  $scope.$on("$routeChangeSuccess", function () {
+    window.scrollTo(0);
+
+    skrollrService.skrollr().then(function(skrollr){
+      skrollr.refresh();
+    });
+  })
+
 }]);
 
 
 // INDEX CONTROLLER
-avenueApp.controller('indexController', ['$scope', 'pageInfo', function($scope, pageInfo) {
+avenueApp.controller('indexController', ['$scope', 'pageInfo', 'styleResponseCalculator', function($scope, pageInfo, styleResponseCalculator) {
 
   pageInfo.info.updateName('index');
 
@@ -14,6 +24,14 @@ avenueApp.controller('indexController', ['$scope', 'pageInfo', function($scope, 
     var href = $(this).attr('data-href');
     window.location.href = href;
   });
+
+
+  $scope.$watch(function () {
+    return styleResponseCalculator.currentAnswer();
+  }, function(newVal, oldVal) {
+    $scope.answer = newVal;
+  }, true);
+
 
 }]);
 

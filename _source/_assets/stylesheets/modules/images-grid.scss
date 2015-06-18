@@ -7,6 +7,8 @@
 
 .images-grid{
 
+  @include no-bullets;
+
   &.grid-2{
     @include block-grid(
       $per-row: 2,
