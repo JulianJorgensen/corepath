@@ -6,7 +6,12 @@
     <div class="row collapse">
 
         <div class="column small-6" ng-class="{'small-push-6' : align == 'left'}">
-          <div class="choices-image {{ align }} {{bleed ? 'bleed' : 'rounded'}}" ng-class="{'active' : anyIsSelected()}" style="background-image: url('{{ currentImage }}');"></div>
+          <div class="choices-image-wrapper {{ align }} {{ bleed ? 'bleed' : 'rounded' }}">
+            <div class="choices-image choices-image-default" ng-class="{'active': !anyIsSelected()}" style="background-image: url('{{ defaultImage }}');"></div>
+            <div class="choices-image" ng-class="{'active': isSelected(1)}" style="background-image: url('{{ firstImage }}');"></div>
+            <div class="choices-image" ng-class="{'active': isSelected(2)}" style="background-image: url('{{ secondImage }}');"></div>
+            <div class="choices-image" ng-class="{'active': isSelected(3)}" style="background-image: url('{{ thirdImage }}');"></div>
+          </div>
         </div>
         <div class="column small-6" ng-class="{'small-pull-6': align == 'left'}">
           <h2 class="text-center choices-question">{{ question }}</h2>

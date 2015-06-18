@@ -1,9 +1,13 @@
 <!-- VERTICAL ALIGNED CHOICES -->
 <!-- ========================== -->
 <div class="choices-container vertical color-{{ choicesColor || 'default' }}">
-  <div class="row choices-background padding-xlarge" ng-class="anyIsSelected() ? 'active' : ''" style="background-image: url('{{ currentImage }}');">
-    <div class="container">
+  <div class="row choices-background padding-xlarge">
+    <div class="choices-background-image" ng-class="{'active': !anyIsSelected()}" style="background-image: url('{{ defaultImage }}');"></div>
+    <div class="choices-background-image" ng-class="{'active': isSelected(1)}" style="background-image: url('{{ firstImage }}');"></div>
+    <div class="choices-background-image" ng-class="{'active': isSelected(2)}" style="background-image: url('{{ secondImage }}');"></div>
+    <div class="choices-background-image" ng-class="{'active': isSelected(3)}" style="background-image: url('{{ thirdImage }}');"></div>
 
+    <div class="container">
       <div class="row">
         <div class="column small-8">
           <h2 class="choices-question text-left">{{ question }}</h2>

@@ -19,7 +19,7 @@
 .button{
   font-size: 1.5rem;
   line-height: 1.5rem;
-  @include transition(transform $transition-speed-default);
+  @include transition(transform $transition-speed-fast);
 
   &:active{
     @include transform(scale(0.9));

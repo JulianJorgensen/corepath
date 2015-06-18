@@ -101,13 +101,13 @@
     @include align-items(center);
     @include display(flex);
     @include justify-content(center);
-    @include transition(all $transition-speed-default);
+    @include transition(all $transition-speed-fast);
     height: $button-height;
 
     .button-content{
       padding: 0;
       color: $black;
-      @include transition(color $transition-speed-default);
+      @include transition(color $transition-speed-fast);
     }
     &.active{
       .button-content{
@@ -198,18 +198,9 @@
 
 // CHOICES IMAGE
 // =====================
-.choices-container .choices-image{
+.choices-container .choices-image-wrapper{
   height: 500px;
   width: 500px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-
-  @include filter(grayscale(100%));
-
-  &.active{
-    @include filter(grayscale(0%));
-  }
 
   &.bleed{
     position: absolute;
@@ -218,8 +209,32 @@
     &.right{
       right: 0;
     }
+
     &.left{
       left: 0;
+    }
+  }
+
+  &.rounded{
+    .choices-image{
+      border-radius: 50%;
+    }
+  }
+
+  .choices-image{
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    opacity: 0;
+    @include cover(center);
+    @include transition(all $transition-speed-default);
+
+    &.active{
+      opacity: 1;
+    }
+
+    &.choices-image-default{
+      @include filter(grayscale(100%));
     }
   }
 }
@@ -236,9 +251,7 @@
   height: 320px;
   width: 320px;
   border-radius: 50%;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  @include cover(center);
 
   &.active{
     z-index: 999;
@@ -264,13 +277,26 @@
 // CHOICES BG
 // =================
 .choices-background{
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  @include filter(grayscale(100%));
+  position: relative;
 
-  &.active{
-    @include filter(grayscale(0%));
+  .choices-background-default{
+    @include filter(grayscale(100%));
+  }
+
+  .choices-background-image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    opacity: 0;
+    @include cover(center);
+    @include transition(all $transition-speed-default);
+
+    &.active{
+      opacity: 1;
+    }
   }
 }
 
@@ -282,20 +308,29 @@
   position: relative;
   margin-bottom: $spacing-default;
   height: 600px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  @include filter(grayscale(100%));
-
-  &.active{
-    @include filter(grayscale(0%));
-  }
 
   &.bleed{
     .choices-question{
       position: absolute;
       bottom: 0;
       max-width: inherit;
+    }
+  }
+
+  .choices-marquee-image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    @include cover(center);
+    @include transition(all $transition-speed-default);
+
+    &.choices-marquee-image-default{
+      @include filter(grayscale(100%));
+    }
+
+    &.active{
+      opacity: 1;
     }
   }
 }

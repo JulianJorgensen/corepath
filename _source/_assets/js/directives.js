@@ -43,6 +43,8 @@ avenueApp.directive('choices', function() {
             $scope.selectChoice = function (setChoice){
                 $scope.choice = setChoice;
 
+                console.log($scope);
+
                 // change the image accordingly
                 if (setChoice == '1'){
                   $scope.currentImage = $scope.firstImage;
