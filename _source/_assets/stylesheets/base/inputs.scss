@@ -16,6 +16,28 @@ input{
 }
 
 
+.inline-list{
+  margin-bottom: 0;
+
+  > li:first-child{
+    margin-left: 0;
+  }
+}
+
+.input-group{
+  margin: $spacing-large 0;
+
+  &.first{
+    margin-top: 0;
+  }
+}
+
+// input sizes
+input.input-small{
+  display: inline-block;
+  width: 150px;
+}
+
 
 // CUSTOM RADIOS AND CHECKBOXES
 // ============================
@@ -30,9 +52,17 @@ input[type="checkbox"] {
   & + label{
     @include user-select(none);
     border: 1px solid $gray40;
-    padding: $spacing-xsmall $spacing-large;
+    padding: $spacing-xsmall $spacing-default;
     text-transform: uppercase;
     font-weight: 100;
+    margin-left: 0;
+  }
+
+  &.disabled, &:disabled{
+    & + label{
+      opacity: 0.3;
+      cursor: default !important;
+    }
   }
 
   &:checked{

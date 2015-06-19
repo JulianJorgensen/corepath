@@ -1,11 +1,16 @@
 // MAIN CONTROLLER
-avenueApp.controller('mainController', ['$scope', 'pageInfo', 'skrollrService', function($scope, pageInfo, skrollrService) {
+avenueApp.controller('mainController', ['$scope', 'pageInfo', 'skrollrService', 'styleResponseCalculator', function($scope, pageInfo, skrollrService, styleResponseCalculator) {
   $scope.pageInfo = pageInfo.info;
 
 
-  $scope.$on("$routeChangeSuccess", function () {
-    window.scrollTo(0);
+  $scope.$watch(function () {
+    return styleResponseCalculator.currentAnswer();
+  }, function(newVal, oldVal) {
+    $scope.answer = newVal;
+  }, true);
 
+
+  $scope.$on("$routeChangeSuccess", function () {
     skrollrService.skrollr().then(function(skrollr){
       skrollr.refresh();
     });
@@ -15,7 +20,7 @@ avenueApp.controller('mainController', ['$scope', 'pageInfo', 'skrollrService', 
 
 
 // INDEX CONTROLLER
-avenueApp.controller('indexController', ['$scope', 'pageInfo', 'styleResponseCalculator', function($scope, pageInfo, styleResponseCalculator) {
+avenueApp.controller('indexController', ['$scope', 'pageInfo', function($scope, pageInfo) {
 
   pageInfo.info.updateName('index');
 
@@ -24,14 +29,6 @@ avenueApp.controller('indexController', ['$scope', 'pageInfo', 'styleResponseCal
     var href = $(this).attr('data-href');
     window.location.href = href;
   });
-
-
-  $scope.$watch(function () {
-    return styleResponseCalculator.currentAnswer();
-  }, function(newVal, oldVal) {
-    $scope.answer = newVal;
-  }, true);
-
 
 }]);
 
@@ -81,11 +78,21 @@ avenueApp.controller('aboutController', ['$scope', 'pageInfo', function($scope, 
 
 // HOW CONTROLLER
 avenueApp.controller('howController', ['$scope', 'pageInfo', function($scope, pageInfo) {
+  window.scrollTo(0);
+
   pageInfo.info.updateName('how');
 }]);
 
 
 // INTAKE CONTROLLER
 avenueApp.controller('intakeController', ['$scope', 'pageInfo', function($scope, pageInfo) {
+  window.scrollTo(0);
+
   pageInfo.info.updateName('intake');
+
+  $scope.lifestyle = {};
+  $scope.place = {};
+  $scope.project = {};
+  $scope.contact = {};
+
 }]);

@@ -227,7 +227,7 @@
     width: inherit;
     opacity: 0;
     @include cover(center);
-    @include transition(all $transition-speed-default);
+    @include transition(all $transition-speed-slow);
 
     &.active{
       opacity: 1;
@@ -247,7 +247,7 @@
   position: relative;
   margin-top: $spacing-xlarge;
   @include filter(grayscale(100%));
-  @include transition(all $transition-speed-default);
+  @include transition(all $transition-speed-slow);
   height: 320px;
   width: 320px;
   border-radius: 50%;
@@ -292,7 +292,7 @@
     z-index: 0;
     opacity: 0;
     @include cover(center);
-    @include transition(all $transition-speed-default);
+    @include transition(all $transition-speed-slow);
 
     &.active{
       opacity: 1;
@@ -323,7 +323,7 @@
     height: 100%;
     opacity: 0;
     @include cover(center);
-    @include transition(all $transition-speed-default);
+    @include transition(all $transition-speed-slow);
 
     &.choices-marquee-image-default{
       @include filter(grayscale(100%));
