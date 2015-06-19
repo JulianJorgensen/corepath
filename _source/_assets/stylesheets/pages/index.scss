@@ -3,6 +3,10 @@
 @import '../variables_custom';
 @import '../variables_foundation';
 
+#opening-statement {
+  margin-top: 80px;
+}
+
 #lets-begin{
   @include align-items(center);
   @include display(flex);
