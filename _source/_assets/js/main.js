@@ -12,4 +12,5 @@ $(document).ready(function(){
     $(this).toggleClass('active');
     $('section#contact').toggleClass('active');
   });
+
 });

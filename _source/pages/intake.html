@@ -10,15 +10,16 @@
     <div class="column small-2 text-right">
 
       <div class="intake-header">
+        <a name="intake-top"></a>
         <h5 class="white">Start your project in 15 minutes</h5>
       </div>
 
       <ul class="subnav">
-        <li ng-class="{active: ('intake.lifestyle' | routeSegmentStartsWith) && ('id' | routeSegmentParam) == i}"><a href="#/intake/lifestyle">1. lifestyle</a></li>
-        <li ng-class="{active: ('intake.place' | routeSegmentStartsWith) && ('id' | routeSegmentParam) == i}"><a href="#/intake/place">2. the place</a></li>
-        <li ng-class="{active: ('intake.project' | routeSegmentStartsWith) && ('id' | routeSegmentParam) == i}"><a href="#/intake/project">3. the project</a></li>
-        <li ng-class="{active: ('intake.contact' | routeSegmentStartsWith) && ('id' | routeSegmentParam) == i}"><a href="#/intake/contact">4. contact details</a></li>
-        <li ng-class="{active: ('intake.ready' | routeSegmentStartsWith) && ('id' | routeSegmentParam) == i}"><a href="#/intake/ready">5. ready to go</a></li>
+        <li ng-class="{active: ('intake.lifestyle' | routeSegmentStartsWith) && ('id' | routeSegmentParam) == i}"><a href="#/intake/lifestyle#intake-top">1. lifestyle</a></li>
+        <li ng-class="{active: ('intake.place' | routeSegmentStartsWith) && ('id' | routeSegmentParam) == i}"><a href="#/intake/place#intake-top">2. the place</a></li>
+        <li ng-class="{active: ('intake.project' | routeSegmentStartsWith) && ('id' | routeSegmentParam) == i}"><a href="#/intake/project#intake-top">3. the project</a></li>
+        <li ng-class="{active: ('intake.contact' | routeSegmentStartsWith) && ('id' | routeSegmentParam) == i}"><a href="#/intake/contact#intake-top">4. contact details</a></li>
+        <li ng-class="{active: ('intake.ready' | routeSegmentStartsWith) && ('id' | routeSegmentParam) == i}"><a href="#/intake/ready#intake-top">5. ready to go</a></li>
       </ul>
     </div>
     <div class="column small-10">
