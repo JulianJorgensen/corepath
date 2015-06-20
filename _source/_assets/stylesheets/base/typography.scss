@@ -2,6 +2,7 @@
 @import '../mixins';
 @import '../variables_custom';
 @import '../variables_foundation';
+@import '../vendor/foundation/components/global';
 
 
 // disable that ugly blue outline
@@ -57,4 +58,9 @@ h1, h2, h3, h4, h5, h6{
 
 .text-gray{
 	color: $gray40;
+}
+
+
+.text-green{
+	color: $success-color;
 }

@@ -95,5 +95,19 @@ avenueApp.controller('intakeController', ['$scope', 'pageInfo', function($scope,
   $scope.project = {};
   $scope.contact = {};
 
+  $scope.formSubmitted = false;
 
+  $scope.sendForm = function() {
+
+    console.log($scope.lifestyle);
+    console.log($scope.place);
+    console.log($scope.project);
+    console.log($scope.contact);
+
+    $scope.formSubmitted = true;
+  };
+
+  $scope.resetForm = function() {
+    $scope.formSubmitted = false;
+  };
 }]);

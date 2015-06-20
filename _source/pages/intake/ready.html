@@ -1,322 +1,340 @@
-<div class="intake-header white">
-  <h1>5. Ready to Go</h1>
-  <p>We&rsquo;re just about ready to start your project!</p>
-</div>
+<section ng-show="!formSubmitted">
 
-<p>Please review the information below to ensure everything looks right. Your living space consultant will be in touch shortly to take you through the rest of the process.</p>
-
-<div class="separator large line"></div>
-
-<h3>Style Match</h3>
-<p>Our process matched these styles as the most likely to work with how you live:</p>
-
-<div ng-if="answer == 'a'">Old World Charm</div>
-<div ng-if="answer == 'b'">New World Charm</div>
-<div ng-if="answer == 'c'">Design Classics</div>
-
-<div class="separator large line"></div>
-
-<section>
-  <h3>Lifestyle</h3>
-  <div class="row">
-    <div class="column small-4">
-      Interests and Hobbies
-    </div>
-    <div class="column small-8">
-      <span>{[ lifestyle.hobbies ]}</span>
-    </div>
+  <div class="intake-header white">
+    <h1>5. Ready to Go</h1>
+    <p>We&rsquo;re just about ready to start your project!</p>
   </div>
 
-  <div class="row">
-    <div class="column small-4 end">
-      An Average Day
-    </div>
-  </div>
+  <p>Please review the information below to ensure everything looks right. Your living space consultant will be in touch shortly to take you through the rest of the process.</p>
 
-  <div class="row">
-    <div class="column small-4">
-      Morning
-    </div>
-    <div class="column small-8">
-      <span>{[ lifestyle.morning ]}</span>
-    </div>
-  </div>
+  <div class="separator large line"></div>
 
-  <div class="row">
-    <div class="column small-4">
-      Afternoon
-    </div>
-    <div class="column small-8">
-      <span>{[ lifestyle.afternoon ]}</span>
-    </div>
-  </div>
+  <h3>Style Match</h3>
+  <p>Our process matched these styles as the most likely to work with how you live:</p>
 
-  <div class="row">
-    <div class="column small-4">
-      Evening
-    </div>
-    <div class="column small-8">
-      <span>{[ lifestyle.evening ]}</span>
-    </div>
-  </div>
+  <div ng-if="answer == 'a'">Old World Charm</div>
+  <div ng-if="answer == 'b'">New World Charm</div>
+  <div ng-if="answer == 'c'">Design Classics</div>
 
-  <div class="row">
-    <div class="column small-4">
-      Personality Keywords
-    </div>
-    <div class="column small-8">
-      <span>{[ lifestyle.personality ]}</span>
-    </div>
-  </div>
+  <div class="separator large line"></div>
 
-  <div class="row">
-    <div class="column small-4">
-      Overnight Guests
+  <section>
+    <h3>Lifestyle</h3>
+    <div class="row">
+      <div class="column small-4">
+        Interests and Hobbies
+      </div>
+      <div class="column small-8">
+        <span>{[ lifestyle.hobbies ]}</span>
+      </div>
     </div>
-    <div class="column small-8">
-      <span>{[ lifestyle.overnightGuests ]}</span>
-    </div>
-  </div>
 
-  <div class="row">
-    <div class="column small-4">
-      Entertain
+    <div class="row">
+      <div class="column small-4 end">
+        An Average Day
+      </div>
     </div>
-    <div class="column small-8">
-      <span>{[ lifestyle.entertain ]}</span>
-    </div>
-  </div>
 
-  <div class="row">
-    <div class="column small-4">
-      Work from Home
+    <div class="row">
+      <div class="column small-4">
+        Morning
+      </div>
+      <div class="column small-8">
+        <span>{[ lifestyle.morning ]}</span>
+      </div>
     </div>
-    <div class="column small-8">
-      <span>{[ lifestyle.workHome ]}</span>
-    </div>
-  </div>
 
-  <div class="row">
-    <div class="column small-4">
-      Pets
+    <div class="row">
+      <div class="column small-4">
+        Afternoon
+      </div>
+      <div class="column small-8">
+        <span>{[ lifestyle.afternoon ]}</span>
+      </div>
     </div>
-    <div class="column small-8">
-      <ul class="inline-list">
-        <li ng-repeat="(pet,checked) in lifestyle.pets" ng-if="checked">{[ pet ]}</li>
-      </ul>
-    </div>
-  </div>
 
-  <div class="row">
-    <div class="column small-4">
-      Collections
+    <div class="row">
+      <div class="column small-4">
+        Evening
+      </div>
+      <div class="column small-8">
+        <span>{[ lifestyle.evening ]}</span>
+      </div>
     </div>
-    <div class="column small-8">
-      <ul class="inline-list">
-        <li ng-repeat="(item,checked) in lifestyle.items" ng-if="checked">{[ item ]}</li>
-      </ul>
+
+    <div class="row">
+      <div class="column small-4">
+        Personality Keywords
+      </div>
+      <div class="column small-8">
+        <span>{[ lifestyle.personality ]}</span>
+      </div>
     </div>
-  </div>
+
+    <div class="row">
+      <div class="column small-4">
+        Overnight Guests
+      </div>
+      <div class="column small-8">
+        <span>{[ lifestyle.overnightGuests ]}</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column small-4">
+        Entertain
+      </div>
+      <div class="column small-8">
+        <span>{[ lifestyle.entertain ]}</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column small-4">
+        Work from Home
+      </div>
+      <div class="column small-8">
+        <span>{[ lifestyle.workHome ]}</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column small-4">
+        Pets
+      </div>
+      <div class="column small-8">
+        <ul class="inline-list">
+          <li ng-repeat="(pet,checked) in lifestyle.pets" ng-if="checked">{[ pet ]}</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column small-4">
+        Collections
+      </div>
+      <div class="column small-8">
+        <ul class="inline-list">
+          <li ng-repeat="(item,checked) in lifestyle.items" ng-if="checked">{[ item ]}</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="separator large line"></div>
+
+  <section>
+    <h3>The Place</h3>
+    <div class="row">
+      <div class="column small-4">
+        Address
+      </div>
+      <div class="column small-8">
+        <span>{[ place.address ]}, {[ place.city ]}</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column small-4">
+        Plan to Stay
+      </div>
+      <div class="column small-8">
+        <span>{[ place.length ]}</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column small-4">
+        Living With
+      </div>
+      <div class="column small-8">
+        <ul class="inline-list">
+          <li ng-repeat="(item,checked) in place.livingWith" ng-if="checked">{[ item ]}</li>
+          <li ng-show="place.children">{[ place.childrenCount ]} children</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column small-4">
+        Patio
+      </div>
+      <div class="column small-8">
+        <span>{[ place.patio ]}</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column small-4">
+        Bedrooms
+      </div>
+      <div class="column small-8">
+        <span>{[ place.bedrooms ]}</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column small-4">
+        Bathrooms
+      </div>
+      <div class="column small-8">
+        <span>{[ place.bathrooms ]}</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column small-4">
+        Furniture items
+      </div>
+      <div class="column small-8">
+        <span>{[ place.furnitureItems ]}</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="separator large line"></div>
+
+  <section>
+    <h3>The Project</h3>
+    <div class="row">
+      <div class="column small-4">
+        Goal
+      </div>
+      <div class="column small-8">
+        <span>{[ project.goal ]}</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column small-4">
+        Move-in Date
+      </div>
+      <div class="column small-8">
+        <span>{[ project.moveInDate ]}</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column small-4">
+        Purchasing Commences
+      </div>
+      <div class="column small-8">
+        <span>{[ project.purchaseDate ]}</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column small-4">
+        Budget
+      </div>
+      <div class="column small-8">
+        <span>{[ project.budget ]}</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column small-4">
+        #1 Criteria
+      </div>
+      <div class="column small-8">
+        <span>{[ project.criteria1 ]}</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column small-4">
+        #2 Criteria
+      </div>
+      <div class="column small-8">
+        <span>{[ project.criteria2 ]}</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column small-4">
+        Furniture to Use
+      </div>
+      <div class="column small-8">
+        <span>{[ project.furniture ]}</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column small-4">
+        Referral
+      </div>
+      <div class="column small-8">
+        <span>{[ project.referral ]}</span>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="separator large line"></div>
+
+  <section>
+    <h3>Contact Details</h3>
+    <div class="row">
+      <div class="column small-4">
+        Name
+      </div>
+      <div class="column small-8">
+        <span>{[ contact.firstName ]} {[ contact.lastName ]}</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column small-4">
+        Email
+      </div>
+      <div class="column small-8">
+        <span>{[ contact.email ]}</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column small-4">
+        Phone
+      </div>
+      <div class="column small-8">
+        <span>{[ contact.phone ]}</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column small-4">
+        Method of contact
+      </div>
+      <div class="column small-8">
+        <span>{[ contact.method ]}</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column small-4">
+        Other Comments
+      </div>
+      <div class="column small-8">
+        <span>{[ contact.comments ]}</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="separator large"></div>
+
+  <a class="button large expand" ng-click="sendForm()">Start my Project</a>
 </section>
 
-<div class="separator large line"></div>
 
-<section>
-  <h3>The Place</h3>
-  <div class="row">
-    <div class="column small-4">
-      Address
-    </div>
-    <div class="column small-8">
-      <span>{[ place.address ]}, {[ place.city ]}</span>
-    </div>
+<section ng-show="formSubmitted" class="text-center">
+
+  <div class="intake-header white">
   </div>
 
-  <div class="row">
-    <div class="column small-4">
-      Plan to Stay
-    </div>
-    <div class="column small-8">
-      <span>{[ place.length ]}</span>
-    </div>
-  </div>
+  <h1>Sent!</h1>
+  <p>We will get back to you soon</p>
 
-  <div class="row">
-    <div class="column small-4">
-      Living With
-    </div>
-    <div class="column small-8">
-      <ul class="inline-list">
-        <li ng-repeat="(item,checked) in place.livingWith" ng-if="checked">{[ item ]}</li>
-      </ul>
-    </div>
-  </div>
+  <i class="fa fa-check fa-5x text-green" />
+  <div><a class="button small margin-top-xlarge" ng-click="resetForm()" href="#/intake/#lifestyle">Re-do form</a></div>
 
-  <div class="row">
-    <div class="column small-4">
-      Patio
-    </div>
-    <div class="column small-8">
-      <span>{[ place.patio ]}</span>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="column small-4">
-      Bedrooms
-    </div>
-    <div class="column small-8">
-      <span>{[ place.bedrooms ]}</span>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="column small-4">
-      Bathrooms
-    </div>
-    <div class="column small-8">
-      <span>{[ place.bathrooms ]}</span>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="column small-4">
-      Furniture items
-    </div>
-    <div class="column small-8">
-      <span>{[ place.furnitureItems ]}</span>
-    </div>
-  </div>
 </section>
-
-<div class="separator large line"></div>
-
-<section>
-  <h3>The Project</h3>
-  <div class="row">
-    <div class="column small-4">
-      Goal
-    </div>
-    <div class="column small-8">
-      <span>{[ project.goal ]}</span>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="column small-4">
-      Move-in Date
-    </div>
-    <div class="column small-8">
-      <span>{[ project.moveInDate ]}</span>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="column small-4">
-      Purchasing Commences
-    </div>
-    <div class="column small-8">
-      <span>{[ project.purchaseDate ]}</span>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="column small-4">
-      Budget
-    </div>
-    <div class="column small-8">
-      <span>{[ project.budget ]}</span>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="column small-4">
-      #1 Criteria
-    </div>
-    <div class="column small-8">
-      <span>{[ project.criteria1 ]}</span>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="column small-4">
-      #2 Criteria
-    </div>
-    <div class="column small-8">
-      <span>{[ project.criteria2 ]}</span>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="column small-4">
-      Furniture to Use
-    </div>
-    <div class="column small-8">
-      <span>{[ project.furniture ]}</span>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="column small-4">
-      Referral
-    </div>
-    <div class="column small-8">
-      <span>{[ project.referral ]}</span>
-    </div>
-  </div>
-</section>
-
-
-<div class="separator large line"></div>
-
-<section>
-  <h3>Contact Details</h3>
-  <div class="row">
-    <div class="column small-4">
-      Name
-    </div>
-    <div class="column small-8">
-      <span>{[ contact.firstName ]} {[ contact.lastName ]}</span>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="column small-4">
-      Email
-    </div>
-    <div class="column small-8">
-      <span>{[ contact.email ]}</span>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="column small-4">
-      Phone
-    </div>
-    <div class="column small-8">
-      <span>{[ contact.phone ]}</span>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="column small-4">
-      Method of contact
-    </div>
-    <div class="column small-8">
-      <span>{[ contact.method ]}</span>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="column small-4">
-      Other Comments
-    </div>
-    <div class="column small-8">
-      <span>{[ contact.comments ]}</span>
-    </div>
-  </div>
-</section>
-
-<div class="separator large"></div>
-
-<a class="button large expand" href="#">Start my Project</a>

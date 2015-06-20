@@ -31,8 +31,8 @@
   <div class="row padding-top-default">
     <div class="column small-12">
       <input type="checkbox" ng-model="place.livingWith.roommates" name="who-roommates" value="Roommates" id="who-roommates"><label for="who-roommates">Roommates</label>
-      <input type="checkbox" ng-model="place.livingWith.children" name="who-children" value="Children" id="who-children"><label for="who-children">Children</label>
-      <input type="text" placeholder="How many?" class="input-small" />
+      <input type="checkbox" ng-model="place.children" name="who-children" value="Children" id="who-children"><label for="who-children">Children</label>
+      <input type="text" ng-model="place.childrenCount" ng-show="place.children" placeholder="How many?" class="input-small" />
     </div>
   </div>
 </div>
