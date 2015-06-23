@@ -97,7 +97,7 @@ avenueApp.controller('howController', ['$scope', 'pageInfo', function($scope, pa
 
 
 // INTAKE CONTROLLER
-avenueApp.controller('intakeController', ['$scope', 'pageInfo', function($scope, pageInfo) {
+avenueApp.controller('intakeController', ['$scope', 'pageInfo', '$http', function($scope, pageInfo, $http) {
   window.scrollTo(0);
 
   pageInfo.info.updateName('intake');
@@ -126,13 +126,22 @@ avenueApp.controller('intakeController', ['$scope', 'pageInfo', function($scope,
   $scope.formSubmitted = false;
 
   $scope.sendForm = function() {
+    var params = {
+      lifestyle: $scope.lifestyle,
+      place: $scope.place,
+      project: $scope.project,
+      contact: $scope.contact,
+    }
+    $http.post('https://avenue-spaces.herokuapp.com/email', params).
+    success(function(data, status, headers, config) {
+      console.log('success', data, status, headers, config);
+      $scope.formSubmitted = true;
+    }).
+    error(function(data, status, headers, config) {
+      console.log('error', data, status, headers, config);
+      alert('Something went wrong, please contact hello@avenuespaces.com');
+    });
 
-    console.log($scope.lifestyle);
-    console.log($scope.place);
-    console.log($scope.project);
-    console.log($scope.contact);
-
-    $scope.formSubmitted = true;
   };
 
   $scope.resetForm = function() {
