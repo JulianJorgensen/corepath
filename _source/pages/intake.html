@@ -4,12 +4,11 @@
 <div class="hero" style="background-image: url('{% asset_path '2048-5.jpg' %}');" /></div>
 
 
-<div class="container">
-
+<div class="container" ng-show="!formSubmitted">
   <div class="row">
-    <div class="column small-2 text-right">
+    <div class="column small-3 text-right">
 
-      <div class="intake-header">
+      <div class="intake-header first">
         <a name="intake-top"></a>
         <h5 class="white">Start your project in 15 minutes</h5>
       </div>
@@ -22,10 +21,23 @@
         <li ng-class="{active: ('intake.ready' | routeSegmentStartsWith) && ('id' | routeSegmentParam) == i}"><a href="#/intake/ready#intake-top">5. ready to go</a></li>
       </ul>
     </div>
-    <div class="column small-10">
-
-      <div app-view-segment="1"></div>
-
+    <div class="column small-9">
+      <form name="intakeForm">
+        <div app-view-segment="1"></div>
+      </form>
     </div>
+  </div>
+</div>
+
+
+<div ng-show="formSubmitted" class="text-center">
+  <div class="intake-header white">
+  </div>
+
+  <div class="intake-content">
+    <h1>Thank you - information received!</h1>
+    <p>There's nothing left to do but relax. An Avenue representative will be in contact with you soon.</p>
+
+    <i class="fa fa-check fa-5x text-green" />
   </div>
 </div>

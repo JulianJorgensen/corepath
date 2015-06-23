@@ -90,18 +90,11 @@
               </div>
             </div>
           </div>
-          <ul class="tabs-naked white margin-top-xxlarge" data-tab role="tablist">
-            <div class="row">
-              <div class="column small-3">
-                <li class="tab-title" role="presentational" ng-click="tab.selectTab(1)" ng-class="{active: tab.isSelected(1)}"><h6><a role="tab" tabindex="0" aria-selected="true" controls="panel2-1">Classic</a></h6></li>
-              </div>
-              <div class="column small-6 text-center">
-                <li class="tab-title" role="presentational" ng-click="tab.selectTab(2)" ng-class="{active: tab.isSelected(2)}"><h6><a role="tab" tabindex="1" aria-selected="false" controls="panel2-2">Contemporary</a></h6></li>
-              </div>
-              <div class="column small-3 text-right">
-                <li class="tab-title" role="presentational" ng-click="tab.selectTab(3)" ng-class="{active: tab.isSelected(3)}"><h6><a role="tab" tabindex="2" aria-selected="false" controls="panel2-3">Modern</a></h6></li>
-              </div>
-          </ul>
+          <div class="marquee-tabs">
+            <a class="tab-title" ng-click="tab.selectTab(1)" ng-class="{active: tab.isSelected(1)}">Design Classics</a>
+            <a class="tab-title" ng-click="tab.selectTab(2)" ng-class="{active: tab.isSelected(2)}">Old World Charm</a>
+            <a class="tab-title" ng-click="tab.selectTab(3)" ng-class="{active: tab.isSelected(3)}">New World Glamour</a>
+          </div>
         </div>
       </div>
     </div>
@@ -110,24 +103,21 @@
 
 <section class="section">
   <div class="container flex-center">
-
-    <div class="row collapse">
-      <div class="column small-7 text-right">
+      <div class="flex-grid-7 text-right position-relative">
         <h6>High-quality furnishings<br>selected for you and your home tailored to your style</h6>
-        <div class="separator-t-shape">
-          <div class="vertical-line" skrollr data--400-bottom="height: 60px;" data-bottom="height: 0px;"><span></span></div>
-        </div>
+        <div class="separator-t-shape"></div>
       </div>
-      <div class="column small-1 text-center">
+      <div class="flex-grid-1 text-center">
         <small>OR</small>
       </div>
-      <div class="column small-4">
+      <div class="flex-grid-4">
         <div class="button light block text-left" data-href="#/intake">
           <small>Need to fill a space yesterday?</small>
           <h5>Try our fast track service <i class="fa fa-caret-right pull-right"></i></h5>
         </div>
       </div>
     </div>
+    <div class="vertical-line absolute" skrollr data--400-bottom="height: 60px;" data-bottom="height: 0px;"><span></span></div>
   </div>
   <div class="clearfix"></div>
 </section>
@@ -154,7 +144,7 @@
     first="The opening of the newest fine dining restaurant in town" first-description="This tells us that modern, wellappointed
 settings are more your style." first-image="{{ 'questions/q1/food-restaurant-lunch-cutlery.jpg' | asset_path }}"
     second="Your local roadhouse or pub" second-description="Good music, good friends, good times. Come as you are is the
-right vibe for you." second-image="{{ 'questions/q1/restaurant-man-person-coffee.jpeg' | asset_path }}"
+right vibe for you." second-image="{{ 'questions/q4/restaurant-alcohol-bar-drinks.jpg' | asset_path }}"
     third="Some place serving an interesting Thai & Japanese fusion" third-description="It sounds like international influences
 blended into something new are comfortable for you." third-image="{{ 'questions/q1/40835074_xl.jpg' | asset_path }}"
     bleed="true" activate-content="#question-transportation" />
@@ -203,7 +193,7 @@ in one trip." third-image="{{ 'questions/q3/shutterstock_133259825.jpg' | asset_
     </div>
 
     <choices
-      question-id="4" default-image="{% asset_path 'questions/q4/38488118_xl.jpg' %}" question="What&rsquo;s your favourite way to spend free time?"
+      question-id="4" default-image="{% asset_path 'questions/q4/shutterstock_171595433.jpg' %}" question="What&rsquo;s your favourite way to spend free time?"
       first="Reading the paper or good book while listening to your favourite music" first-description="Recharging yourself with quiet activities requires a space that&rsquo;s supportive, comfortable, and flexible." first-image="{{ 'questions/q4/2048-1.jpg' | asset_path }}"
       second="Drinking your favourite cocktail with friends - Social drinks are your thing?" second-description="We can consider how
 that fits into the design of your space." second-image="{{ 'questions/q4/restaurant-alcohol-bar-drinks.jpg' | asset_path }}"
@@ -224,7 +214,7 @@ that fits into the design of your space." second-image="{{ 'questions/q4/restaur
     <h2 class="text-center">What colors excite you most?</h2>
 
     <choices
-      question-id="5" first="I love to go bold with primary colors" first-description="When well balanced, strong colours will energize a space." first-icon="{% asset_path 'colour_answer_a.svg' %}"
+      size="large" question-id="5" first="I love to go bold with primary colors" first-description="When well balanced, strong colours will energize a space." first-icon="{% asset_path 'colour_answer_a.svg' %}"
       second="I like to express myself with exciting secondary colors " second-description="Subtle tones let a space adapt to many
 moods and needs." second-icon="{% asset_path 'colour_answer_b.svg' %}"
       third="My palette is definitely more neutral" third-description="Down to Earth and calm. Got it." third-icon="{% asset_path 'colour_answer_c.svg' %}"
@@ -257,10 +247,10 @@ moods and needs." second-icon="{% asset_path 'colour_answer_b.svg' %}"
     </div>
 
     <choices
-      question-id="6" default-image="{% asset_path 'questions/q5/37.jpg' %}" question="When you buy furniture, what do you consider most important?"
-      first="Function" first-description="Practical, no fuss. Got it." first-image="{{ 'questions/q5/photo-1422480415834-d7d30118ea06.jpeg' | asset_path }}"
-      second="Comfort & Affordability" second-description="Understood. You definitely won’t need to break the bank to make a livable space." second-image="{{ 'questions/q5/14809631_xl.jpg' | asset_path }}"
-      third="Quality & Style" third-description="Good sense and good taste go hand in hand." third-image="{{ 'questions/q5/stairs-home-loft-lifestyle.jpg' | asset_path }}"
+      question-id="6" default-image="{% asset_path 'questions/q6/37.jpg' %}" question="When you buy furniture, what do you consider most important?"
+      first="Function" first-description="Practical, no fuss. Got it." first-image="{{ 'questions/q6/photo-1422480415834-d7d30118ea06.jpeg' | asset_path }}"
+      second="Comfort & Affordability" second-description="Understood. You definitely won’t need to break the bank to make a livable space." second-image="{{ 'questions/q6/14809631_xl.jpg' | asset_path }}"
+      third="Quality & Style" third-description="Good sense and good taste go hand in hand." third-image="{{ 'questions/q6/stairs-home-loft-lifestyle.jpg' | asset_path }}"
       template-url="choices-vertical" align="left" activate-content="section#question-furniture-old-new" />
   </div>
 </section>
@@ -275,10 +265,10 @@ moods and needs." second-icon="{% asset_path 'colour_answer_b.svg' %}"
     </div>
 
     <choices
-      question-id="7" default-image="{% asset_path 'questions/q6/photo-1417976528056-3c9bbbb5456c.jpeg' %}" question="Do you prefer old or new furniture?"
-      first="Love my antiques and vintage finds" first-description="We can do a lot to bring that feeling of authenticity and heritage." first-image="{{ 'questions/q6/house-window-chair-verandah.jpg' | asset_path }}"
-      second="I would definitely visit a high-end furniture store" second-description="The more modern and high end pieces aren’t necessarily out of reach." second-image="{{ 'questions/q6/inside-apartment-design-home.jpg' | asset_path }}"
-      third="I plan to reupholster my grandma&rsquo;s chair" third-description="Reclaimed and restored pieces can say a lot about what&rsquo;s important to you. Noted." third-image="{{ 'questions/q6/shutterstock_197958920.jpg' | asset_path }}"
+      question-id="7" default-image="{% asset_path 'questions/q7/photo-1417976528056-3c9bbbb5456c.jpeg' %}" question="Do you prefer old or new furniture?"
+      first="Love my antiques and vintage finds" first-description="We can do a lot to bring that feeling of authenticity and heritage." first-image="{{ 'questions/q7/house-window-chair-verandah.jpg' | asset_path }}"
+      second="I would definitely visit a high-end furniture store" second-description="The more modern and high end pieces aren’t necessarily out of reach." second-image="{{ 'questions/q7/inside-apartment-design-home.jpg' | asset_path }}"
+      third="I plan to reupholster my grandma&rsquo;s chair" third-description="Reclaimed and restored pieces can say a lot about what&rsquo;s important to you. Noted." third-image="{{ 'questions/q7/shutterstock_197958920.jpg' | asset_path }}"
       template-url="choices-vertical" align="right" bleed="true" activate-content="section#question-living-preference" />
   </div>
 </section>
@@ -293,10 +283,9 @@ moods and needs." second-icon="{% asset_path 'colour_answer_b.svg' %}"
 
     <choices
       question-id="8" question="Where would you prefer to live?"
-      first="My preference is for the quiet country life" first-description="A simpler way of life lets us design a space that
-speaks to the essentials and what matters most." first-thumb="{{ 'questions/q7/industry-bricks-wall.jpg' | asset_path }}"
-      second="I need to be steps away from the latest and greatest in food, culture &amp; wine" second-description="A taste for what&rsquo;s new and incredible can help set your space apart." second-thumb="{{ 'questions/q7/hGibbjg0Rb2fUIoMtU5l__DSC8099.jpg' | asset_path }}"
-      third="I want to be near my friends &amp; family wherever they may be" third-description="Welcoming in loved ones makes a house a home. We can make this possible." third-thumb="{{ 'questions/q7/restaurant-hands-people-coffee.jpg' | asset_path }}"
+      first="My preference is for the quiet country life" first-description="A simpler way of life lets us design a space that speaks to the essentials and what matters most." first-thumb="{{ 'questions/q8/2048-6.jpg' | asset_path }}"
+      second="I need to be steps away from the latest and greatest in food, culture &amp; wine" second-description="A taste for what&rsquo;s new and incredible can help set your space apart." second-thumb="{{ 'questions/q8/hGibbjg0Rb2fUIoMtU5l__DSC8099.jpg' | asset_path }}"
+      third="I want to be near my friends &amp; family wherever they may be" third-description="Welcoming in loved ones makes a house a home. We can make this possible." third-thumb="{{ 'questions/q8/restaurant-hands-people-coffee.jpg' | asset_path }}"
       template-url="choices-horizontal" activate-content="section#question-fair-activity" />
   </div>
 </section>
@@ -327,10 +316,10 @@ speaks to the essentials and what matters most." first-thumb="{{ 'questions/q7/i
     </div>
 
     <choices
-      question-id="9" default-image="{{ 'questions/q8/photo-1415033523948-6c31d010530d.jpeg' | asset_path }}" question="What&rsquo;s your favourite fair activity?"
-      first="Roller Coaster" first-description="Bringing some excitement into your space doesn’t have to be risky. Let&rsquo;s add that touch to your style." first-image="{{ 'questions/q8/13414512_xl.jpg' | asset_path }}"
-      second="Ferris Wheel" second-description="A taste for the gentle majesty of this ride will help us set a tone for you." second-image="{{ 'questions/q8/2048-123.jpg' | asset_path }}"
-      third="Haunted House" third-description="Surprises and thrills! We’ll make sure a touch of excitement is added to your design." third-image="{{ 'questions/q8/21192912_xl.jpg' | asset_path }}"
+      question-id="9" default-image="{{ 'questions/q9/photo-1415033523948-6c31d010530d.jpeg' | asset_path }}" question="What&rsquo;s your favourite fair activity?"
+      first="Roller Coaster" first-description="Bringing some excitement into your space doesn&rsquo;t have to be risky. Let&rsquo;s add that touch to your style." first-image="{{ 'questions/q9/13414512_xl.jpg' | asset_path }}"
+      second="Ferris Wheel" second-description="A taste for the gentle majesty of this ride will help us set a tone for you." second-image="{{ 'questions/q9/shutterstock_134476418.jpg' | asset_path }}"
+      third="Haunted House" third-description="Surprises and thrills! We&rsquo;ll make sure a touch of excitement is added to your design." third-image="{{ 'questions/q9/21192912_xl.jpg' | asset_path }}"
       template-url="choices-vertical" bleed="true" align="left" activate-content="section#question-wearing" />
   </div>
 </section>
@@ -344,11 +333,10 @@ speaks to the essentials and what matters most." first-thumb="{{ 'questions/q7/i
     </div>
 
     <choices
-      question-id="10" default-image="{{ 'questions/q9/89983109848.jpg' | asset_path }}" question="What are you most likely to be wearing?"
-      first="Jeans &amp; t-shirt" first-description="Timeless, reliable, and comfortable. Your home can be just the same way." first-image="{{ 'questions/q9/photo-1419814193935-ddb634a0ddda.jpeg' | asset_path }}"
-      second="It&rsquo;s the power suit for me" second-description="Confident styles can say a lot about where you are in life." second-image="{{ 'questions/q9/shutterstock_126318380.jpg' | asset_path }}"
-      third="Gucci /Prada shoes, sunglasses and/or handbag" third-description="The finer things, and knowing how to spot
-them. We can design your space around the notes of high fashion." third-image="{{ 'questions/q9/ysPfhVSzSP2m629CW0mw_selfPortrait.jpg' | asset_path }}"
+      question-id="10" default-image="{{ 'questions/q10/89983109848.jpg' | asset_path }}" question="What are you most likely to be wearing?"
+      first="Jeans &amp; t-shirt" first-description="Timeless, reliable, and comfortable. Your home can be just the same way." first-image="{{ 'questions/q10/photo-1419814193935-ddb634a0ddda.jpeg' | asset_path }}"
+      second="It&rsquo;s the power suit for me" second-description="Confident styles can say a lot about where you are in life." second-image="{{ 'questions/q10/shutterstock_144792661.jpg' | asset_path }}"
+      third="Gucci /Prada shoes, sunglasses and/or handbag" third-description="The finer things, and knowing how to spot them. We can design your space around the notes of high fashion." third-image="{{ 'questions/q10/shutterstock_92199376.jpg' | asset_path }}"
       template-url="choices-horizontal" activate-content="section#final" />
   </div>
 </section>
@@ -366,9 +354,9 @@ them. We can design your space around the notes of high fashion." third-image="{
     <div class="row">
       <div class="column small-8 small-centered">
         <h2 class="margin-bottom-default">Based on your answers, we see that your design and lifestyle preferences best fit
-          <div ng-if="answer == 'a'">Old World Charm</div>
-          <div ng-if="answer == 'b'">New World Charm</div>
-          <div ng-if="answer == 'c'">Design Classics</div>
+          <div ng-if="answer == 'a'" class="answer">Old World Charm</div>
+          <div ng-if="answer == 'b'" class="answer">New World Charm</div>
+          <div ng-if="answer == 'c'" class="answer">Design Classics</div>
         </h2>
 
         <p ng-if="answer == 'a'">You know how to relax and take time to enjoy life. Art should be an integral part of any design to satisfy your creative and/or possible eccentric side. Incorporating color and unique items would help define you and your space. Antiques and classic furniture designs are preferred to new modern trends making your home welcoming and comfortable.</p>

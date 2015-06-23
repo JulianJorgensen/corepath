@@ -2,7 +2,14 @@
 avenueApp.controller('mainController', ['$scope', 'pageInfo', 'skrollrService', 'styleResponseCalculator', function($scope, pageInfo, skrollrService, styleResponseCalculator) {
   $scope.pageInfo = pageInfo.info;
 
+  // contact pull down
+  $scope.contactActivated = false;
 
+  $scope.toggleContact = function() {
+    $scope.contactActivated = $scope.contactActivated === false ? true: false;
+  };
+
+  // answer response calculator
   $scope.$watch(function () {
     return styleResponseCalculator.currentAnswer();
   }, function(newVal, oldVal) {
@@ -10,7 +17,13 @@ avenueApp.controller('mainController', ['$scope', 'pageInfo', 'skrollrService', 
   }, true);
 
 
+  // on page change
   $scope.$on("$routeChangeSuccess", function () {
+
+    // deactivate contact pulldown
+    $scope.contactActivated = false;
+
+    // refresh skrollr
     skrollrService.skrollr().then(function(skrollr){
       skrollr.refresh();
     });
@@ -64,7 +77,6 @@ avenueApp.controller('imageController', ['$scope', '$element', function ($scope,
   };
 
   $scope.setImage($scope.currImage);
-
 }]);
 
 
@@ -94,6 +106,22 @@ avenueApp.controller('intakeController', ['$scope', 'pageInfo', function($scope,
   $scope.place = {};
   $scope.project = {};
   $scope.contact = {};
+
+
+  $scope.isInvalid = function(field){
+    return $scope.intakeForm[field].$invalid && $scope.intakeForm[field].blur && $scope.intakeForm[field].$dirty;
+  };
+
+  $scope.validateInput = function(field){
+    $scope.intakeForm[field].blur = true;
+  };
+
+  $scope.validateForm = function(newUrl){
+    if (!$scope.intakeForm.$invalid){
+      window.location.href = newUrl;
+    }
+  }
+
 
   $scope.formSubmitted = false;
 

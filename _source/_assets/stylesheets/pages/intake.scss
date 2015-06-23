@@ -26,7 +26,6 @@
     visibility: hidden;
   }
 
-
   .top-bar .nav-items .nav-item{
     border-bottom-color: $white;
     a{
@@ -34,9 +33,28 @@
     }
   }
 
-
   .intake-header{
     margin-top: $spacing-xxlarge;
-    height: 200px;
+    height: 115px;
+
+    .intake-subheader{
+      font-size: rem-calc(20);
+      line-height: rem-calc(20);
+    }
+
+    &.first{
+      border-right: 1px solid $white;
+      padding-right: $spacing-default;
+    }
+  }
+
+  .intake-content{
+    margin-top: $spacing-xlarge;
+  }
+
+  .subnav{
+    padding-top: $spacing-xlarge;
+    padding-right: $spacing-default;
+    border-right: 1px solid $gray50;
   }
 }

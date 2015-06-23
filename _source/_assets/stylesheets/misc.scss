@@ -11,6 +11,15 @@
 }
 
 
+// error validation
+.error{
+  &.ng-untouched{
+    
+  }
+}
+
+
+// block
 .block{
   display: block;
 }

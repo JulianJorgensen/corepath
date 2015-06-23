@@ -15,6 +15,12 @@ $spacing-xxlarge: 120px;
 $spacing-default: $spacing-medium;
 
 
+// flex grid
+$fg-column: 60px;             // Column Width
+$fg-gutter: 25px;             // Gutter Width
+$fg-max-columns: 12;
+
+
 // grays
 $gray5:         darken(white, 5);
 $gray10:        darken(white, 10);

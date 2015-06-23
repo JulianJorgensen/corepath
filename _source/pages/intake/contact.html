@@ -1,41 +1,46 @@
 <div class="intake-header white">
   <h1>4. Contact details</h1>
-  <p>A few details to make communication go smoothly.</p>
+  <p class="intake-subheader">A few details to make communication go smoothly.</p>
 </div>
 
-<div class="input-group first">
-  <div class="row">
-    <div class="column small-6">
-      <label>First Name</label>
-      <input type="text" ng-model="contact.firstName" />
+
+<div class="intake-content">
+
+  <div class="input-group first">
+    <div class="row">
+      <div class="column small-6">
+        <label>First Name</label>
+        <input type="text" ng-model="contact.firstName" />
+      </div>
+      <div class="column small-6">
+        <label>Last Name</label>
+        <input type="text" ng-model="contact.lastName" />
+      </div>
     </div>
-    <div class="column small-6">
-      <label>Last Name</label>
-      <input type="text" ng-model="contact.lastName" />
+
+    <div class="row">
+      <div class="column small-6">
+        <label>Phone</label>
+        <input type="text" ng-model="contact.phone" />
+      </div>
+      <div class="column small-6">
+        <label>Email*</label>
+        <input type="email" ng-blur="validateInput('email')" name="email" ng-model="contact.email" required />
+        <span class="error" ng-show="isInvalid('email')">Please enter your email</span>
+      </div>
     </div>
   </div>
 
-  <div class="row">
-    <div class="column small-6">
-      <label>Phone</label>
-      <input type="text" ng-model="contact.phone" />
-    </div>
-    <div class="column small-6">
-      <label>Email</label>
-      <input type="text" ng-model="contact.email" />
-    </div>
+  <div class="input-group">
+    <label>Preferred method of contact</label>
+    <input type="radio" ng-model="contact.method" name="contact-method" value="Email" id="contact-method-email"><label for="contact-method-email">Email</label>
+    <input type="radio" ng-model="contact.method" name="contact-method" value="Phone" id="contact-method-phone"><label for="contact-method-phone">Phone</label>
   </div>
-</div>
 
-<div class="input-group">
-  <label>Preferred method of contact</label>
-  <input type="radio" ng-model="contact.method" name="contact-method" value="Email" id="contact-method-email"><label for="contact-method-email">Email</label>
-  <input type="radio" ng-model="contact.method" name="contact-method" value="Phone" id="contact-method-phone"><label for="contact-method-phone">Phone</label>
-</div>
+  <div class="input-group">
+    <label>Any additional comments or things we should know?</label>
+    <textarea ng-model="contact.comments" />
+  </div>
 
-<div class="input-group">
-  <label>Any additional comments or things we should know?</label>
-  <textarea ng-model="contact.comments" />
+  <a class="button large pull-right" ng-click="validateForm('#/intake/ready#intake-top')">Next Step</a>
 </div>
-
-<a class="button large pull-right" href="#/intake/ready#intake-top">Next Step</a>

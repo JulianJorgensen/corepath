@@ -7,6 +7,7 @@ avenueApp.directive('choices', function() {
             defaultImage: '@',
             question: '@',
             questionId: '@',
+            size: '@',
             first: '@',
             firstDescription: '@',
             firstImage: '@',

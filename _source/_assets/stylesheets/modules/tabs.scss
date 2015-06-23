@@ -3,12 +3,17 @@
 @import 'variables_custom';
 @import 'mixins';
 
-.tabs-naked{
+.marquee-tabs{
   position: absolute;
   bottom: $spacing-default;
+  right: $spacing-large;
   @include no-bullets;
   .tab-title{
     display: inline-block;
+    color: $white;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-left: $spacing-default;
 
     &.active{
       border-bottom: 2px solid;

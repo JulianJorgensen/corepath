@@ -1,70 +1,78 @@
 <div class="intake-header white">
   <h1>2. The place</h1>
-  <p>Let&rsquo;s get into the details of the space you&rsquo;re looking to design. Tell us about the place.</p>
+  <p class="intake-subheader">Let&rsquo;s get into the details of the space you&rsquo;re looking to design. Tell us about the place.</p>
 </div>
 
-<div class="input-group first">
-  <label>What's the address of your home?</label>
-  <input type="text" ng-model="place.address" />
 
-  <input type="radio" ng-model="place.city" name="address-city" value="Vancouver" id="address-vancouver"><label for="address-vancouver">Vancouver</label>
-  <input type="radio" ng-model="place.city" name="address-city" value="Toronto" id="address-toronto"><label for="address-toronto">Toronto</label>
-</div>
+<div class="intake-content">
 
-<div class="input-group">
-  <label>How long do you plan to live at this address?</label>
-  <input type="radio" ng-model="place.length" name="address-length" value="less than 1 year" id="address-1y"><label for="address-1y">Under 1 Yr</label>
-  <input type="radio" ng-model="place.length" name="address-length" value="1-3 years" id="address-1-3y"><label for="address-1-3y">1-3 Yrs</label>
-  <input type="radio" ng-model="place.length" name="address-length" value="3-5 years" id="address-3-5y"><label for="address-3-5y">3-5 Yrs</label>
-  <input type="radio" ng-model="place.length" name="address-length" value="5+ years" id="address-5y"><label for="address-5y">5+ Yrs</label>
-</div>
+  <div class="input-group first">
+    <label>What's the address of your home?</label>
+    <input type="text" ng-model="place.address" />
 
-<div class="input-group">
-  <label>Who will be living in the home?</label>
-  <div class="row">
-    <div class="column small-12">
-      <input type="checkbox" ng-model="place.livingWith.me" name="who-only-me" value="Only me" id="who-only-me"><label for="who-only-me">Only me</label>
-      <input type="checkbox" ng-model="place.livingWith.partner" name="who-partner" value="Partner/Spouse" id="who-partner"><label for="who-partner">Partner/Spouse</label>
-      <input type="checkbox" ng-model="place.livingWith.parents" name="who-parents" value="Parents/grandparents" id="who-parents"><label for="who-parents">Parents/grandparents</label>
+    <input type="radio" ng-model="place.city" name="address-city" value="Vancouver" id="address-vancouver"><label for="address-vancouver">Vancouver</label>
+    <input type="radio" ng-model="place.city" name="address-city" value="Toronto" id="address-toronto"><label for="address-toronto">Toronto</label>
+  </div>
+
+  <div class="input-group">
+    <label>How long do you plan to live at this address?</label>
+    <input type="radio" ng-model="place.length" name="address-length" value="less than 1 year" id="address-1y"><label for="address-1y">Under 1 Yr</label>
+    <input type="radio" ng-model="place.length" name="address-length" value="1-3 years" id="address-1-3y"><label for="address-1-3y">1-3 Yrs</label>
+    <input type="radio" ng-model="place.length" name="address-length" value="3-5 years" id="address-3-5y"><label for="address-3-5y">3-5 Yrs</label>
+    <input type="radio" ng-model="place.length" name="address-length" value="5+ years" id="address-5y"><label for="address-5y">5+ Yrs</label>
+  </div>
+
+  <div class="input-group">
+    <label>Who will be living in the home?</label>
+    <div class="row">
+      <div class="column small-12">
+        <input type="checkbox" ng-model="place.livingWith.me" name="who-only-me" value="Only me" id="who-only-me"><label for="who-only-me">Only me</label>
+        <input type="checkbox" ng-model="place.livingWith.partner" name="who-partner" value="Partner/Spouse" id="who-partner"><label for="who-partner">Partner/Spouse</label>
+      </div>
+    </div>
+    <div class="row padding-top-default">
+      <div class="column small-12">
+        <input type="checkbox" ng-model="place.livingWith.parents" name="who-parents" value="Parents/grandparents" id="who-parents"><label for="who-parents">Parents/grandparents</label>
+        <input type="checkbox" ng-model="place.livingWith.roommates" name="who-roommates" value="Roommates" id="who-roommates"><label for="who-roommates">Roommates</label>
+      </div>
+    </div>
+    <div class="row padding-top-default">
+      <div class="column small-12">
+        <input type="checkbox" ng-model="place.children" name="who-children" value="Children" id="who-children"><label for="who-children">Children</label>
+        <input type="text" ng-model="place.childrenCount" ng-show="place.children" placeholder="How many?" class="input-small" />
+      </div>
     </div>
   </div>
-  <div class="row padding-top-default">
-    <div class="column small-12">
-      <input type="checkbox" ng-model="place.livingWith.roommates" name="who-roommates" value="Roommates" id="who-roommates"><label for="who-roommates">Roommates</label>
-      <input type="checkbox" ng-model="place.children" name="who-children" value="Children" id="who-children"><label for="who-children">Children</label>
-      <input type="text" ng-model="place.childrenCount" ng-show="place.children" placeholder="How many?" class="input-small" />
+
+  <div class="input-group">
+    <label>Does your home have a patio?</label>
+    <input type="radio" ng-model="place.patio" name="home-patio" value="Yes" id="home-patio-yes"><label for="home-patio-yes">Yes</label>
+    <input type="radio" ng-model="place.patio" name="home-patio" value="No" id="home-patio-no"><label for="home-patio-no">No</label>
+  </div>
+
+  <div class="input-group">
+    <div class="row">
+      <div class="column small-6">
+        <label>How many bedrooms?</label>
+        <input type="radio" ng-model="place.bedrooms" name="home-bedrooms" value="1" id="home-bedrooms-1"><label for="home-bedrooms-1">1</label>
+        <input type="radio" ng-model="place.bedrooms" name="home-bedrooms" value="2" id="home-bedrooms-2"><label for="home-bedrooms-2">2</label>
+        <input type="radio" ng-model="place.bedrooms" name="home-bedrooms" value="3" id="home-bedrooms-3"><label for="home-bedrooms-3">3</label>
+        <input type="radio" ng-model="place.bedrooms" name="home-bedrooms" value="4" id="home-bedrooms-4"><label for="home-bedrooms-4">4</label>
+      </div>
+      <div class="column small-6">
+        <label>How many bathrooms?</label>
+        <input type="radio" ng-model="place.bathrooms" name="home-bathrooms" value="1" id="home-bathrooms-1"><label for="home-bathrooms-1">1</label>
+        <input type="radio" ng-model="place.bathrooms" name="home-bathrooms" value="2" id="home-bathrooms-2"><label for="home-bathrooms-2">2</label>
+        <input type="radio" ng-model="place.bathrooms" name="home-bathrooms" value="3" id="home-bathrooms-3"><label for="home-bathrooms-3">3</label>
+        <input type="radio" ng-model="place.bathrooms" name="home-bathrooms" value="4" id="home-bathrooms-4"><label for="home-bathrooms-4">4</label>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="input-group">
-  <label>Does your home have a patio?</label>
-  <input type="radio" ng-model="place.patio" name="home-patio" value="Yes" id="home-patio-yes"><label for="home-patio-yes">Yes</label>
-  <input type="radio" ng-model="place.patio" name="home-patio" value="No" id="home-patio-no"><label for="home-patio-no">No</label>
-</div>
-
-<div class="input-group">
-  <div class="row">
-    <div class="column small-6">
-      <label>How many bedrooms?</label>
-      <input type="radio" ng-model="place.bedrooms" name="home-bedrooms" value="1" id="home-bedrooms-1"><label for="home-bedrooms-1">1</label>
-      <input type="radio" ng-model="place.bedrooms" name="home-bedrooms" value="2" id="home-bedrooms-2"><label for="home-bedrooms-2">2</label>
-      <input type="radio" ng-model="place.bedrooms" name="home-bedrooms" value="3" id="home-bedrooms-3"><label for="home-bedrooms-3">3</label>
-      <input type="radio" ng-model="place.bedrooms" name="home-bedrooms" value="4" id="home-bedrooms-4"><label for="home-bedrooms-4">4</label>
-    </div>
-    <div class="column small-6">
-      <label>How many bathrooms?</label>
-      <input type="radio" ng-model="place.bathrooms" name="home-bathrooms" value="1" id="home-bathrooms-1"><label for="home-bathrooms-1">1</label>
-      <input type="radio" ng-model="place.bathrooms" name="home-bathrooms" value="2" id="home-bathrooms-2"><label for="home-bathrooms-2">2</label>
-      <input type="radio" ng-model="place.bathrooms" name="home-bathrooms" value="3" id="home-bathrooms-3"><label for="home-bathrooms-3">3</label>
-      <input type="radio" ng-model="place.bathrooms" name="home-bathrooms" value="4" id="home-bathrooms-4"><label for="home-bathrooms-4">4</label>
-    </div>
+  <div class="input-group">
+    <label>What furniture items do you have now and want incorporated into the project?</label>
+    <textarea ng-model="place.furnitureItems"></textarea>
   </div>
-</div>
 
-<div class="input-group">
-  <label>What furniture items do you have now and want incorporated into the project?</label>
-  <textarea ng-model="place.furnitureItems"></textarea>
+  <a class="button large pull-right" href="#/intake/project#intake-top">Next Step</a>
 </div>
-
-<a class="button large pull-right" href="#/intake/project#intake-top">Next Step</a>

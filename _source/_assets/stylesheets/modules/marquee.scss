@@ -47,13 +47,13 @@
 
     .marquee-background{
       &.bg-1{
-        background-image: image-url('affordable-home-furniture-reviewhigh-resolution-image--home-design-ideas-online-furniture-stores-9gs7tx2h.jpg');
+        background-image: image-url('2048-4.jpg');
       }
       &.bg-2{
         background-image: image-url('2048-3.jpg');
       }
       &.bg-3{
-        background-image: image-url('2048-4.jpg');
+        background-image: image-url('affordable-home-furniture-reviewhigh-resolution-image--home-design-ideas-online-furniture-stores-9gs7tx2h.jpg');
       }
     }
 
@@ -68,7 +68,7 @@
       }
       .marquee-landing-tabs{
         @include flex(1);
-        max-width: 400px;
+        max-width: 500px;
         padding-left: $spacing-default;
       }
     }

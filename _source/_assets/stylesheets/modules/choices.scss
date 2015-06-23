@@ -72,6 +72,10 @@
           fill: $black;
         }
       }
+
+      &.large{
+        @include transform(scale(1.5));        
+      }
     }
   }
 }

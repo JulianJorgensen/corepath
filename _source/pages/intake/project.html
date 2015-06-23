@@ -1,61 +1,66 @@
 <div class="intake-header white">
   <h1>3. The project</h1>
-  <p>Now for details about the project itself</p>
+  <p class="intake-subheader">Now for details about the project itself</p>
 </div>
 
+<div class="intake-content">
 
-<div class="input-group first">
-  <label>What's the goal of this project?</label>
-  <input type="radio" ng-model="project.goal" name="project-goal" value="Furnish a new space" id="project-goal-new-space"><label for="project-goal-new-space">Furnish a new space</label>
-  <input type="radio" ng-model="project.goal" name="project-goal" value="Update an existing space" id="project-goal-update"><label for="project-goal-update">Update an existing space</label>
-</div>
+  <div class="input-group first">
+    <label>What's the goal of this project?</label>
+    <input type="radio" ng-model="project.goal" name="project-goal" value="Furnish a new space" id="project-goal-new-space"><label for="project-goal-new-space">Furnish a new space</label>
+    <input type="radio" ng-model="project.goal" name="project-goal" value="Update an existing space" id="project-goal-update"><label for="project-goal-update">Update an existing space</label>
+  </div>
 
-
-<div class="input-group">
-  <div class="row">
-    <div class="column small-6">
-      <label>Move-in-Date (if applicable)</label>
-      <input type="text" ng-model="project.moveInDate" id="move-in-date" />
-    </div>
-    <div class="column small-6">
-      <label>Purchasing Date Commences</label>
-      <input type="text" ng-model="project.purchaseDate" id="purchase-date" />
+  <div class="input-group">
+    <div class="row">
+      <div class="column small-6">
+        <label>Move-in-Date (if applicable)</label>
+        <input type="text" ng-model="project.moveInDate" id="move-in-date" />
+      </div>
+      <div class="column small-6">
+        <label>Purchasing Date Commences</label>
+        <input type="text" ng-model="project.purchaseDate" id="purchase-date" />
+      </div>
     </div>
   </div>
-</div>
 
-<div class="input-group">
-  <label>What is your budget for this project?</label>
-  <input type="radio" ng-model="project.budget" name="project-budget" value="Under $5000" id="project-budget-1"><label for="project-budget-1">Under $5,000</label>
-  <input type="radio" ng-model="project.budget" name="project-budget" value="$5000 - 10000" id="project-budget-2"><label for="project-budget-2">$5,000 - 10,000</label>
-  <input type="radio" ng-model="project.budget" name="project-budget" value="$10000 - 15000" id="project-budget-3"><label for="project-budget-3">$10,000 - 15,000</label>
-  <input type="radio" ng-model="project.budget" name="project-budget" value="$15000 +" id="project-budget-4"><label for="project-budget-4">$15,000+</label>
-</div>
+  <div class="input-group">
+    <label>What is your budget for this project?</label>
+    <input type="radio" ng-model="project.budget" name="project-budget" value="Under $5000" id="project-budget-1"><label for="project-budget-1">Under $5,000</label>
+    <input type="radio" ng-model="project.budget" name="project-budget" value="$5000 - 10000" id="project-budget-2"><label for="project-budget-2">$5,000 - 10,000</label>
+    <input type="radio" ng-model="project.budget" name="project-budget" value="$10000 - 15000" id="project-budget-3"><label for="project-budget-3">$10,000 - 15,000</label>
+    <div class="row padding-top-default">
+      <div class="column small-12">
+        <input type="radio" ng-model="project.budget" name="project-budget" value="$15000 +" id="project-budget-4"><label for="project-budget-4">$15,000+</label>
+      </div>
+    </div>
+  </div>
 
-<div class="input-group">
-  <label>What is your most important purchasing criteria?</label>
-  <input type="radio" ng-model="project.criteria1" name="project-purchase-criteria" value="Price" id="project-purchase-criteria-1"><label for="project-purchase-criteria-1">Price</label>
-  <input type="radio" ng-model="project.criteria1" name="project-purchase-criteria" value="Quality" id="project-purchase-criteria-2"><label for="project-purchase-criteria-2">Quality</label>
-  <input type="radio" ng-model="project.criteria1" name="project-purchase-criteria" value="Style" id="project-purchase-criteria-3"><label for="project-purchase-criteria-3">Style</label>
-  <input type="radio" ng-model="project.criteria1" name="project-purchase-criteria" value="Function" id="project-purchase-criteria-4"><label for="project-purchase-criteria-4">Function</label>
-</div>
+  <div class="input-group">
+    <label>What is your most important purchasing criteria?</label>
+    <input type="radio" ng-model="project.criteria1" name="project-purchase-criteria" value="Price" id="project-purchase-criteria-1"><label for="project-purchase-criteria-1">Price</label>
+    <input type="radio" ng-model="project.criteria1" name="project-purchase-criteria" value="Quality" id="project-purchase-criteria-2"><label for="project-purchase-criteria-2">Quality</label>
+    <input type="radio" ng-model="project.criteria1" name="project-purchase-criteria" value="Style" id="project-purchase-criteria-3"><label for="project-purchase-criteria-3">Style</label>
+    <input type="radio" ng-model="project.criteria1" name="project-purchase-criteria" value="Function" id="project-purchase-criteria-4"><label for="project-purchase-criteria-4">Function</label>
+  </div>
 
-<div class="input-group" ng-if="project.criteria1">
-  <label>After {[ project.criteria1 ]}, what is your next most important purchasing criteria?</label>
-  <input type="radio" ng-model="project.criteria2" ng-disabled="project.criteria1 == 'Price'" name="project-purchase-criteria-secondary" value="Price" id="project-purchase-criteria-secondary-1"><label for="project-purchase-criteria-secondary-1">Price</label>
-  <input type="radio" ng-model="project.criteria2" ng-disabled="project.criteria1 == 'Quality'" name="project-purchase-criteria-secondary" value="Quality" id="project-purchase-criteria-secondary-2"><label for="project-purchase-criteria-secondary-2">Quality</label>
-  <input type="radio" ng-model="project.criteria2" ng-disabled="project.criteria1 == 'Style'" name="project-purchase-criteria-secondary" value="Style" id="project-purchase-criteria-secondary-3"><label for="project-purchase-criteria-secondary-3">Style</label>
-  <input type="radio" ng-model="project.criteria2" ng-disabled="project.criteria1 == 'Function'" name="project-purchase-criteria-secondary" value="Function" id="project-purchase-criteria-secondary-4"><label for="project-purchase-criteria-secondary-4">Function</label>
-</div>
+  <div class="input-group" ng-if="project.criteria1">
+    <label>After {[ project.criteria1 ]}, what is your next most important purchasing criteria?</label>
+    <input type="radio" ng-model="project.criteria2" ng-disabled="project.criteria1 == 'Price'" name="project-purchase-criteria-secondary" value="Price" id="project-purchase-criteria-secondary-1"><label for="project-purchase-criteria-secondary-1">Price</label>
+    <input type="radio" ng-model="project.criteria2" ng-disabled="project.criteria1 == 'Quality'" name="project-purchase-criteria-secondary" value="Quality" id="project-purchase-criteria-secondary-2"><label for="project-purchase-criteria-secondary-2">Quality</label>
+    <input type="radio" ng-model="project.criteria2" ng-disabled="project.criteria1 == 'Style'" name="project-purchase-criteria-secondary" value="Style" id="project-purchase-criteria-secondary-3"><label for="project-purchase-criteria-secondary-3">Style</label>
+    <input type="radio" ng-model="project.criteria2" ng-disabled="project.criteria1 == 'Function'" name="project-purchase-criteria-secondary" value="Function" id="project-purchase-criteria-secondary-4"><label for="project-purchase-criteria-secondary-4">Function</label>
+  </div>
 
-<div class="input-group">
-  <label>What furniture items do you have now and want incorporated into the project?</label>
-  <textarea ng-model="project.furniture"></textarea>
-</div>
+  <div class="input-group">
+    <label>What furniture items do you have now and want incorporated into the project?</label>
+    <textarea ng-model="project.furniture"></textarea>
+  </div>
 
-<div class="input-group">
-  <label>Did anyone refer you to Avenue? Let us know so we can thank them.</label>
-  <input type="text" ng-model="project.referral" />
-</div>
+  <div class="input-group">
+    <label>Did anyone refer you to Avenue? Let us know so we can thank them.</label>
+    <input type="text" ng-model="project.referral" />
+  </div>
 
-<a class="button large pull-right" href="#/intake/contact#intake-top">Next Step</a>
+  <a class="button large pull-right" href="#/intake/contact#intake-top">Next Step</a>
+</div>

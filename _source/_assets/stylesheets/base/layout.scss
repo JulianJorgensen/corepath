@@ -102,6 +102,11 @@ body{
   margin: $spacing-small 0;
   clear: both;
 
+  &.absolute{
+    position: absolute;
+    left: 50%;
+  }
+
   &.xlarge{
     height: $spacing-xlarge;
     margin: $spacing-large 0;
@@ -153,4 +158,50 @@ body{
   @include display(flex);
   @include align-items(center);
   @include justify-content(center);
+}
+
+
+
+.flex-grid{
+  &-1{
+    width: flex-grid(1);
+  }
+  &-2{
+    width: flex-grid(2);
+  }
+  &-3{
+    width: flex-grid(3);
+  }
+  &-4{
+    width: flex-grid(4);
+  }
+  &-5{
+    width: flex-grid(5);
+  }
+  &-6{
+    width: flex-grid(6);
+  }
+  &-7{
+    width: flex-grid(7);
+  }
+  &-8{
+    width: flex-grid(8);
+  }
+  &-9{
+    width: flex-grid(9);
+  }
+  &-10{
+    width: flex-grid(10);
+  }
+  &-11{
+    width: flex-grid(11);
+  }
+  &-12{
+    width: flex-grid(12);
+  }
+}
+
+
+.position-relative{
+  position: relative;
 }

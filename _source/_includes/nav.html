@@ -7,7 +7,7 @@
       <ul class="nav-items pull-right">
           <!-- <li class="nav-item"><a href="#/about">About Us</a></li> -->
           <li class="nav-item"><a href="#/how">How it Works</a></li>
-          <li class="nav-contact"><a><img src="{% asset_path 'icons/contact.svg' %}" /></a></li>
+          <li class="nav-contact" ng-click="toggleContact()" ng-class="{active: contactActivated}"><a><img src="{% asset_path 'icons/contact.svg' %}" /></a></li>
       </ul>
     </div>
   </nav>
@@ -15,7 +15,7 @@
 
 <!-- CONTACT US -->
 <!-- ========== -->
-<section id="contact">
+<section id="contact" ng-class="{active: contactActivated}">
   <div class="container">
     <div class="row">
       <div class="column small-4">

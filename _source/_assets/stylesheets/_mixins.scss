@@ -1,9 +1,9 @@
-@mixin box-shadow($color, $opacity: 0.3)
+@mixin box-shadow($color: $gray80, $size1: 1px, $size2: 6px, $size3: 15px)
 {
-  -webkit-box-shadow: rgba($color, $opacity) 0 0 10px;
-  -moz-box-shadow: rgba($color, $opacity) 0 0 10px;
-  -ms-box-shadow: rgba($color, $opacity) 0 0 10px;
-  box-shadow: rgba($color, $opacity) 0 0 10px;
+  -webkit-box-shadow: $color $size1 $size2 $size3;
+  -moz-box-shadow: $color $size1 $size2 $size3;
+  -ms-box-shadow: $color $size1 $size2 $size3;
+  box-shadow: $color $size1 $size2 $size3;
 }
 
 @mixin no-bullets{
