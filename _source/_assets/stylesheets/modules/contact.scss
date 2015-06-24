@@ -6,7 +6,7 @@
 section#contact{
   position: absolute;
   background-color: $white;
-  top: 150px;
+  top: 125px;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -24,7 +24,7 @@ section#contact{
   }
 
   #mce-EMAIL{
-    height: auto;    
+    height: auto;
   }
 
   &.active{
