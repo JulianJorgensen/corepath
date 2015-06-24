@@ -34,10 +34,15 @@
   <div class="intake-header white">
   </div>
 
-  <div class="intake-content">
-    <h1>Thank you - information received!</h1>
+  <div ng-show="formSuccess" class="intake-content">
+    <h1>Received - Thank you!</h1>
     <p>There's nothing left to do but relax. An Avenue representative will be in contact with you soon.</p>
-
     <i class="fa fa-check fa-5x text-green" />
+  </div>
+  <div ng-show="formFailure" class="intake-content">
+    <h1>Uh oh</h1>
+    <p>Something went wrong, if you continue to have trouble please contact us directly at <a href="mailto:hello@avenuespaces.com">hello@avenuespaces.com</a>.</p>
+    <div><a class="button large" ng-click="resetForm()">Try Again</a></div>
+    <!-- <i class="fa fa-times fa-5x text-red" /> -->
   </div>
 </div>

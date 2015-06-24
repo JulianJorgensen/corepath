@@ -125,6 +125,8 @@ avenueApp.controller('intakeController', ['$scope', 'pageInfo', '$http', functio
   }
 
   $scope.formSubmitted = false;
+  $scope.formSuccess = false;
+  $scope.formFailure = false;
 
   $scope.sendForm = function() {
     var params = {
@@ -135,12 +137,12 @@ avenueApp.controller('intakeController', ['$scope', 'pageInfo', '$http', functio
     }
     $http.post('https://avenue-spaces.herokuapp.com/email', params).
     success(function(data, status, headers, config) {
-      console.log('success', data, status, headers, config);
       $scope.formSubmitted = true;
+      $scope.formSuccess = true;
     }).
     error(function(data, status, headers, config) {
-      console.log('error', data, status, headers, config);
-      alert('Something went wrong, please contact hello@avenuespaces.com');
+      $scope.formSubmitted = true;
+      $scope.formFailure = true;
     });
 
   };

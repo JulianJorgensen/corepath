@@ -46,8 +46,6 @@ avenueApp.directive('choices', ['styleResponseCalculator', function(styleRespons
 
           scope.selectChoice = function (choice){
 
-            console.log('calling selectChoice...');
-
               scope.choice = choice;
 
               // set button
