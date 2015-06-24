@@ -13,7 +13,7 @@
     width: 100%;
     height: 400px;
     z-index: -1;
-    @include cover(center);
+    @include cover(center, center);
   }
 
   .top-bar .logo svg{

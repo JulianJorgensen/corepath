@@ -51,3 +51,15 @@
 .answer{
   text-decoration: underline;
 }
+
+
+#style-analysis-header{
+  line-height: rem-calc(45);
+}
+
+
+#question-cuisine{
+  .choices-marquee .choices-marquee-image.choices-image-2{
+    @include cover(top, center);
+  }
+}

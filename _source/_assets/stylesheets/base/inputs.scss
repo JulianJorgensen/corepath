@@ -2,7 +2,6 @@
 @import '../variables_custom';
 @import '../variables_foundation';
 
-
 label{
   margin-bottom: $spacing-default;
 }
@@ -14,7 +13,6 @@ textarea{
 input{
   font-size: rem-calc(18);
 }
-
 
 .inline-list{
   margin-bottom: 0;
@@ -37,7 +35,6 @@ input.input-small{
   display: inline-block;
   width: 150px;
 }
-
 
 // CUSTOM RADIOS AND CHECKBOXES
 // ============================
@@ -73,9 +70,6 @@ input[type="checkbox"] {
     }
   }
 }
-
-
-
 
 
 // CHECKBOX SPECIFIC STYLES

@@ -47,37 +47,37 @@
 
   #how-marquee-1{
     background-image: image-url('how-1.png');
-    @include cover(center);
+    @include cover(center, center);
     height: 400px;
   }
 
   #how-marquee-2{
     background-image: image-url('how-2.png');
-    @include cover(center);
+    @include cover(center, center);
     height: 400px;
   }
 
   #how-marquee-3{
     background-image: image-url('how-3.png');
-    @include cover(center);
+    @include cover(center, center);
     height: 300px;
   }
 
   #how-marquee-4{
     background-image: image-url('how-4.png');
-    @include cover(center);
+    @include cover(center, center);
     height: 300px;
   }
 
   #how-marquee-5{
     background-image: image-url('how-5.png');
-    @include cover(center);
+    @include cover(center, center);
     height: 400px;
   }
 
   #how-marquee-6{
     background-image: image-url('how-6.png');
-    @include cover(center);
+    @include cover(center, center);
     height: 500px;
   }
 }

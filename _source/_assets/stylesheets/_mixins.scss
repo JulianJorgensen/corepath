@@ -13,8 +13,8 @@
 }
 
 
-@mixin cover($position){
+@mixin cover($positionX, $positionY){
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: $position $position;
+  background-position: $positionX $positionY;
 }

@@ -23,8 +23,12 @@ section#contact{
     border-bottom: 0;
   }
 
+  #mce-EMAIL{
+    height: auto;    
+  }
+
   &.active{
-    height: 270px;
+    height: 240px;
     @include box-shadow($gray80, 1px, 27px, 15px);
   }
 }

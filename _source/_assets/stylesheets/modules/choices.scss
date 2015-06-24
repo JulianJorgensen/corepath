@@ -238,7 +238,7 @@
     height: inherit;
     width: inherit;
     opacity: 0;
-    @include cover(center);
+    @include cover(center, center);
     @include transition(all $transition-speed-slow);
 
     &.active{
@@ -264,7 +264,7 @@
     height: 320px;
     width: 320px;
     border-radius: 50%;
-    @include cover(center);
+    @include cover(center, center);
   }
 
   &.active{
@@ -313,7 +313,7 @@
     left: 0;
     z-index: 0;
     opacity: 0;
-    @include cover(center);
+    @include cover(center, center);
     @include transition(all $transition-speed-slow);
 
     &.active{
@@ -344,7 +344,7 @@
     width: 100%;
     height: 100%;
     opacity: 0;
-    @include cover(center);
+    @include cover(center, center);
     @include transition(all $transition-speed-slow);
 
     &.choices-marquee-image-default{
