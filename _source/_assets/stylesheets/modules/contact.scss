@@ -9,11 +9,10 @@ section#contact{
   top: 150px;
   left: 0;
   width: 100%;
-  max-height: 0;
   overflow: hidden;
+  height: 0;
   z-index: 999;
-  @include box-shadow($gray80, 1px, 27px, 15px);
-  @include transition(max-height $transition-speed-default);
+  @include transition(all $transition-speed-default);
 
   .container{
     padding: 0;
@@ -25,6 +24,7 @@ section#contact{
   }
 
   &.active{
-    max-height: 300px;
+    height: 270px;
+    @include box-shadow($gray80, 1px, 27px, 15px);
   }
 }

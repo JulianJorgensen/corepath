@@ -109,7 +109,7 @@ avenueApp.controller('intakeController', ['$scope', 'pageInfo', '$http', functio
 
 
   $scope.isInvalid = function(field){
-    return $scope.intakeForm[field].$invalid && $scope.intakeForm[field].blur && $scope.intakeForm[field].$dirty;
+    return ($scope.intakeForm[field].$invalid && $scope.intakeForm[field].blur && $scope.intakeForm[field].$dirty) || $scope.validated;
   };
 
   $scope.validateInput = function(field){
@@ -119,9 +119,10 @@ avenueApp.controller('intakeController', ['$scope', 'pageInfo', '$http', functio
   $scope.validateForm = function(newUrl){
     if (!$scope.intakeForm.$invalid){
       window.location.href = newUrl;
+    }else{
+      $scope.validated = true;
     }
   }
-
 
   $scope.formSubmitted = false;
 
