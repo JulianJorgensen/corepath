@@ -6,12 +6,12 @@
 // PUSH SCALE EFFECT ON BUTTON PRESS
 .cta, .choices li{
   svg, .choices-thumb-image{
-    @include transition(transform $transition-speed-default);
+    // @include transition(transform $transition-speed-default);
   }
 
   &:active{
     .button, svg, .choices-thumb-image{
-      @include transform(scale(0.9));
+      // @include transform(scale(0.9));
     }
   }
 }
@@ -19,7 +19,7 @@
 .button{
   font-size: 1.3rem;
   line-height: 1.5rem;
-  @include transition(transform $transition-speed-fast);
+  // @include transition(transform $transition-speed-fast);
 
   &:active{
     @include transform(scale(0.9));

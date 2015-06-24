@@ -1,6 +1,6 @@
 // CHOICES BUTTONS DIRECTIVE
 // ============================
-avenueApp.directive('choices', function() {
+avenueApp.directive('choices', ['styleResponseCalculator', function(styleResponseCalculator) {
     return {
         restrict: 'E',
         scope: {
@@ -37,50 +37,51 @@ avenueApp.directive('choices', function() {
             return 'pages/templates/choices-horizontal.html';
           }
         },
-        link: function(scope, element, attrs) {
-          scope.currentImage = scope.defaultImage;
-        },
-        controller: function($scope, skrollrService, styleResponseCalculator) {
-            $scope.selectChoice = function (setChoice){
-                $scope.choice = setChoice;
+        link: function(scope, elem, attrs) {
 
-                // change the image accordingly
-                if (setChoice == '1'){
-                  $scope.currentImage = $scope.firstImage;
+          console.log('linking...');
 
-                  // update answer
-                  styleResponseCalculator.updateAnswers($scope.questionId, 'a');
+          // show default image
+          elem.find('.choices-image-default').addClass('active');
 
-                }else if (setChoice == '2'){
-                  $scope.currentImage = $scope.secondImage;
+          scope.selectChoice = function (choice){
 
-                  // update answer
-                  styleResponseCalculator.updateAnswers($scope.questionId, 'b');
+              scope.choice = choice;
 
-                }else{
-                  $scope.currentImage = $scope.thirdImage;
+              // set button
+              // elem.find('.choices .choice').removeClass('active');
+              // elem.find('.choices .choice:nth-child(' + choice + ')').addClass('active');
 
-                  // update answer
-                  styleResponseCalculator.updateAnswers($scope.questionId, 'c');
-                }
+              // update image
+              elem.find('.choices-image, .choices-marquee-image, .choices-thumb-image, .choices-background-image').removeClass('active');
+              elem.find('.choices-image-' + choice).addClass('active');
 
-                if ($($scope.activateContent).hasClass('hide')){
-                  $($scope.activateContent).show();
+              // update description
+              // elem.find('.choice-description').removeClass('active');
+              // elem.find('.choice-description-' + choice).addClass('active');
 
-                  skrollrService.skrollr().then(function(skrollr){
-                    skrollr.refresh();
-                  });
-                }
-            };
-            $scope.isSelected = function(checkChoice) {
-                return $scope.choice === checkChoice;
-            };
-            $scope.anyIsSelected = function() {
-                return ($scope.choice === 1 || $scope.choice === 2 || $scope.choice === 3);
-            };
+              // update answer
+              // if (scope.choice == '1'){
+              //   styleResponseCalculator.updateAnswers(scope.questionId, 'a');
+              // }else if (scope.choice == '2'){
+              //   styleResponseCalculator.updateAnswers(scope.questionId, 'b');
+              // }else{
+              //   styleResponseCalculator.updateAnswers(scope.questionId, 'c');
+              // }
+
+              // show next section
+              if ($(scope.activateContent).hasClass('hide')){
+                $(scope.activateContent).show();
+
+                // skrollrService.skrollr().then(function(skrollr){
+                //   skrollr.refresh();
+                // });
+              }
+          };
+
         }
     };
-});
+}]);
 
 
 // choices buttons directive
