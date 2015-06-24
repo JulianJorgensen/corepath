@@ -2,10 +2,10 @@
 <!-- ========================== -->
 <div class="choices-container vertical color-{{ choicesColor || 'default' }}">
   <div class="row choices-background padding-xlarge">
-    <div class="choices-background-image" ng-class="{'active': !anyIsSelected()}" style="background-image: url('{{ defaultImage }}');"></div>
-    <div class="choices-background-image" ng-class="{'active': isSelected(1)}" style="background-image: url('{{ firstImage }}');"></div>
-    <div class="choices-background-image" ng-class="{'active': isSelected(2)}" style="background-image: url('{{ secondImage }}');"></div>
-    <div class="choices-background-image" ng-class="{'active': isSelected(3)}" style="background-image: url('{{ thirdImage }}');"></div>
+    <div class="choices-background-image choices-image-default" style="background-image: url('{{ defaultImage }}');"></div>
+    <div class="choices-background-image choices-image-1" style="background-image: url('{{ firstImage }}');"></div>
+    <div class="choices-background-image choices-image-2" style="background-image: url('{{ secondImage }}');"></div>
+    <div class="choices-background-image choices-image-3" style="background-image: url('{{ thirdImage }}');"></div>
 
     <div class="container">
       <div class="row">
@@ -25,13 +25,13 @@
 
   <div class="row">
     <div class="column small-12 margin-top-large">
-      <div class="choice-description flex-center" ng-show="isSelected(1)">
+      <div class="choice-description choice-description-1 flex-center">
         <p class="text-center">{{ firstDescription }}</p>
       </div>
-      <div class="choice-description flex-center" ng-show="isSelected(2)">
+      <div class="choice-description choice-description-2 flex-center">
         <p class="text-center">{{ secondDescription }}</p>
       </div>
-      <div class="choice-description flex-center" ng-show="isSelected(3)">
+      <div class="choice-description choice-description-3 flex-center">
         <p class="text-center">{{ thirdDescription }}</p>
       </div>
     </div>
