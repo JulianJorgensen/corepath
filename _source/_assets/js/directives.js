@@ -1,6 +1,6 @@
 // CHOICES BUTTONS DIRECTIVE
 // ============================
-avenueApp.directive('choices', ['styleResponseCalculator', function(styleResponseCalculator) {
+avenueApp.directive('choices', ['styleResponseCalculator', 'skrollrService', function(styleResponseCalculator, skrollrService) {
     return {
         restrict: 'E',
         scope: {
@@ -39,8 +39,6 @@ avenueApp.directive('choices', ['styleResponseCalculator', function(styleRespons
         },
         link: function(scope, elem, attrs) {
 
-          console.log('linking...');
-
           // show default image
           elem.find('.choices-image-default').addClass('active');
 
@@ -49,25 +47,25 @@ avenueApp.directive('choices', ['styleResponseCalculator', function(styleRespons
               scope.choice = choice;
 
               // set button
-              // elem.find('.choices .choice').removeClass('active');
-              // elem.find('.choices .choice:nth-child(' + choice + ')').addClass('active');
+              elem.find('.choices .choice').removeClass('active');
+              elem.find('.choices .choice:nth-child(' + choice + ')').addClass('active');
 
               // update image
               elem.find('.choices-image, .choices-marquee-image, .choices-thumb-image, .choices-background-image').removeClass('active');
               elem.find('.choices-image-' + choice).addClass('active');
 
               // update description
-              // elem.find('.choice-description').removeClass('active');
-              // elem.find('.choice-description-' + choice).addClass('active');
+              elem.find('.choice-description').removeClass('active');
+              elem.find('.choice-description-' + choice).addClass('active');
 
               // update answer
-              // if (scope.choice == '1'){
-              //   styleResponseCalculator.updateAnswers(scope.questionId, 'a');
-              // }else if (scope.choice == '2'){
-              //   styleResponseCalculator.updateAnswers(scope.questionId, 'b');
-              // }else{
-              //   styleResponseCalculator.updateAnswers(scope.questionId, 'c');
-              // }
+              if (scope.choice == '1'){
+                styleResponseCalculator.updateAnswers(scope.questionId, 'a');
+              }else if (scope.choice == '2'){
+                styleResponseCalculator.updateAnswers(scope.questionId, 'b');
+              }else{
+                styleResponseCalculator.updateAnswers(scope.questionId, 'c');
+              }
 
               // show next section
               if ($(scope.activateContent).hasClass('hide')){

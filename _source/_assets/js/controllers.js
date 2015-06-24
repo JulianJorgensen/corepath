@@ -18,7 +18,7 @@ avenueApp.controller('mainController', ['$scope', 'pageInfo', 'skrollrService', 
 
 
   // on page change
-  $scope.$on("$routeChangeSuccess", function () {
+  $scope.$on("$routeChangeSuccess", function (newRoute, oldRoute) {
 
     // deactivate contact pulldown
     $scope.contactActivated = false;

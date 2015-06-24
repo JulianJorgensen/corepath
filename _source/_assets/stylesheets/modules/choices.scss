@@ -286,12 +286,12 @@
     font-size: rem-calc(20);
     font-style: italic;
     color: $gray80;
-    max-width: 500px;
     margin-bottom: 0;
+    max-width: 500px;
   }
 
   &.active{
-    display: block;
+    @include display(flex);
   }
 }
 
