@@ -209,14 +209,13 @@ that fits into the design of your space." second-image="{{ 'questions/q4/shutter
       <div class="separator-text">5</div>
     </div>
 
-    <h2 class="text-center">What colours excite you most?</h2>
+    <h2 class="text-center margin-bottom-large">What colours excite you most?</h2>
 
     <choices
-      size="large" question-id="5" first="I love to go bold with primary colors" first-description="When well balanced, strong colours will energize a space." first-icon="{% asset_path 'colour_answer_a.svg' %}"
-      second="I like to express myself with exciting secondary colors " second-description="Subtle tones let a space adapt to many
-moods and needs." second-icon="{% asset_path 'colour_answer_b.svg' %}"
-      third="My palette is definitely more neutral" third-description="Down to Earth and calm. Got it." third-icon="{% asset_path 'colour_answer_c.svg' %}"
-      icon-type="svg" activate-content="#question-furniture" />
+      question-id="5" first="I love to go bold with primary colors" first-description="When well balanced, strong colours will energize a space." first-thumb="{% asset_path 'questions/q5/question5a.jpg' %}"
+      second="I like to express myself with exciting secondary colors " second-description="Subtle tones let a space adapt to many moods and needs." second-thumb="{% asset_path 'questions/q5/question5b.jpg' %}"
+      third="My palette is definitely more neutral" third-description="Down to Earth and calm. Got it." third-thumb="{% asset_path 'questions/q5/question5c.jpg' %}"
+      activate-content="#question-furniture" />
   </div>
 </section>
 
@@ -284,7 +283,7 @@ moods and needs." second-icon="{% asset_path 'colour_answer_b.svg' %}"
       first="My preference is for the quiet country life" first-description="A simpler way of life allows a for spaces that speak to what matters most." first-thumb="{{ 'questions/q8/2048-6.jpg' | asset_path }}"
       second="I need to be steps away from the latest and greatest in food, wine &amp; culture" second-description="A taste for what&rsquo;s new and incredible can help set your space apart." second-thumb="{{ 'questions/q8/hGibbjg0Rb2fUIoMtU5l__DSC8099.jpg' | asset_path }}"
       third="I want to be near my friends &amp; family wherever they may be" third-description="Welcoming in loved ones makes a house a home. We can make this possible." third-thumb="{{ 'questions/q8/restaurant-hands-people-coffee.jpg' | asset_path }}"
-      template-url="choices-horizontal" activate-content="section#question-fair-activity" />
+      shape="round" template-url="choices-horizontal" activate-content="section#question-fair-activity" />
   </div>
 </section>
 
@@ -340,7 +339,7 @@ moods and needs." second-icon="{% asset_path 'colour_answer_b.svg' %}"
 </section>
 
 
-<section id="final" class="section">
+<section id="final" class="section hide">
   <div class="container text-center">
 
     <div class="vertical-line xxlarge"><span skrollr data--400-bottom="height: 120px;" data-bottom="height: 0px;"></span></div>

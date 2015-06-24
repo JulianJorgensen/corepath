@@ -2,16 +2,16 @@
   <li class="choice">
     <div ng-click="selectChoice(1)" class="choices-icon flex-center {[size]}" ng-if="firstIcon"><ng-include src="firstIcon" /></div>
     <div ng-click="selectChoice(1)" class="button"><a class="button-content">{{ first }}</a></div>
-    <div class="choices-thumb-image" ng-if="firstThumb" style="background-image: url('{{ firstThumb }}');"></div>
+    <div class="choices-thumb-image {[ shape ]}" ng-if="firstThumb" style="background-image: url('{{ firstThumb }}');"></div>
   </li>
   <li class="choice">
     <div ng-click="selectChoice(2)" class="choices-icon flex-center {[size]}" ng-if="secondIcon"><ng-include src="secondIcon" /></div>
     <div ng-click="selectChoice(2)" class="button"><a class="button-content">{{ second }}</a></div>
-    <div class="choices-thumb-image" ng-if="secondThumb" style="background-image: url('{{ secondThumb }}');"></div>
+    <div class="choices-thumb-image {[ shape ]}" ng-if="secondThumb" style="background-image: url('{{ secondThumb }}');"></div>
   </li>
   <li class="choice">
     <div ng-click="selectChoice(3)" class="choices-icon flex-center {[size]}" ng-if="thirdIcon"><ng-include src="thirdIcon" /></div>
     <div ng-click="selectChoice(3)" class="button"><a class="button-content">{{ third }}</a></div>
-    <div class="choices-thumb-image" ng-if="thirdThumb" style="background-image: url('{{ thirdThumb }}');"></div>
+    <div class="choices-thumb-image {[ shape ]}" ng-if="thirdThumb" style="background-image: url('{{ thirdThumb }}');"></div>
   </li>
 </ul>

@@ -28,7 +28,8 @@ avenueApp.directive('choices', ['styleResponseCalculator', 'skrollrService', fun
             align: '@',
             currentImage: '@',
             choicesColor: '@',
-            bleed: '@'
+            bleed: '@',
+            shape: '@'
         },
         templateUrl: function(elem,attrs) {
           if (attrs.templateUrl){
@@ -71,9 +72,9 @@ avenueApp.directive('choices', ['styleResponseCalculator', 'skrollrService', fun
               if ($(scope.activateContent).hasClass('hide')){
                 $(scope.activateContent).show();
 
-                // skrollrService.skrollr().then(function(skrollr){
-                //   skrollr.refresh();
-                // });
+                skrollrService.skrollr().then(function(skrollr){
+                  skrollr.refresh();
+                });
               }
           };
 

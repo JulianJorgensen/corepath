@@ -263,8 +263,11 @@
     @include transition(all $transition-speed-slow);
     height: 320px;
     width: 320px;
-    border-radius: 50%;
     @include cover(center, center);
+
+    &.round{
+      border-radius: 50%;
+    }
   }
 
   &.active{
