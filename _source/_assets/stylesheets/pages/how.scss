@@ -4,6 +4,11 @@
 @import '../variables_foundation';
 
 .page-how{
+
+  .top-bar .nav-items .nav-item{
+    border-bottom: 2px solid #999999;
+  }
+
   .marquee{
     height: 500px;
     background-size: cover;
