@@ -97,7 +97,7 @@ avenueApp.controller('howController', ['$scope', 'pageInfo', function($scope, pa
 
 
 // INTAKE CONTROLLER
-avenueApp.controller('intakeController', ['$scope', 'pageInfo', '$http', function($scope, pageInfo, $http) {
+avenueApp.controller('intakeController', ['$scope', 'pageInfo', '$http', 'styleResponseCalculator', function($scope, pageInfo, $http, styleResponseCalculator) {
   window.scrollTo(0);
 
   pageInfo.info.updateName('intake');
@@ -134,6 +134,10 @@ avenueApp.controller('intakeController', ['$scope', 'pageInfo', '$http', functio
       place: $scope.place,
       project: $scope.project,
       contact: $scope.contact,
+    }
+    if ($scope.answer) {
+      params.quiz_answer = styleResponseCalculator.currentAnswerFull();
+      params.quiz_answers = styleResponseCalculator.getAnswers();
     }
     $http.post('https://avenue-spaces.herokuapp.com/email', params).
     success(function(data, status, headers, config) {

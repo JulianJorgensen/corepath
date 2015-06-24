@@ -21,7 +21,11 @@ function mode(array){
 avenueApp.service('styleResponseCalculator', function() {
 
   var questions = [];
-
+  var responseStrings = {
+    a: 'Old World Charm',
+    b: 'New World Glamour',
+    c: 'Design Classics',
+  };
 
   this.updateAnswers = function(question, answer) {
     questions[question-1] = answer;
@@ -30,6 +34,14 @@ avenueApp.service('styleResponseCalculator', function() {
   this.currentAnswer = function() {
     return mode(questions);
   }
+
+  this.currentAnswerFull = function() {
+    return responseStrings[mode(questions)];
+  };
+
+  this.getAnswers = function() {
+    return questions;
+  };
 
 });
 
