@@ -1,0 +1,56 @@
+<!doctype html>
+<head>
+  <title>Room Customizer | Avenue</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <style>
+    body {
+      font-family: Helvetica;
+      margin: 0;
+      padding: 0;
+    }
+    .images {
+      background-size: contain;
+      background-repeat: no-repeat;
+      min-height: 2000px;
+
+    }
+    .next {
+      display: block;
+      position: fixed;
+      bottom: 5px; right: 5px;
+      padding: 15px 15px 14px 15px;
+      background: #fff;
+      border: 1px solid #89A5DA;
+      color: #000;
+      text-decoration: none;
+    }
+
+  </style>
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js" charset="utf-8"></script>
+</head>
+<body>
+  <div class="images" style="background-image: url('images/1 Room Setup.png');"></div>
+  <a href='#' class="next">Next &rarr;</a>
+</body>
+<script type="text/javascript">
+  var index = 1;
+  var images = [
+    'images/1 Room Setup.png',
+    'images/2 Customize Pieces Item Move.png',
+    'images/3 Customize Pieces.png',
+    'images/4 Customize Wall Colour.png',
+    'images/5 Customize Wall Colour Selected.png',
+    'images/6 Customize Floor Type.png',
+    'images/7 Customize Floor Type Selected.png',
+    'images/8 Share.png',
+  ];
+  $.each(images, function(i, image) {
+    $('<img>').attr('src', image);
+  });
+  $('.next').click(function() {
+    // window.scrollTo(0,0);
+    $('.images').attr('style', 'background-image: url("' + images[index++ % images.length] + '");');
+    return false;
+  });
+</script>
+</html>
