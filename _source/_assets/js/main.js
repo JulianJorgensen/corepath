@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
-  setTimeout(function(){
-    $('.marquee').removeClass('loading');
-  }, 1000);
+  // setTimeout(function(){
+  //   $('.marquee').removeClass('loading');
+  // }, 1000);
 
 });
