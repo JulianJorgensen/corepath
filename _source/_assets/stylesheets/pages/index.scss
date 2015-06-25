@@ -59,6 +59,15 @@
 
 
 #question-cuisine{
+  position: relative;
+
+  .marquee-overlap{
+    position: absolute;
+    top: 500px;
+    left: 50%;
+    margin-left: -500px;
+  }
+
   .choices-marquee .choices-marquee-image.choices-image-2{
     @include cover(top, center);
   }

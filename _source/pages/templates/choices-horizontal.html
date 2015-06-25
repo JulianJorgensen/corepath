@@ -2,14 +2,15 @@
 <!-- ========================== -->
 <div class="choices-container horizontal">
 
+  <div class="container" ng-show="question">
+    <h2 class="choices-question">{{ question }}</h2>
+  </div>
+
   <div class="choices-marquee {{ bleed ? 'bleed' : '' }}" ng-show="defaultImage">
     <div class="choices-marquee-image choices-image-default" style="background-image: url('{{ defaultImage }}');"></div>
     <div class="choices-marquee-image choices-image-1" style="background-image: url('{{ firstImage }}');"></div>
     <div class="choices-marquee-image choices-image-2" style="background-image: url('{{ secondImage }}');"></div>
     <div class="choices-marquee-image choices-image-3" style="background-image: url('{{ thirdImage }}');"></div>
-    <div class="container">
-      <h2 class="choices-question white">{{ question }}</h2>
-    </div>
   </div>
 
   <div class="container">
