@@ -7,6 +7,30 @@
   position: relative;
   padding: $spacing-large 0;
 
+  .fa-spinner{
+    display: none;
+  }
+
+  &.loading{
+    .marquee-content,
+    .marquee-background,
+    .marquee-background.active{
+      opacity: 0;
+    }
+
+    .fa-spinner{
+      display: block;
+      color: $white;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      font-size: rem-calc(40);
+      margin-top: -20px;
+      margin-left: -20px;
+    }
+  }
+
+
   .marquee-overlay,
   .marquee-background{
     position: absolute;
@@ -60,6 +84,7 @@
     .marquee-content{
       @include display(flex);
       @include justify-content(flex-end);
+      @include transition(opacity $transition-speed-default);
 
       .marquee-landing-headline{
         @include flex(1);
