@@ -107,13 +107,13 @@
       @include align-items(center);
       @include display(flex);
       @include justify-content(center);
-      @include transition(all $transition-speed-fast);
+      @include transition(all 0.05);
       height: $button-height;
 
       .button-content{
         padding: 0;
         color: $black;
-        @include transition(color $transition-speed-fast);
+        @include transition(color 0.05);
       }
     }
 
@@ -138,14 +138,17 @@
   .choices.active{
     .button:not(.active){
       opacity: 0.3;
-      border-color: $black;
       &:hover{
         opacity: 1;
         border-color: transparent;
       }
     }
+    .choice.active{
+      .button{
+        opacity: 1 !important;
+      }
+    }
   }
-
 
   // white buttons
   &.color-white{
@@ -167,6 +170,7 @@
       &.active{
         .button:not(.active){
           border-color: $white;
+          opacity: 0.4;
 
             .button-content{
               color: $black;
@@ -244,11 +248,11 @@
     &.active{
       opacity: 1;
     }
-
-    &.choices-image-default{
-      @include filter(grayscale(100%));
-    }
   }
+}
+
+.choices-image-default{
+  @include filter(grayscale(100%));
 }
 
 
@@ -291,6 +295,7 @@
     color: $gray80;
     margin-bottom: 0;
     max-width: 500px;
+    white-space: pre-line;
   }
 
   &.active{

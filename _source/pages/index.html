@@ -245,9 +245,11 @@ that fits into the design of your space." second-image="{{ 'questions/q4/shutter
 
     <choices
       question-id="6" default-image="{% asset_path 'questions/q6/37.jpg' %}" question="When you buy furniture, what do you consider most important?"
-      first="Function" first-description="Practical, no fuss.<br>Got it." first-image="{{ 'questions/q6/photo-1422480415834-d7d30118ea06.jpeg' | asset_path }}"
-      second="Comfort & Affordability" second-description="Understood. You definitely won&quote;t need to break the bank to make a livable space." second-image="{{ 'questions/q6/14809631_xl.jpg' | asset_path }}"
-      third="Quality & Style" third-description="Good sense and good taste<br>go hand in hand." third-image="{{ 'questions/q6/stairs-home-loft-lifestyle.jpg' | asset_path }}"
+      first="Function" first-description="Practical, no fuss.
+      Got it." first-image="{{ 'questions/q6/photo-1422480415834-d7d30118ea06.jpeg' | asset_path }}"
+      second="Comfort & Affordability" second-description="Understood. You definitely won&rsquo;t need to break the bank to make a livable space." second-image="{{ 'questions/q6/14809631_xl.jpg' | asset_path }}"
+      third="Quality & Style" third-description="Good sense and good taste
+      go hand in hand." third-image="{{ 'questions/q6/stairs-home-loft-lifestyle.jpg' | asset_path }}"
       template-url="choices-vertical" align="left" activate-content="section#question-furniture-old-new" />
   </div>
 </section>
@@ -356,9 +358,7 @@ that fits into the design of your space." second-image="{{ 'questions/q4/shutter
           <div ng-if="answer == 'c'" class="answer">Design Classics</div>
         </h2>
 
-        <p ng-if="answer == 'a'">You know how to relax and take time to enjoy life. Art should be an integral part of any design to satisfy your creative and/or possible eccentric side. Incorporating colour and unique items would help define you and your space. Antiques and classic furniture designs are preferred to new modern trends, making your home welcoming and comfortable.</p>
-        <p ng-if="answer == 'b'">You have an appreciation for the finer things in life and a good eye for design. You like elegance and simplicity and definitely prefer new furniture. Everything needs to be clean, uncluttered and perfectly organized. Neutral colours (white, grey, black, brown) form the main colour palette for your space. You prefer going out to staying in and your home is (or should be) a hot spot for after-work cocktails, dinners and weekend brunch.</p>
-        <p ng-if="answer == 'c'">Your demeanor is likely to be more laid back and casual (while still very professional when you need to be) and your space is designed with purpose in mind. You appreciate simplicity but would also like to add an element of fun into your space. You tend to favour neutral colours but incorporate a splash of colour here and there. Both new and old furniture pieces work for you (with a preference towards the new) and you are more likely to focus on practicality, functionality and affordability to style.</p>
+        <p>{[ answerDescription ]}</p>
       </div>
     </div>
 
@@ -408,7 +408,7 @@ that fits into the design of your space." second-image="{{ 'questions/q4/shutter
     </div>
 
     <div class="row">
-      <div class="column small-4 cta" data-href="#/email">
+      <div class="column small-4 cta" data-href="mailto:?subject=Your style results from Avenue Spaces&body=Your style is: {[ answerFull ]}.%0D%0A%0D%0A{[ answerDescription ]}">
         <div class="cta-icon">{% asset icons/email.svg %}</div>
         <div class="button cta-button">
           <span class="button-content">Email my results</span>
@@ -424,7 +424,7 @@ that fits into the design of your space." second-image="{{ 'questions/q4/shutter
         <p>Starting your project is painless. We'll collect some information, and create a visual proposal of pieces that work for you. Complete with incredible prices, and delivered to your home.</p>
       </div>
 
-      <div class="column small-4 cta" data-href="#/email">
+      <div class="column small-4 cta" data-href="mailto:hello@avenuespaces.com?subject=I would like to book an appointment&body=Hello, I just completed the style quiz. My style is {[ answerFull ]}.">
         <div class="cta-icon">{% asset icons/calendar.svg %}</div>
         <div class="button cta-button">
           <span class="button-content">Book a visit</span>

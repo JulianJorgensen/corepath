@@ -14,6 +14,8 @@ avenueApp.controller('mainController', ['$scope', 'pageInfo', 'skrollrService', 
     return styleResponseCalculator.currentAnswer();
   }, function(newVal, oldVal) {
     $scope.answer = newVal;
+    $scope.answerFull = styleResponseCalculator.currentAnswerFull();
+    $scope.answerDescription = styleResponseCalculator.currentAnswerDescription();
   }, true);
 
 

@@ -85,8 +85,8 @@ input[type="checkbox"]{
       position: absolute;
       top: 4px;
       left: 4px;
-      width: 27px;
-      height: 27px;
+      width: 24px;
+      height: 24px;
       border-radius: 4px;
       background-color: $gray10;
     }
@@ -101,7 +101,7 @@ input[type="checkbox"]{
       &:after{
         position: absolute;
         font-family: FontAwesome;
-        top: 5px;
+        top: 4px;
         left: 8px;
         content: "\f00c";
         color: $black;

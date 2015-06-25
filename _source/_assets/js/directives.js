@@ -47,6 +47,8 @@ avenueApp.directive('choices', ['styleResponseCalculator', 'skrollrService', fun
 
               scope.choice = choice;
 
+              elem.find('.choices').addClass('active');
+
               // set button
               elem.find('.choices .choice').removeClass('active');
               elem.find('.choices .choice:nth-child(' + choice + ')').addClass('active');

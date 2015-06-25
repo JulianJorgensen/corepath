@@ -63,3 +63,10 @@
     @include cover(top, center);
   }
 }
+
+
+#question-colour{
+  .choices.active .choice:not(.active) .choices-thumb-image{
+    @include transform(scale(0.9));
+  }
+}
