@@ -87,7 +87,9 @@ avenueApp.service('skrollrService', ['$document', '$q', '$rootScope', '$window',
     scriptTag.onload = onScriptLoad;
 
     var s = $document[0].getElementsByTagName('body')[0];
-    s.appendChild(scriptTag);
+    if (!navigator.userAgent.match(/mobile/gi)) {
+      s.appendChild(scriptTag);
+    }
 
     return {
       skrollr: function() { return defer.promise; }
