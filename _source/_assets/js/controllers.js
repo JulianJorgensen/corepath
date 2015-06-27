@@ -92,7 +92,7 @@ avenueApp.controller('aboutController', ['$scope', 'pageInfo', function($scope, 
 
 // HOW CONTROLLER
 avenueApp.controller('howController', ['$scope', 'pageInfo', function($scope, pageInfo) {
-  window.scrollTo(0);
+  window.scrollTo(0, 0);
 
   pageInfo.info.updateName('how');
 }]);
@@ -100,7 +100,7 @@ avenueApp.controller('howController', ['$scope', 'pageInfo', function($scope, pa
 
 // INTAKE CONTROLLER
 avenueApp.controller('intakeController', ['$scope', 'pageInfo', '$http', 'styleResponseCalculator', function($scope, pageInfo, $http, styleResponseCalculator) {
-  window.scrollTo(0);
+  window.scrollTo(0, 0);
   $http.get('https://avenue-spaces.herokuapp.com/'); // Ping the server to wake up Heroku.
 
   pageInfo.info.updateName('intake');
