@@ -32,5 +32,6 @@
 
   ROOT
   *= require './misc.scss'
+  *= require './ie.scss'
 
 */
