@@ -29,7 +29,13 @@ avenueApp.controller('mainController', ['$scope', 'pageInfo', 'skrollrService', 
     skrollrService.skrollr().then(function(skrollr){
       skrollr.refresh();
     });
-  })
+  });
+
+  $scope.letsBegin = function() {
+    $("html, body").animate({
+      scrollTop: $('#question-cuisine').offset().top + $('#question-cuisine').height() - $(window).height()
+    }, 500);
+  };
 
 }]);
 
@@ -76,8 +82,31 @@ avenueApp.controller('imageController', ['$scope', '$element', function ($scope,
     $scope.currImage = imageNumber;
     $scope.currImageElement = $element.find('.images-grid li:nth-child(' + (imageNumber) + ')');
     $scope.currImageSrc = $scope.currImageElement.find('img').attr('data-large-src');
-    console.log(imageNumber, '.images-grid li:nth-child(' + (imageNumber) + ')', $scope.currImageElement);
+    $scope.caption = $scope.currImageElement.find('.caption').html();
+    $scope.attribution = $scope.currImageElement.find('.caption').data('source');
   };
+
+  $scope.$watch('answer', function(newValue, oldValue) {
+    $scope.currImage = 1;
+    $scope.setImage($scope.currImage);
+    switch (newValue) {
+      case 'a':
+        $scope.caption = 'Farmhouse';
+        $scope.attribution = 'Houzz';
+        $scope.currImageSrc = "<%= asset_path('gallery/old_world_charm/Farmhouse/reverie-panel-bed-l.jpg') %>";
+        break;
+      case 'b':
+        $scope.caption = 'Contemporary';
+        $scope.attribution = 'Pinterest';
+        $scope.currImageSrc = "<%= asset_path('gallery/new_world_glam/contemporary/open-furniture-bold-colors.jpg') %>";
+        break;
+      case 'c':
+        $scope.caption = 'Eclectic';
+        $scope.attribution = 'Houzz';
+        $scope.currImageSrc = "<%= asset_path('gallery/design_classics/Eclectic/eclectic-and-innovative-in-the-dining-room-inspiration.jpg') %>";
+        break;
+    }
+  });
 
   $scope.setImage($scope.currImage);
 }]);
