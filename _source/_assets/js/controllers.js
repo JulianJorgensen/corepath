@@ -74,8 +74,9 @@ avenueApp.controller('imageController', ['$scope', '$element', function ($scope,
 
   $scope.setImage = function(imageNumber){
     $scope.currImage = imageNumber;
-    $scope.currImageElement = $element.find('.images-grid li:nth-child(' + (imageNumber - 1) + ')');
+    $scope.currImageElement = $element.find('.images-grid li:nth-child(' + (imageNumber) + ')');
     $scope.currImageSrc = $scope.currImageElement.find('img').attr('data-large-src');
+    console.log(imageNumber, '.images-grid li:nth-child(' + (imageNumber) + ')', $scope.currImageElement);
   };
 
   $scope.setImage($scope.currImage);

@@ -379,15 +379,28 @@ that fits into the design of your space." second-image="{{ 'questions/q4/shutter
           <li ng-controller="imageController">
             <p class="text-center margin-bottom-default"><em>Take a look at some samples from this style.</em></p>
             <div class="images-grid-inner">
-              <img src="{% asset_path '5.jpg' %}" ng-src="{[ currImageSrc ]}" />
+              <img ng-if="answer == 'a'" src="{% asset_path 'gallery/old_world_charm/Farmhouse/reverie-panel-bed-l.jpg' %}" ng-src="{[ currImageSrc ]}" />
+              <img ng-if="answer == 'b'" src="{% asset_path 'gallery/new_world_glam/contemporary/open-furniture-bold-colors.jpg' %}" ng-src="{[ currImageSrc ]}" />
+              <img ng-if="answer == 'c'" src="{% asset_path 'gallery/design_classics/Eclectic/eclectic-and-innovative-in-the-dining-room-inspiration.jpg' %}" ng-src="{[ currImageSrc ]}" />
             </div>
 
-            <ul class="images-grid grid-5 suggested-thumbnails">
-              <li ng-click="setImage(1)" ng-class="{active: currImage == 1}"><img src="http://placehold.it/100x100" alt="" /></li>
-              <li ng-click="setImage(2)" ng-class="{active: currImage == 2}"><img src="http://placehold.it/100x100" data-large-src="{% asset_path '5.jpg' %}" alt="" /></li>
-              <li ng-click="setImage(3)" ng-class="{active: currImage == 3}"><img src="http://placehold.it/100x100" data-large-src="{% asset_path '5.jpg' %}" alt="" /></li>
-              <li ng-click="setImage(4)" ng-class="{active: currImage == 4}"><img src="http://placehold.it/100x100" data-large-src="{% asset_path '5.jpg' %}" alt="" /></li>
-              <li ng-click="setImage(5)" ng-class="{active: currImage == 5}"><img src="http://placehold.it/100x100" data-large-src="{% asset_path '5.jpg' %}" alt="" /></li>
+            <ul ng-if="answer == 'a'" class="images-grid grid-5 suggested-thumbnails">
+              <li ng-click="setImage(1)" ng-class="{active: currImage == 1}"><img src="{% asset_path 'gallery/old_world_charm/Farmhouse/reverie-panel-bed-l.jpg' %}" data-large-src="{% asset_path 'gallery/old_world_charm/Farmhouse/reverie-panel-bed-l.jpg' %}" alt="" /></li>
+              <li ng-click="setImage(2)" ng-class="{active: currImage == 2}"><img src="{% asset_path 'gallery/old_world_charm/heritage/heritage-1.jpg' %}" data-large-src="{% asset_path 'gallery/old_world_charm/heritage/heritage-1.jpg' %}" alt="" /></li>
+              <li ng-click="setImage(3)" ng-class="{active: currImage == 3}"><img src="{% asset_path 'gallery/old_world_charm/Traditional-Transitional/inspiration-transitional-style-living-room-furniture-with-11578-living-room-traditional-transitional-style-decorating-book-cases-1280x720.jpg' %}" data-large-src="{% asset_path 'gallery/old_world_charm/Traditional-Transitional/inspiration-transitional-style-living-room-furniture-with-11578-living-room-traditional-transitional-style-decorating-book-cases-1280x720.jpg' %}" alt="" /></li>
+              <li ng-click="setImage(4)" ng-class="{active: currImage == 4}"><img src="{% asset_path 'gallery/old_world_charm/texture swatch/chea-5301-7998.jpg' %}" data-large-src="{% asset_path 'gallery/old_world_charm/texture swatch/chea-5301-7998.jpg' %}" alt="" /></li>
+            </ul>
+            <ul ng-if="answer == 'b'" class="images-grid grid-5 suggested-thumbnails">
+              <li ng-click="setImage(1)" ng-class="{active: currImage == 1}"><img src="{% asset_path 'gallery/new_world_glam/contemporary/open-furniture-bold-colors.jpg' %}" data-large-src="{% asset_path 'gallery/new_world_glam/contemporary/open-furniture-bold-colors.jpg' %}" alt="" /></li>
+              <li ng-click="setImage(2)" ng-class="{active: currImage == 2}"><img src="{% asset_path 'gallery/new_world_glam/deco/HH-The-Mandarin-2-Door-Buffet-£3000_opt.jpg' %}" data-large-src="{% asset_path 'gallery/new_world_glam/deco/HH-The-Mandarin-2-Door-Buffet-£3000_opt.jpg' %}" alt="" /></li>
+              <li ng-click="setImage(3)" ng-class="{active: currImage == 3}"><img src="{% asset_path 'gallery/new_world_glam/modern chic/impressive-contemporary-apartment-furniture-of-modern-apartment-living-room-furniture-sets-modern-apartment-living-for-furniture.jpg' %}" data-large-src="{% asset_path 'gallery/new_world_glam/modern chic/impressive-contemporary-apartment-furniture-of-modern-apartment-living-room-furniture-sets-modern-apartment-living-for-furniture.jpg' %}" alt="" /></li>
+              <li ng-click="setImage(4)" ng-class="{active: currImage == 4}"><img src="{% asset_path 'gallery/new_world_glam/texture swatch/Unknown.jpeg' %}" data-large-src="{% asset_path 'gallery/new_world_glam/texture swatch/Unknown.jpeg' %}" alt="" /></li>
+            </ul>
+            <ul ng-if="answer == 'c'" class="images-grid grid-5 suggested-thumbnails">
+              <li ng-click="setImage(1)" ng-class="{active: currImage == 1}"><img src="{% asset_path 'gallery/design_classics/Eclectic/eclectic-and-innovative-in-the-dining-room-inspiration.jpg' %}" data-large-src="{% asset_path 'gallery/design_classics/Eclectic/eclectic-and-innovative-in-the-dining-room-inspiration.jpg' %}" alt="" /></li>
+              <li ng-click="setImage(2)" ng-class="{active: currImage == 2}"><img src="{% asset_path 'gallery/design_classics/Mid-century Modern/modern-waiting-room-chairs-modern-living-room-design-home-design-and-decoration-interior-images-modern-room-design.jpg' %}" data-large-src="{% asset_path 'gallery/design_classics/Mid-century Modern/modern-waiting-room-chairs-modern-living-room-design-home-design-and-decoration-interior-images-modern-room-design.jpg' %}" alt="" /></li>
+              <li ng-click="setImage(3)" ng-class="{active: currImage == 3}"><img src="{% asset_path 'gallery/design_classics/Scandinavian/new-scandinavian-furniture.jpg' %}" data-large-src="{% asset_path 'gallery/design_classics/Scandinavian/new-scandinavian-furniture.jpg' %}" alt="" /></li>
+              <li ng-click="setImage(4)" ng-class="{active: currImage == 4}"><img src="{% asset_path 'gallery/design_classics/texture swatch/elt1016-5376.png' %}" data-large-src="{% asset_path 'gallery/design_classics/texture swatch/elt1016-5376.png' %}" alt="" /></li>
             </ul>
           </li>
         </ul>
