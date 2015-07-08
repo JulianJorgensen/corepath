@@ -3,6 +3,18 @@
 @import '../variables_custom';
 @import '../variables_foundation';
 
+.fast-track {
+  h5 {
+    color: #D03701;
+    @include transition(color 300ms ease-out);
+  }
+  &:hover {
+    h5 {
+      color: black;
+    }
+  }
+}
+
 #opening-statement {
   margin-top: 80px;
 }
@@ -77,5 +89,8 @@
 #question-colour{
   .choices.active .choice:not(.active) .choices-thumb-image{
     @include transform(scale(0.9));
+  }
+  .choices .choice .choices-thumb-image {
+    @include filter(none);
   }
 }
