@@ -1,0 +1,17 @@
+@mixin no-bullets{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+@mixin cover($positionX, $positionY){
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: $positionX $positionY;
+}
+
+@mixin linkColor($color){
+  a, a:visited, a:hover, a:active{
+    color: $color;
+  }
+}

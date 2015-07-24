@@ -1,67 +1,46 @@
 <!DOCTYPE html>
 
-<html class="no-js" lang="en" ng-app="avenueApp">
+<html lang="en">
 <head>
-    <base href="{{ site.baseurl }}" target="_blank">
+  <base href="{{ site.baseurl }}" target="_blank">
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
 
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+  <title>{{ site.title }}</title>
 
-    <!-- Set the viewport width to device width for mobile -->
-    <meta name="viewport" content="width=1050" />
+  <!-- Styles -->
+  <link rel="stylesheet" href="{% asset_path main.css %}">
 
-    <title>{{ site.title }}</title>
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
-    <script src="{% asset_path init.js %}"></script>
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="{% asset_path main.css %}">
-
-    <!-- Font awesome -->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
-    <!-- tyepkit -->
-    <script src="//use.typekit.net/tvw4jri.js"></script>
-    <script>try{Typekit.load();}catch(e){}</script>
+  <!-- tyepkit -->
+  <script src="//use.typekit.net/tvw4jri.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
 </head>
 
-<body class="page-{[ pageInfo.name ]}" ng-controller="mainController">
+<body>
 
-    {% include nav.html %}
-
+  <main class="container">
     {{ content }}
+  </main>
 
-    <!-- Javascript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-resource.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-route-segment/1.4.0/angular-route-segment.min.js"></script>
-    <script src="{% asset_path vendor/anchorScroll.angular.js %}"></script>
+  <!-- Javascript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
-    <!-- vendors -->
-    <script src="{% asset_path vendor/angular-skrollr.min.js %}"></script>
+  <!-- Foundation -->
+  <script src="{% asset_path vendor/foundation.min.js %}"></script>
 
-    <!-- AngularJS Foundation -->
-    <script src="{% asset_path vendor/foundation.min.js %}"></script>
-
-    <!-- Angular JS -->
-    <script src="{% asset_path app.js %}"></script>
-    <script src="{% asset_path routes.js %}"></script>
-    <script src="{% asset_path controllers.js %}"></script>
-    <script src="{% asset_path directives.js %}"></script>
-    <script src="{% asset_path services.js %}"></script>
-
-    <!-- main js -->
-    <script src="{% asset_path main.js %}"></script>
+  <!-- main js -->
+  <script src="{% asset_path main.js %}"></script>
 
 
-    <!-- PAGE SPECIFIC JS -->
-    {% if page.include_js %}
-    {% for js_file in page.include_js %}
-    <script src="{{ js_file | asset_path }}" type="text/javascript"></script>
-    {% endfor %}
-    {% endif %}
+  <!-- PAGE SPECIFIC JS -->
+  {% if page.include_js %}
+  {% for js_file in page.include_js %}
+  <script src="{{ js_file | asset_path }}" type="text/javascript"></script>
+  {% endfor %}
+  {% endif %}
 
-    {{ page.custom_js }}
+  {{ page.custom_js }}
 </body>
 </html>

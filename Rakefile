@@ -13,13 +13,13 @@ namespace :deploy do
 
   # Usaage:
   # bundle exec rake blog:publish
-  desc "Publishing site to staging (gh-pages)"
+  desc "Deploying site (gh-pages)"
   task :staging do
     # Compile the Jekyll site using the config.
     Jekyll::Site.new(Jekyll.configuration({
       "source"      => "./_source",
       "destination" => "_site",
-      "config" => "_config_staging.yml"
+      "config" => "_config.yml"
     })).process
 
     # Get the origin to which we are going to push the site.

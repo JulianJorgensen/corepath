@@ -1,0 +1,134 @@
+// displays
+.inline-block{
+  display: inline-block;
+}
+
+.spacing{
+  margin: $spacing-large 0;
+}
+
+// borders
+.border-top{
+  border-top: 1px solid $border-color;
+}
+.border-bottom{
+  border-bottom: 1px solid $border-color;
+}
+.border-left{
+  border-left: 1px solid $border-color;
+}
+.border-right{
+  border-right: 1px solid $border-color;
+}
+
+// xxlarge margins and paddings
+.margin-top-xxlarge { margin-top: $spacing-xxlarge; };
+.padding-top-xxlarge { padding-top: $spacing-xxlarge; };
+
+.margin-right-xxlarge { margin-right: $spacing-xxlarge; };
+.padding-right-xxlarge { padding-right: $spacing-xxlarge; };
+
+.margin-bottom-xxlarge { margin-bottom: $spacing-xxlarge; };
+.padding-bottom-xxlarge { padding-bottom: $spacing-xxlarge; };
+
+.margin-left-xxlarge { margin-left: $spacing-xxlarge; };
+.padding-left-xxlarge { padding-left: $spacing-xxlarge; };
+
+.margin-xxlarge { margin: $spacing-xxlarge; };
+.padding-xxlarge { padding: $spacing-xxlarge; };
+
+// xlarge margins and paddings
+.margin-top-xlarge { margin-top: $spacing-xlarge; };
+.padding-top-xlarge { padding-top: $spacing-xlarge; };
+
+.margin-right-xlarge { margin-right: $spacing-xlarge; };
+.padding-right-xlarge { padding-right: $spacing-xlarge; };
+
+.margin-bottom-xlarge { margin-bottom: $spacing-xlarge; };
+.padding-bottom-xlarge { padding-bottom: $spacing-xlarge; };
+
+.margin-left-xlarge { margin-left: $spacing-xlarge; };
+.padding-left-xlarge { padding-left: $spacing-xlarge; };
+
+.margin-xlarge { margin: $spacing-xlarge; };
+.padding-xlarge { padding: $spacing-xlarge; };
+
+// large margins and paddings
+.margin-top-large { margin-top: $spacing-large; };
+.padding-top-large { padding-top: $spacing-large; };
+
+.margin-right-large { margin-right: $spacing-large; };
+.padding-right-large { padding-right: $spacing-large; };
+
+.margin-bottom-large { margin-bottom: $spacing-large; };
+.padding-bottom-large { padding-bottom: $spacing-large; };
+
+.margin-left-large { margin-left: $spacing-large; };
+.padding-left-large { padding-left: $spacing-large; };
+
+.margin-large { margin: $spacing-large; };
+.padding-large { padding: $spacing-large; };
+
+// default margins and paddings
+.margin-top-default { margin-top: $spacing-default; };
+.padding-top-default { padding-top: $spacing-default; };
+
+.margin-right-default { margin-right: $spacing-default; };
+.padding-right-default { padding-right: $spacing-default; };
+
+.margin-bottom-default { margin-bottom: $spacing-default; };
+.padding-bottom-default { padding-bottom: $spacing-default; };
+
+.margin-left-default { margin-left: $spacing-default; };
+.padding-left-default { padding-left: $spacing-default; };
+
+.margin-default { margin: $spacing-default; };
+.padding-default { padding: $spacing-default; };
+
+// small margins and paddings
+.margin-top-small { margin-top: $spacing-small; };
+.padding-top-small { padding-top: $spacing-small; };
+
+.margin-right-small { margin-right: $spacing-small; };
+.padding-right-small { padding-right: $spacing-small; };
+
+.margin-bottom-small { margin-bottom: $spacing-small; };
+.padding-bottom-small { padding-bottom: $spacing-small; };
+
+.margin-left-small { margin-left: $spacing-small; };
+.padding-left-small { padding-left: $spacing-small; };
+
+.margin-small { margin: $spacing-small; };
+.padding-small { padding: $spacing-small; };
+
+// xsmall margins and paddings
+.margin-top-xsmall { margin-top: $spacing-xsmall; };
+.padding-top-xsmall { padding-top: $spacing-xsmall; };
+
+.margin-right-xsmall { margin-right: $spacing-xsmall; };
+.padding-right-xsmall { padding-right: $spacing-xsmall; };
+
+.margin-bottom-xsmall { margin-bottom: $spacing-xsmall; };
+.padding-bottom-xsmall { padding-bottom: $spacing-xsmall; };
+
+.margin-left-xsmall { margin-left: $spacing-xsmall; };
+.padding-left-xsmall { padding-left: $spacing-xsmall; };
+
+.margin-xsmall { margin: $spacing-xsmall; };
+.padding-xsmall { padding: $spacing-xsmall; };
+
+// no margins and paddings
+.margin-top-none { margin-top: 0 !important; };
+.padding-top-none { padding-top: 0 !important; };
+
+.margin-right-none { margin-right: 0 !important; };
+.padding-right-none { padding-right: 0 !important; };
+
+.margin-bottom-none { margin-bottom: 0 !important; };
+.padding-bottom-none { padding-bottom: 0 !important; };
+
+.margin-left-none { margin-left: 0 !important; };
+.padding-left-none { padding-left: 0 !important; };
+
+.margin-none { margin: 0 !important; };
+.padding-none { padding: 0 !important; };

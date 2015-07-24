@@ -1,13 +1,5 @@
-@import 'bourbon';
-@import '../mixins';
-@import '../variables_custom';
-@import '../variables_foundation';
-@import "../vendor/foundation/components/grid";
-
-// HTML
 html{
   font-size: 16px;
-  -webkit-font-smoothing: antialiased;
 }
 
 body{
@@ -15,131 +7,14 @@ body{
   min-width: 1000px;
 }
 
-
 // MAIN CONTAINER
 .main-container{
   padding-bottom: $spacing-xlarge;
 }
 
-// INNER CONTAINER
 .container{
   max-width: 1000px;
   margin: 0 auto;
-}
-
-
-// ROW FULL WIDTH
-.row-full-width {
-  @include grid-row();
-  max-width: 100%;
-
-  .custom-column-class {
-    @include grid-column(12);
-  }
-}
-
-// SEPARATOR
-.separator{
-  position: relative;
-  margin: $spacing-large 0;
-  clear: both;
-
-  &.large{
-    margin: $spacing-large 0;
-  }
-
-  &.xlarge{
-    margin: $spacing-xlarge 0;
-  }
-
-  &.xxlarge{
-    margin: $spacing-xxlarge 0;
-  }
-
-  &.line{
-    border-bottom: 2px solid $gray20;
-    @include display(flex);
-    @include align-items(center);
-    @include justify-content(center);
-
-    .separator-text{
-      position: relative;
-      bottom: -18px;
-      height: 30px;
-      padding: 0 $spacing-default;
-      background-color: $white;
-      text-transform: uppercase;
-    }
-  }
-}
-
-.separator-tree{
-  position: relative;
-  margin: $spacing-xlarge 0;
-  clear: both;
-  width: 100%;
-  @include display(flex);
-  @include align-items(center);
-  @include justify-content(center);
-
-  &:after{
-    content: "";
-    border: 1px solid $gray20;
-    border-bottom-width: 0;
-    width: 50%;
-    height: $spacing-xxlarge;
-  }
-
-  &.flipped{
-    &:after{
-      border-bottom-width: 1px;
-      border-top-width: 0;
-    }
-  }
-}
-
-.vertical-line{
-  position: relative;
-  margin: $spacing-small 0;
-  clear: both;
-
-  &.absolute{
-    position: absolute;
-    left: 50%;
-  }
-
-  &.xlarge{
-    height: $spacing-xlarge;
-    margin: $spacing-large 0;
-  }
-
-  &.xxlarge{
-    height: $spacing-xxlarge;
-    margin: $spacing-large 0;
-  }
-
-  .number{
-    border: 1px solid $gray40;
-    border-radius: 50%;
-    height: 36px;
-    width: 36px;
-    text-align: center;
-    position: absolute;
-    bottom: -46px;
-    color: $gray40;
-    left: 50%;
-    margin-left: -18px;
-    line-height: 36px;
-  }
-
-  span{
-    position: absolute;
-    top: 0;
-    left: 50%;
-    background-color: $gray20;
-    height: 100%;
-    width: 1px;
-  }
 }
 
 // FLEX POSITIONING CLASSES
@@ -148,61 +23,13 @@ body{
   @include align-items(flex-end);
   @include justify-content(flex-end);
 }
-
 .flex-right{
   @include display(flex);
   @include align-items(flex-end);
   @include justify-content(flex-end);
 }
-
 .flex-center{
   @include display(flex);
   @include align-items(center);
   @include justify-content(center);
-}
-
-
-
-.flex-grid{
-  &-1{
-    width: flex-grid(1);
-  }
-  &-2{
-    width: flex-grid(2);
-  }
-  &-3{
-    width: flex-grid(3);
-  }
-  &-4{
-    width: flex-grid(4);
-  }
-  &-5{
-    width: flex-grid(5);
-  }
-  &-6{
-    width: flex-grid(6);
-  }
-  &-7{
-    width: flex-grid(7);
-  }
-  &-8{
-    width: flex-grid(8);
-  }
-  &-9{
-    width: flex-grid(9);
-  }
-  &-10{
-    width: flex-grid(10);
-  }
-  &-11{
-    width: flex-grid(11);
-  }
-  &-12{
-    width: flex-grid(12);
-  }
-}
-
-
-.position-relative{
-  position: relative;
 }

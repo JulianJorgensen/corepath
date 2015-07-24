@@ -159,3 +159,6 @@ DEPENDENCIES
   github-pages (= 37)
   jekyll-assets
   json
+
+BUNDLED WITH
+   1.10.5

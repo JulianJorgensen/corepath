@@ -1,9 +1,4 @@
-@import 'bourbon';
-@import '../mixins';
-@import '../variables_custom';
-@import '../variables_foundation';
 @import '../vendor/foundation/components/global';
-
 
 // disable that ugly blue outline
 a, a:visited, a:focus, a:hover,
@@ -19,52 +14,4 @@ ul.no-bullets
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-}
-
-
-// uppercase headings
-h1, h2, h5, h6{
-	text-transform: uppercase;
-}
-
-
-h1, h2, h3, h4, h5, h6{
-	font-weight: 600;
-	margin: 0;
-	padding: 0;
-}
-
-.light{
-	font-weight: 300;
-}
-
-
-.serif{
-	&, p{
-		font-family: $font-family-serif;
-		font-style: italic;
-		color: $gray80;
-	}
-}
-
-.break-text{
-	font-size: rem-calc(26);
-	margin-bottom: 0;
-}
-
-
-
-// colors
-
-.text-gray{
-	color: $gray40;
-}
-
-
-.text-green{
-	color: $success-color;
-}
-
-.text-red{
-	color: $alert-color;
 }
