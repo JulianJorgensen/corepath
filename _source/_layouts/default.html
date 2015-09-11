@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html class="no-js" lang="en" ng-app="haztechApp">
+<html lang="en">
 <head>
   <base href="{{ site.baseurl }}" target="_blank">
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
@@ -13,7 +13,7 @@
   <!-- Font awesome -->
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
-  <!-- tyepkit -->
+  <!-- typekit -->
   <script src="//use.typekit.net/tvw4jri.js"></script>
   <script>try{Typekit.load();}catch(e){}</script>
 </head>
@@ -21,18 +21,17 @@
 <body>
 
   <div class="main-container">
-    {% include nav.html %}
+    <div class="container">
+      {% include nav.html %}
+    </div>
 
-    <main ng-view></main>
+    <main>
+      {{ content }}
+    </main>
   </div>
-
-  <div class="logo"><img src="{% asset_path logo.png %}" /></div>
 
   <!-- Vendor -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-animate.min.js"></script>
 
   <!-- Foundation -->
   <script src="{% asset_path vendor/foundation.min.js %}"></script>
@@ -42,7 +41,6 @@
 
   <!-- Custom JS -->
   <script src="{% asset_path main.js %}"></script>
-  <script src="{% asset_path routes.js %}"></script>
 
 
   <!-- PAGE SPECIFIC JS -->

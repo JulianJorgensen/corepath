@@ -1,0 +1,30 @@
+.visibleNearby{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  overflow: hidden;
+
+  .royalSlider{
+    margin: 0 25%;
+    width: 50%;
+  }
+
+  .rsOverflow,
+  .rsSlide {
+    background: none;
+  }
+  .rsOverflow {
+    overflow: visible;
+  }
+
+  /* Scaling transforms */
+  .rsSlide img {
+    opacity: 0.45;
+    @include transition(all 0.3s ease-out);
+    // @include transform(scale(0.9));
+  }
+  .rsActiveSlide img {
+    opacity: 1;
+    @include transform(scale(1));
+  }
+}

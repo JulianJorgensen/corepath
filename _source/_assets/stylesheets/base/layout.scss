@@ -5,29 +5,23 @@ html{
 body{
   overflow-x: hidden;
   min-width: 1000px;
-  background-color: $navy-blue;
 }
 
-// MAIN CONTAINER
-.main-container{
-  @include display(flex);
-  @include align-items(flex-start);
-  @include justify-content(flex-start);
-
-  .content{
-    padding: 150px $spacing-large 0;
-  }
+// CONTENT
+.container{
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-.logo{
-  position: absolute;
-  top: 50px;
-  right: 50px;
-  max-height: 100px;
-  z-index: 9;
+.section-default{
+  padding: $spacing-xlarge 0;
+}
 
-  img{
-    max-height: 100%;
+.section-primary{
+  background-color: $primary-color;
+
+  &, h1, h2, h3, h4, h5, h6{
+    color: $white;
   }
 }
 
@@ -46,21 +40,4 @@ body{
   @include display(flex);
   @include align-items(center);
   @include justify-content(center);
-}
-
-
-
-main{
-  position: relative;
-
-  &.ng-enter {
-    @include transition((opacity $transition-speed-default ease-in, bottom $transition-speed-fast ease-in));
-    opacity: 0;
-    bottom: -100px;
-  }
-
-  &.ng-enter.ng-enter-active {
-    opacity: 1;
-    bottom: 0;
-  }
 }

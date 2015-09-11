@@ -8,23 +8,22 @@ div, ul, li, span, label, select, input, textarea
 }
 
 a{
-	color: $white;
 	&:hover{
-		color: $yellow;
+		color: $primary-color;
 	}
 }
 
-
-p, div, li{
-	color: $white;
-}
-
 h1{
-	border-bottom: 3px solid $yellow;
+	text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6{
-	color: $yellow;
+	// color: $primary-color;
+}
+
+quote{
+	font-size: rem-calc(30);
+	font-weight: 100;
 }
 
 // reset ULs
