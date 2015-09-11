@@ -7,6 +7,25 @@ div, ul, li, span, label, select, input, textarea
 	outline: 0;
 }
 
+a{
+	color: $white;
+	&:hover{
+		color: $yellow;
+	}
+}
+
+
+p, div, li{
+	color: $white;
+}
+
+h1{
+	border-bottom: 3px solid $yellow;
+}
+
+h1, h2, h3, h4, h5, h6{
+	color: $yellow;
+}
 
 // reset ULs
 ul.no-bullets

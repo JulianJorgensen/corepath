@@ -5,16 +5,30 @@ html{
 body{
   overflow-x: hidden;
   min-width: 1000px;
+  background-color: $navy-blue;
 }
 
 // MAIN CONTAINER
 .main-container{
-  padding-bottom: $spacing-xlarge;
+  @include display(flex);
+  @include align-items(flex-start);
+  @include justify-content(flex-start);
+
+  .content{
+    padding: 150px $spacing-large 0;
+  }
 }
 
-.container{
-  max-width: 1000px;
-  margin: 0 auto;
+.logo{
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  max-height: 100px;
+  z-index: 9;
+
+  img{
+    max-height: 100%;
+  }
 }
 
 // FLEX POSITIONING CLASSES
@@ -23,13 +37,30 @@ body{
   @include align-items(flex-end);
   @include justify-content(flex-end);
 }
-.flex-right{
+.flex-left{
   @include display(flex);
-  @include align-items(flex-end);
-  @include justify-content(flex-end);
+  @include align-items(flex-start);
+  @include justify-content(flex-start);
 }
 .flex-center{
   @include display(flex);
   @include align-items(center);
   @include justify-content(center);
+}
+
+
+
+main{
+  position: relative;
+
+  &.ng-enter {
+    @include transition((opacity $transition-speed-default ease-in, bottom $transition-speed-fast ease-in));
+    opacity: 0;
+    bottom: -100px;
+  }
+
+  &.ng-enter.ng-enter-active {
+    opacity: 1;
+    bottom: 0;
+  }
 }

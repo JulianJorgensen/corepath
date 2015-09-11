@@ -1,7 +1,7 @@
-title: GoldenChai Boilerplate
+title: Haztech
 source: ./_source
 destination: ./_site
-baseurl:
+baseurl: 
 
 assets:
   dirname: assets
@@ -20,3 +20,5 @@ assets:
   gzip:
   # - text/css
   # - application/javascript
+
+gems: [bourbon]
