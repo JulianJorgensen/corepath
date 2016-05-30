@@ -1,4 +1,4 @@
-# Adobe MAX 2016 Site Guidelines
+# CorePath Robotics website
 
 ## 1. Technologies
 
@@ -21,11 +21,11 @@ Front-end frameworks:
 
 ## 2. Getting Started
 
-The very first thing you'll need to do is to fork the [Github project](https://github.com/coverall/adobe-max).
+The very first thing you'll need to do is to fork the [Github project](https://github.com/JulianJorgensen/corepath).
 
 Clone your fork and add the upstream:
 
-`git remote add upstream https://github.com/coverall/adobe-max`
+`git remote add upstream https://github.com/JulianJorgensen/corepath`
 
 
 ### 2.1 Steps to install
@@ -42,7 +42,7 @@ If you are using Boxen, please run `cd /opt/boxen; bin/boxen` first and make sur
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 ```
-6. `cd ~/Sites/adobe-max` (go to adobe max repo)
+6. `cd ~/Sites/corepath` (go to corepath repo)
 7. `rbenv install` (install the specified ruby version)
 8. Verify you are using the correct ruby version by running `rbenv versions` or `ruby -v` (it should use the ruby version specified by `.ruby-version`)
 9. `gem install bundler` (install gem (= ruby packages/libraries) management tool)
@@ -56,7 +56,7 @@ source $(brew --prefix nvm)/nvm.sh
 17. `npm install --global gulp`
 18. `npm start`
 
-The site should now open automatically in a new browser using BrowserSync. You can also access the site manually here: [http://localhost.max.adobe.com:3000](http://localhost.max.adobe.com:3000) or simply [http://localhost:3000](http://localhost:3000), but for TypeKit and other white-listing sites, it is recommended you use the localhost.max.adobe.com:3000 url.
+The site should now open automatically in a new browser using BrowserSync. You can also access the site manually here: [http://localhost.corepath.dk:3000](http://localhost.corepath.dk:3000) or simply [http://localhost:3000](http://localhost:3000), but for TypeKit and other white-listing sites, it is recommended you use the localhost.corepath.dk:3000 url.
 
 
 ### 2.2 BrowserSync
@@ -85,7 +85,7 @@ are great tools that help with this.
 After committing, do a pull request. [Hub](https://hub.github.com) makes this
 easy from the command line. (We recommend not aliasing `git` to `hub`.)
 
-`hub pull-request -b coverall:master --browse`
+`hub pull-request -b JulianJorgensen:master --browse`
 
 
 ## 4. Javascripts (and CoffeeScripts)
@@ -229,25 +229,3 @@ You'll see the corresponding sizes in the Photoshop mock-ups:
 
 
 ## 7. TypeKit Information
-
-(these are based on last years' site, and may be changed)
-
-FF Tisa Pro
-* `font-family: "ff-tisa-web-pro",serif;`
-* `font-style: normal;`
-* `font-weight: 400;`
-
-Adobe Clean Regular
-* `font-family: "adobe-clean",sans-serif;`
-* `font-style: normal;`
-* `font-weight: 400;`
-
-Adobe Clean Light
-* `font-family: "adobe-clean",sans-serif;`
-* `font-style: normal;`
-* `font-weight: 300;`
-
-Adobe Clean Bold
-* `font-family: "adobe-clean",sans-serif;`
-* `font-style: normal;`
-* `font-weight: 700;`
