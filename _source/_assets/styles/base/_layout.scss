@@ -1,0 +1,47 @@
+body {
+  font-size: rem-calc(18);
+  line-height: rem-calc(22);
+  padding-top: rem-calc(80);
+
+  @include breakpoint(medium){
+    padding-top: rem-calc(100);
+    min-width: rem-calc(350);
+  }
+
+  @include breakpoint(large){
+    padding-top: rem-calc(150);
+  }
+}
+
+// CONTENT
+.container{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section-default{
+  padding: rem-calc(20) 0;
+
+  @include breakpoint(large){
+    padding: rem-calc(60) 0;
+  }
+}
+
+.section-primary{
+  background-color: $primary-color;
+
+  &, h1, h2, h3, h4, h5, h6, a{
+    color: $white;
+  }
+}
+
+footer {
+  color: $white;
+  background-color: $black;
+  padding: rem-calc(60) 0;
+
+  .nav-items li {
+    display: inline-block;
+    margin-left: rem-calc(20);
+  }
+}

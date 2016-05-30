@@ -1,0 +1,17 @@
+.section-contact {
+  font-size: rem-calc(30);
+  text-align: center;
+
+  .fa-stack-1x {
+    color: #f9a31c;
+  }
+
+  @include breakpoint(medium){
+    font-size: rem-calc(40);
+  }
+}
+
+
+#twitter-widget-0{
+  height: rem-calc(400) !important;
+}

@@ -1,0 +1,29 @@
+---
+env: development
+
+exclude:
+- "_assets/vendor"
+- "_assets/styles/base"
+- "_assets/styles/helpers"
+- "_assets/styles/layouts"
+- "_assets/styles/modules"
+- "_assets/styles/states"
+- "_assets/styles/vendor"
+- "_assets/styles/app.scss"
+- "_assets/js"
+
+include: [_assets]
+
+source: ./_source
+destination: ./_site
+
+baseurl: /
+url_prefix: http://localhost.corepath.dk
+# development only
+url_prefix_secure: http://localhost.corepath.dk
+
+typekit_id: 'tvw4jri'
+#destination: /max/build
+
+# Conversion
+incremental: true

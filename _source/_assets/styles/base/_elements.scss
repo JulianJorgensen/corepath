@@ -1,0 +1,15 @@
+// --------------------------------------------------
+// Elements
+// --------------------------------------------------
+
+
+quote {
+  font-size: rem-calc(25);
+  line-height: rem-calc(35);
+
+  @include breakpoint(medium){
+    font-weight: 100;
+    font-size: rem-calc(40);
+    line-height: rem-calc(50);
+  }
+}

@@ -1,0 +1,27 @@
+<!-- mobile nav -->
+<nav class="nav nav-mobile hide-for-large">
+  <div class="row small-collapse align-middle">
+    <div class="small-4 columns">
+      <div class="nav-logo"><a href="#home"><img src="_assets/images/logo.png" /></a></div>
+    </div>
+    <div class="small-8 columns text-right">
+      <i class="fa fa-bars" data-trigger-mobile-nav></i>
+    </div>
+  </div>
+</nav>
+<div class="mobile-nav-content">
+  {% include nav-items.html %}
+</div>
+
+
+<!-- desktop nav -->
+<nav class="nav nav-desktop show-for-large">
+  <div class="row small-collapse align-middle">
+    <div class="small-3 columns">
+      <div class="nav-logo"><a href="#home"><img src="_assets/images/logo.png" /></a></div>
+    </div>
+    <div class="small-9 columns">
+      {% include nav-items.html %}
+    </div>
+  </div>
+</nav>

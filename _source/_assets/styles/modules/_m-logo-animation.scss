@@ -1,0 +1,28 @@
+.logo-exploded {
+  position: relative;
+  width: 800px;
+  height: 500px;
+  left: 50%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: -400px;
+
+  .logo-half-left,
+  .logo-half-right{
+    position: absolute;
+  }
+
+  .logo-half-left {
+    left: -400px;
+  }
+
+  .logo-half-right {
+    right: -400px;
+  }
+
+  .logo-text {
+    position: absolute;
+    left: 140px;
+    top: 180px;
+  }
+}

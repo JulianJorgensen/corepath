@@ -1,0 +1,17 @@
+// --------------------------------------------------
+// Foundation overrides (custom)
+// --------------------------------------------------
+
+
+// accordion overrides
+.accordion .accordion-title{
+  font-size: inherit;
+}
+
+
+// legend (forms heading)
+legend{
+  font-size: rem-calc(14);
+  line-height: 1.8;
+  font-weight: $global-weight-bold;
+}
