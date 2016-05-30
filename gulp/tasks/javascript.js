@@ -15,8 +15,7 @@ gulp.task('preJS', function(){
     .pipe($.sourcemaps.init())
     .pipe($.babel())
     .pipe($.concat(config.filenamePreload))
-    .pipe($.if(isProduction, uglify({ mangle: false })))
-    .pipe($.if(!isProduction, $.sourcemaps.write()))
+    .pipe(uglify({ mangle: false }))
     .pipe(gulp.dest(config.dest))
     .pipe(gulp.dest(config.siteDest));
 });
@@ -28,8 +27,7 @@ gulp.task('mainJS', function(){
     .pipe($.sourcemaps.init())
     .pipe($.babel())
     .pipe($.concat(config.filename))
-    .pipe($.if(isProduction, uglify({ mangle: false })))
-    .pipe($.if(!isProduction, $.sourcemaps.write()))
+    .pipe(uglify({ mangle: false }))
     .pipe(gulp.dest(config.dest))
     .pipe(gulp.dest(config.siteDest));
 });

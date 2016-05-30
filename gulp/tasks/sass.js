@@ -15,8 +15,7 @@ gulp.task('sass', function() {
     .pipe($.sass()
       .on('error', $.sass.logError))
     .pipe(autoprefixer(config.compatibility))
-    .pipe($.if(isProduction, uglifycss()))
-    .pipe($.if(!isProduction, $.sourcemaps.write()))
+    .pipe(uglifycss())
     .pipe(gulp.dest(config.dest))
     .pipe(gulp.dest(config.siteDest))
     //auto-inject styles into browsers
