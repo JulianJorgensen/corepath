@@ -15,7 +15,6 @@ exclude:
 
 include: [_assets]
 
-source: ./_source
 destination: ./_site
 
 baseurl: /
