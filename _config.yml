@@ -11,11 +11,9 @@ exclude:
 - "_assets/styles/vendor"
 - "_assets/styles/app.scss"
 - "_assets/js"
+- "node_modules"
 
 include: [_assets]
-
-source: ./
-destination: ./_site
 
 baseurl: /
 url_prefix: http://localhost.corepath.dk
