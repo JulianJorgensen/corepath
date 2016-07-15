@@ -97,10 +97,11 @@ watch:
   sass: "_assets/styles/**/*"
   data: "{_data,_posts}/**/*.{yml,xml}"
   pages:
-    - "**/*.{md,html,yml,xml}"
+    - "**/*.{md,html}"
     - "{_includes,_layouts,_pages,_posts}/**/*.{md,html,yml,xml}"
     - "!_site/**/*.*"
     - "!_assets/**/*.*"
+    - "!node_modules/**/*"
 
 revision:
   revision:

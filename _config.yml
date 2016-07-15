@@ -11,7 +11,19 @@ exclude:
 - "_assets/styles/vendor"
 - "_assets/styles/app.scss"
 - "_assets/js"
+
+- "gulp"
+- "bower.json"
+- "Gemfile"
+- "Gemfile.lock"
+- "gulpfile.js"
+- "gulp"
+- "npm-debug.log"
+- "package.json"
+- "rev-manifest.json"
+- "README.md"
 - "node_modules"
+
 
 include: [_assets]
 
