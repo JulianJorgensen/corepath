@@ -1,5 +1,4 @@
 ---
-version: 3.0.3
 env: development
 
 exclude:
@@ -15,6 +14,7 @@ exclude:
 
 include: [_assets]
 
+source: ./
 destination: ./_site
 
 baseurl: /
@@ -23,7 +23,6 @@ url_prefix: http://localhost.corepath.dk
 url_prefix_secure: http://localhost.corepath.dk
 
 typekit_id: 'tvw4jri'
-#destination: /max/build
 
 # Conversion
 incremental: true
