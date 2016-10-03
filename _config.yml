@@ -27,6 +27,7 @@ exclude:
 
 include: [_assets]
 
+source: ./_source
 baseurl: /
 url_prefix: http://localhost.corepath.dk
 # development only
