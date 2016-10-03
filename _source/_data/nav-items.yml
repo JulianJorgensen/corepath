@@ -1,0 +1,17 @@
+- title: Products
+  url: /products/
+  submenus:
+    - title: Industries
+      url: /industries/
+    - title: Applications
+      url: /applications/
+    - title: Cases
+      url: /cases/
+    - title: Distributors
+      url: /distributors/
+- title: Media
+  url: /media/
+- title: About
+  url: /about/
+- title: Contact
+  url: /contact/

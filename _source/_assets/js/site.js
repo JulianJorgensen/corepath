@@ -3,20 +3,20 @@
 // --------------------------------------------------
 
 // SMOOTH SCROLLING
-$(function() {
-  $('a[href*=\\#]:not([href=\\#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
+// $(function() {
+//   $('a[href*=\\#]:not([href=\\#])').click(function() {
+//     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+//       var target = $(this.hash);
+//       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+//       if (target.length) {
+//         $('html,body').animate({
+//           scrollTop: target.offset().top
+//         }, 1000);
+//         return false;
+//       }
+//     }
+//   });
+// });
 
 // initialize skrollr
 $(function () {
@@ -41,15 +41,17 @@ $(document).ready(function(){
 
   // INITIALIZE SLIDERS
   var nav = $(".nav");
-  $(window).on("scroll", function(e) {
-    $(".mobile-nav-content").removeClass("active");
+  if ($("body").hasClass("page-home")){
+    $(window).on("scroll", function(e) {
+      $(".mobile-nav-content").removeClass("active");
 
-    if ($(window).scrollTop() > 10) {
-      nav.addClass("nav-fixed");
-    } else {
-      nav.removeClass("nav-fixed");
-    }
-  });
+      if ($(window).scrollTop() > 300) {
+        nav.addClass("nav-fixed");
+      } else {
+        nav.removeClass("nav-fixed");
+      }
+    });
+  }
 
   var marqueeSlider = $('#marquee-slider').royalSlider({
     addActiveClass: true,
@@ -59,5 +61,19 @@ $(document).ready(function(){
     fadeinLoadedSlide: false,
     keyboardNavEnabled: true
   }).data('royalSlider');
+
+
+  // initialize headroom menu (disappear on scroll)
+  $(".top-bar").headroom({
+    // vertical offset in px before element is first unpinned
+    offset : 80,
+    // scroll tolerance in px before state changes
+    tolerance : 0,
+    // or you can specify tolerance individually for up/down scroll
+    tolerance : {
+        up : 0,
+        down : 15
+    }
+  });
 
 });

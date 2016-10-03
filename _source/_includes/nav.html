@@ -2,7 +2,7 @@
 <nav class="nav nav-mobile hide-for-large">
   <div class="row small-collapse align-middle">
     <div class="small-4 columns">
-      <div class="nav-logo"><a href="#home"><img src="_assets/images/logo.png" /></a></div>
+      <div class="nav-logo"><a href="/"><img src="/_assets/images/logo.png" /></a></div>
     </div>
     <div class="small-8 columns text-right">
       <i class="fa fa-bars" data-trigger-mobile-nav></i>
@@ -10,18 +10,37 @@
   </div>
 </nav>
 <div class="mobile-nav-content">
-  {% include nav-items.html %}
+  <ul class="nav-items">
+    {% for item in site.data.nav-items %}
+      <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+      {% if item.submenus %}
+        {% for submenu in item.submenus %}
+          <li><a href="{{ submenu.url }}">{{ submenu.title }}</a></li>
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+  </ul>
 </div>
 
 
-<!-- desktop nav -->
-<nav class="nav nav-desktop show-for-large">
-  <div class="row small-collapse align-middle">
-    <div class="small-3 columns">
-      <div class="nav-logo"><a href="#home"><img src="_assets/images/logo.png" /></a></div>
-    </div>
-    <div class="small-9 columns">
-      {% include nav-items.html %}
-    </div>
+<nav class="top-bar nav nav-desktop show-for-large {% if page.class != 'home' %}nav-fixed{% endif %}">
+  <div class="top-bar-left">
+    <div class="nav-logo"><a href="/"><img src="/_assets/images/logo.png" /></a></div>
+  </div>
+  <div class="top-bar-right">
+    <ul class="dropdown menu" data-dropdown-menu>
+      {% for item in site.data.nav-items %}
+      <li>
+        <a href="{{ item.url }}">{{ item.title }}</a>
+        {% if item.submenus %}
+          <ul class="menu vertical">
+            {% for submenu in item.submenus %}
+              <li><a href="{{ submenu.url }}">{{ submenu.title }}</a></li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
   </div>
 </nav>

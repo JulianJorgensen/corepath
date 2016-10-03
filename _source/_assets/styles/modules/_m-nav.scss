@@ -7,6 +7,8 @@
     padding-top: rem-calc(20);
     padding-bottom: rem-calc(20);
     width: 100%;
+    padding-left: rem-calc(20);
+    padding-right: rem-calc(20);
     background-color: $white;
     user-select: none;
     @include transition((padding 0.1s, background-color 0.1s));
@@ -16,18 +18,39 @@
       padding-bottom: rem-calc(50);
     }
 
+    a{
+      color: $black;
+      font-weight: bold;
+    }
+
     .nav-logo{
-      @include transition(transform 0.1s);
+      @include transition(width 0.1s);
+      img{
+        max-width: 100%;
+      }
+    }
+
+    .submenu{
+      border: 0;
+      background-color: $white;
     }
 
     &.nav-fixed{
       position: fixed;
-      background-color: rgba($white, 0.5);
+      background-color: $primary-color;
       z-index: 9999;
       left: 0;
       top: 0;
-      padding-top: rem-calc(20);
-      padding-bottom: rem-calc(20);
+      padding-top: rem-calc(10);
+      padding-bottom: rem-calc(10);
+
+      .submenu{
+        background-color: $primary-color;
+      }
+
+      .nav-logo img{
+        filter: brightness(0%);
+      }
     }
   }
 
@@ -85,8 +108,21 @@
   .nav-desktop{
     &.nav-fixed{
       .nav-logo{
-        transform: scale(0.6);
+        width: rem-calc(200);
       }
     }
   }
+}
+
+
+
+.headroom {
+    will-change: transform;
+    transition: transform 200ms linear;
+}
+.headroom--pinned {
+    transform: translateY(0%);
+}
+.headroom--unpinned {
+    transform: translateY(-100%);
 }

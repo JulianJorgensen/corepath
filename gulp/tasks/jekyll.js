@@ -1,4 +1,11 @@
-var browserSync   = require('browser-sync');
+var browserSync   = false;
+try
+{
+  browserSync = require('browser-sync');
+}
+catch (e)
+{
+}
 var config        = require('../util/loadConfig').jekyll;
 var gulp          = require('gulp');
 var isProduction  = require('../util/isProduction');
@@ -11,14 +18,20 @@ gulp.task('jekyll-build', function(done) {
     return spawn('bundle', ['exec', 'jekyll', 'build', '--config', '_config.yml,_config-' + process.env['DEPLOYBOT_ENVIRONMENT'] + '.yml'], {stdio: 'inherit'})
     .on('close', done);
   } else {
-    browserSync.notify(config.notification);
+    if (browserSync)
+    {
+      browserSync.notify(config.notification);
+    }
     return spawn('bundle', ['exec', 'jekyll', 'build'], {stdio: 'inherit'})
     .on('close', done);
   }
 });
 
 gulp.task('jekyll-incremental', function(done) {
-  browserSync.notify(config.notificationIncremental);
+  if (browserSync)
+  {
+    browserSync.notify(config.notificationIncremental);
+  }
   // Spawn jekyll commands
   return spawn('bundle', ['exec', 'jekyll', 'build', '--incremental', '--safe'], {stdio: 'inherit'})
   .on('close', done);

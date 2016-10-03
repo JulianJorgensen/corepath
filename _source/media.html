@@ -1,0 +1,53 @@
+---
+layout: subpage
+---
+
+<div class="container">
+  <h1 class="editable">Media</h1>
+
+  <div class="editable">
+    <div class="row">
+      <div class="small-6 columns editable">
+        <p>We welcome journalists and other media agencies to contact us to learn more about our cutting edge robot technology. Below you can find more information about CP Robotics, press photos as well as our newest press releases.</p>
+
+        <h2>Press releases</h2>
+        {% for article in site.press-releases %}
+          <article class="article">
+            <h6 class="article-date">{{ article.date }}</h6>
+            <h4 class="article-title">{{ article.title }}</h4>
+            <div class="article-excerpt">{{ article.excerpt }}</div>
+          </article>
+        {% endfor %}
+
+      </div>
+      <div class="small-6 columns editable">
+        <h2>Press photos</h2>
+        <h4>Company logo</h4>
+        https://drive.google.com/open?id=0B1W_WcBqzf9-aUxHMEg2bGJtYkE
+
+        <h4 class="margin-top-medium">CEO Jimmy Alison Jørgensen</h4>
+        <img src="/_assets/images/Jimmy-ved-PC-optimeret.jpg" class="CEO Jimmy Jorgensen" />
+
+        <h4 class="margin-top-medium">Information about CP Robotics</h4>
+        https://drive.google.com/open?id=1uoOQBql7siQMv7l1UuzJF9rYUxmCmyOdjpBaAiWFug
+      </div>
+    </div>
+  </div>
+
+
+<h2>Highlighted stories</h2>
+De små vokser også: Vokseværk i robotkuvøsen (Fyens Stiftstidende, 14/06/2016)
+http://www.fyens.dk/erhverv/De-smaa-vokser-ogsaa-Voksevaerk-i-robotkuvoesen/artikel/3017205
+Ungt robotfirma får million til udvikling (Fyens Stiftstidende, 21/04/2016)
+http://www.fyens.dk/erhverv/Ungt-robotfirma-faar-million-til-udvikling/artikel/2982140
+Flere robotter indtager Odense (Tv2, 07/10/2015)
+http://www.tv2fyn.dk/artikel/flere-robotter-indtager-odense
+16 Robotic Startups to Watch (Robotic Trends, 23/09/2015)
+http://www.roboticstrends.com/index.php/%20article/16_robotics_startups_to_watch
+Spokespersons
+CEO, Jimmy Alison Jørgensen, jimmy@corepath.net +45 2025 2435
+Communications Consultant, Morten Agerbæk Riber, morten@corepath.net +45 5182 8495
+Business Development Officer, Sabina Kethelz, sabina@corepath.net +45 4272 6697
+
+  </div>
+</div>

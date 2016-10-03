@@ -1,17 +1,33 @@
-.section-contact {
-  font-size: rem-calc(30);
-  text-align: center;
-
-  .fa-stack-1x {
-    color: #f9a31c;
-  }
-
+.page-home{
   @include breakpoint(medium){
-    font-size: rem-calc(40);
+    padding-top: rem-calc(100);
+    min-width: rem-calc(350);
   }
-}
 
+  @include breakpoint(large){
+    padding-top: rem-calc(200);
+  }
 
-#twitter-widget-0{
-  height: rem-calc(400) !important;
+  h1{
+    text-align: center;
+    border-bottom: 0;
+  }
+
+  .section-contact {
+    font-size: rem-calc(30);
+    text-align: center;
+
+    .fa-stack-1x {
+      color: #f9a31c;
+    }
+
+    @include breakpoint(medium){
+      font-size: rem-calc(40);
+    }
+  }
+
+  #twitter-widget-0{
+    height: rem-calc(600) !important;
+    width: 100% !important;
+  }
 }
