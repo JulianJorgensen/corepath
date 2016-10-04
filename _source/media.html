@@ -7,47 +7,70 @@ layout: subpage
 
   <div class="editable">
     <div class="row">
-      <div class="small-6 columns editable">
-        <p>We welcome journalists and other media agencies to contact us to learn more about our cutting edge robot technology. Below you can find more information about CP Robotics, press photos as well as our newest press releases.</p>
-
-        <h2>Press releases</h2>
-        {% for article in site.press-releases %}
-          <article class="article">
-            <h6 class="article-date">{{ article.date }}</h6>
-            <h4 class="article-title">{{ article.title }}</h4>
-            <div class="article-excerpt">{{ article.excerpt }}</div>
-          </article>
-        {% endfor %}
-
+      <div class="medium-6 columns editable">
+        <p class="lead">We welcome journalists and other media agencies to contact us to learn more about our cutting edge robot technology. Below you can find more information about CP Robotics, press photos as well as our newest press releases.</p>
       </div>
-      <div class="small-6 columns editable">
+      <div class="medium-6 columns editable">
         <h2>Press photos</h2>
-        <h4>Company logo</h4>
-        https://drive.google.com/open?id=0B1W_WcBqzf9-aUxHMEg2bGJtYkE
-
-        <h4 class="margin-top-medium">CEO Jimmy Alison Jørgensen</h4>
-        <img src="/_assets/images/Jimmy-ved-PC-optimeret.jpg" class="CEO Jimmy Jorgensen" />
-
-        <h4 class="margin-top-medium">Information about CP Robotics</h4>
-        https://drive.google.com/open?id=1uoOQBql7siQMv7l1UuzJF9rYUxmCmyOdjpBaAiWFug
+        <h4><a href="/_assets/images/Jimmy-ved-PC-optimeret.jpg" target="new">Photo of CEO Jimmy Alison Jørgensen</a></h4>
+        <h4 class="margin-top-medium"><a href="https://drive.google.com/open?id=0B1W_WcBqzf9-aUxHMEg2bGJtYkE" target="new">Company logo</a></h4>
+        <h4 class="margin-top-medium"><a href="https://drive.google.com/open?id=1uoOQBql7siQMv7l1UuzJF9rYUxmCmyOdjpBaAiWFug" target="new">Information about CP Robotics</a></h4>
       </div>
     </div>
   </div>
 
+  <h2 class="margin-top-medium">Spokespersons</h2>
+  <div class="row">
+    <!-- Profile Jimmy -->
+    <div class="small-12 medium-4 columns">
+      <img src="/_assets/images/jimmy-profile-face-small.jpg">
+      <h5 class="margin-none editable"><b>Jimmy Alison Jørgensen</b></h5>
+      <h6 class="editable">CEO, Director</h6>
+      <h6 class="editable"><a data-email-protector="jimmy|corepath.net">jimmy@corepath.net</a></h6>
+      <h6 class="editable"><phone>+45 2025 2435</phone></h6>
+    </div>
 
-<h2>Highlighted stories</h2>
-De små vokser også: Vokseværk i robotkuvøsen (Fyens Stiftstidende, 14/06/2016)
-http://www.fyens.dk/erhverv/De-smaa-vokser-ogsaa-Voksevaerk-i-robotkuvoesen/artikel/3017205
-Ungt robotfirma får million til udvikling (Fyens Stiftstidende, 21/04/2016)
-http://www.fyens.dk/erhverv/Ungt-robotfirma-faar-million-til-udvikling/artikel/2982140
-Flere robotter indtager Odense (Tv2, 07/10/2015)
-http://www.tv2fyn.dk/artikel/flere-robotter-indtager-odense
-16 Robotic Startups to Watch (Robotic Trends, 23/09/2015)
-http://www.roboticstrends.com/index.php/%20article/16_robotics_startups_to_watch
-Spokespersons
-CEO, Jimmy Alison Jørgensen, jimmy@corepath.net +45 2025 2435
-Communications Consultant, Morten Agerbæk Riber, morten@corepath.net +45 5182 8495
-Business Development Officer, Sabina Kethelz, sabina@corepath.net +45 4272 6697
+    <!-- Profile Sabina -->
+    <div class="small-12 medium-4 columns">
+      <img src="/_assets/images/sabinakethelz1_vingette.jpg">
+      <h5 class="margin-none editable"><b>Sabina Kethelz</b></h5>
+      <h6 class="editable">Business Developer Officer</h6>
+      <h6 class="editable"><a data-email-protector="sabina|corepath.net">sabina@corepath.net</a></h6>
+      <h6 class="editable"><phone>+45 4272 6697</phone></h6>
+    </div>
 
+    <!-- Profile Morten -->
+    <div class="small-12 medium-4 columns">
+      <img src="/_assets/images/morten_agerbak_riber_round.jpg">
+      <h5 class="margin-none editable"><b>Morten Agerbæk Riber</b></h5>
+      <h6 class="editable">Communications Consultant</h6>
+      <h6 class="editable"><a data-email-protector="morten|corepath.net">morten@corepath.net</a></h6>
+      <h6 class="editable"><phone>+45 5182 8495</phone></h6>
+    </div>
   </div>
+
+  <div class="row margin-top-medium">
+    <div class="medium-6 columns">
+      <h2>Highlighted stories</h2>
+      {% for article in site.stories %}
+        <article class="article">
+          <date class="article-date">{{ article.date }}</date>
+          <h4 class="article-title"><a href="{{ article.url }}" target="new">{{ article.title }}</a></h4>
+          <div class="article-excerpt">{{ article.excerpt }}</div>
+        </article>
+      {% endfor %}
+    </div>
+    <div class="medium-6 columns">
+      <h2>Press releases</h2>
+      {% for article in site.press-releases %}
+        <article class="article">
+          <date class="article-date">{{ article.date }}</date>
+          <h4 class="article-title"><a href="{{ article.url }}" target="new">{{ article.title }}</a></h4>
+          <div class="article-excerpt">{{ article.excerpt }}</div>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+
+
 </div>

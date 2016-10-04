@@ -193,7 +193,7 @@ class: home
     <div class="row">
       <div class="small-12 columns text-center">
         <h1 class="margin-none editable">WORK WITH US</h1>
-        <p class="editable">Looking for engineers, designers and business professionals.<br>If you are Interested in a future at CorePath Robotics, send an email to:<br><a href="mailto:jobs@corepath.dk">jobs@corepath.dk</a></p>
+        <p class="editable">Looking for engineers, designers and business professionals.<br>If you are Interested in a future at CorePath Robotics, send an email to:<br><a data-email-protector="jobs|corepath.dk">jobs@corepath.dk</a></p>
       </div>
     </div>
   </section>
@@ -203,11 +203,11 @@ class: home
 
     <div class="row">
       <div class="small-12 medium-6 columns">
-    	  <h3 class="editable">RoboBusiness 2015</h3>
-        <p class="editable">CorePath Robotics attended RoboBusiness Pitchfire 2015 in San Jose, California.  <a href="https://www.linkedin.com/pulse/massive-odenserobotics-presence-robobusiness-2015-san-joost-nijhoff">Read more »</a></p>
-
-        <h3 class="editable">CorePath Robotics founded</h3>
-        <p class="editable">CorePath Robotics founded the 13-08-2015 with Science Ventures Denmark and Syddansk Teknologisk Innovation as investors <a href="#">Read more »</a></p>
+        {% assign news = site.news | sort_by: date | reverse %}
+        {% for article in news %}
+      	  <h3 class="editable">{{ article.title }}</h3>
+          <p class="editable">{{ article.excerpt }} {% if article.url != "" %}<a href="{{ article.url }}">Read more »</a>{% endif %}</p>
+        {% endfor %}
       </div>
       <div class="small-12 medium-6 columns">
         <a class="twitter-timeline" href="https://twitter.com/cprobots" data-widget-id="732719965493567489">Tweets by @cprobots</a>
@@ -231,7 +231,7 @@ class: home
 
   <section class="section-default section-primary section-contact">
 
-    <p class="editable"><a href="mailto:contact@corepath.dk">contact@corepath.dk</a></p>
+    <p class="editable"><a data-email-protector="contact|corepath.dk">contact@corepath.dk</a></p>
 
     <!-- twitter -->
     <span class="fa-stack fa-lg">

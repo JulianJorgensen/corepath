@@ -39,12 +39,20 @@ incremental: true
 
 # Collections
 collections:
+  news:
+    output: true
   press-releases:
     output: true
   stories:
     output: true
 
 defaults:
+  -
+    scope:
+      path: ""
+      type: "news"
+    values:
+      layout: "post"
   -
     scope:
       path: ""
