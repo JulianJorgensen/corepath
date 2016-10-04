@@ -1,24 +1,19 @@
 .logo-exploded-wrapper{
   @include flex();
   @include flex-align(center);
+  height: 100vh;
 }
 .logo-exploded {
   @include flex();
   @include flex-align(center);
   @include flex-align-self(middle);
+  height: rem-calc(492);
   position: relative;
-  height: 100vh;
   width: rem-calc(800);
 
   .logo-half-left,
   .logo-half-right{
     position: absolute;
-  }
-
-  .logo-half-left,
-  .logo-half-right,
-  .logo-text{
-    @include flex-align-self(middle);
   }
 
   .logo-half-left {
@@ -30,7 +25,7 @@
   }
 
   .logo-text {
-    position: absolute;
+    @include flex-align-self(middle);
     left: 140px;
   }
 }
