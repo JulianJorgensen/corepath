@@ -202,6 +202,7 @@ class: home
       <div class="small-12 medium-6 columns">
         {% assign news = site.news | sort_by: date | reverse %}
         {% for article in news %}
+          <date class="article-date">{{ article.date | date: '%B %d, %Y' }}</date>
       	  <h3 class="editable">{{ article.title }}</h3>
           <p class="editable">{{ article.excerpt }} {% if article.url != "" %}<a href="{{ article.url }}">Read more »</a>{% endif %}</p>
         {% endfor %}

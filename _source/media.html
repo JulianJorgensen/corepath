@@ -24,7 +24,7 @@ layout: subpage
       <h2>Highlighted stories</h2>
       {% for article in site.stories %}
         <article class="article">
-          <date class="article-date">{{ article.date }}</date>
+          <date class="article-date">{{ article.date | date: '%B %d, %Y' }}</date>
           <h4 class="article-title"><a href="{{ article.url }}" target="new">{{ article.title }}</a></h4>
           <div class="article-excerpt">{{ article.excerpt }}</div>
         </article>
@@ -34,7 +34,7 @@ layout: subpage
       <h2>Press releases</h2>
       {% for article in site.press-releases %}
         <article class="article">
-          <date class="article-date">{{ article.date }}</date>
+          <date class="article-date">{{ article.date | date: '%B %d, %Y' }}</date>
           <h4 class="article-title"><a href="{{ article.url }}" target="new">{{ article.title }}</a></h4>
           <div class="article-excerpt">{{ article.excerpt }}</div>
         </article>
