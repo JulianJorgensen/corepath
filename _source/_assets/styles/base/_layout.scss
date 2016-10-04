@@ -62,6 +62,10 @@ footer {
   color: $black;
   background-color: $primary-color;
 
+  a, a:hover{
+    color: $black;
+  }
+
   .nav-items{
     margin-bottom: 0;
 
