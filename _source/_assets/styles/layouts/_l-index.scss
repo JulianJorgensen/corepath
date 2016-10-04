@@ -1,7 +1,7 @@
 $footer-height: rem-calc(80);
 
 .page-home{
-  padding-bottom: rem-calc(120);
+  padding-bottom: 0;
   @include breakpoint(medium){
     padding-bottom: rem-calc(40);
     padding-top: rem-calc(100);
@@ -13,6 +13,8 @@ $footer-height: rem-calc(80);
   }
 
   footer{
+    position: static;
+    height: auto;
     @include breakpoint(medium){
       position: absolute;
       bottom: 0;
