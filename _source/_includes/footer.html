@@ -1,23 +1,16 @@
 <footer>
   <div class="row expanded">
-    <div class="small-6 columns">
-      Copyright {{ 'now' | date: "%Y" }} CorePath Robotics. All Rights Reserved
+    <div class="small-12 medium-6 columns small-order-2 medium-order-1 text-center medium-text-left">
+      Copyright {{ 'now' | date: "%Y" }} CorePath Robotics. <span class="nobr">All Rights Reserved</span>
     </div>
-    <div class="small-6 columns">
-      <ul class="nav-items text-right">
-        <li>
-          <a href="#technology">Technology</a>
-        </li>
-        <li>
-          <a href="#applications">Applications</a>
-        </li>
-        <li>
-          <a href="#team">Team</a>
-        </li>
-        <li>
-          <a href="mailto:contact@corepath.dk">Contact</a>
-        </li>
-      </ul>
+    <div class="small-12 medium-6 columns small-order-1 medium-order-2 text-center medium-text-right">
+
+        <ul class="nav-items margin-none">
+          {% for item in site.data.nav-items %}
+            <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+          {% endfor %}
+        </ul>
+
     </div>
   </div>
 </footer>

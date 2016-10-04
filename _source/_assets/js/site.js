@@ -64,7 +64,7 @@ $(document).ready(function(){
 
 
   // initialize headroom menu (disappear on scroll)
-  $(".top-bar").headroom({
+  $("[data-headroom]").headroom({
     // vertical offset in px before element is first unpinned
     offset : 80,
     // scroll tolerance in px before state changes

@@ -1,0 +1,8 @@
+.section-contact {
+  font-size: rem-calc(30);
+  text-align: center;
+
+  @include breakpoint(medium){
+    font-size: rem-calc(40);
+  }
+}

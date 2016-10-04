@@ -10,13 +10,13 @@ body, html{
 }
 
 body {
-  margin-bottom: $footer-height;
-  padding-bottom: rem-calc(30);
+  padding-bottom: rem-calc(120);
   font-size: rem-calc(18);
   line-height: rem-calc(22);
   padding-top: rem-calc(80);
 
   @include breakpoint(medium){
+    padding-bottom: $footer-height;
     min-width: rem-calc(350);
   }
 }
@@ -49,7 +49,7 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: $footer-height;
+  padding: rem-calc(20) 0;
 
   .columns{
     @include flex-align-self(middle);
@@ -69,6 +69,10 @@ footer {
       font-weight: bold;
       display: inline-block;
       margin-left: rem-calc(20);
+
+      &:first-child{
+        margin-left: 0;
+      }
       a{
         color: $black;
       }

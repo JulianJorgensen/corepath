@@ -3,14 +3,21 @@
 // --------------------------------------------------
 
 // displays
-
 .display-block{
   display: block;
 }
 
 
+.nobr{
+  white-space: nowrap;
+}
+
 
 // margins
+.margin-none{
+  margin: 0;
+}
+
 .margin-xlarge{
   margin: rem-calc($spacing-xlarge);
 }

@@ -1,5 +1,9 @@
+$footer-height: rem-calc(80);
+
 .page-home{
+  padding-bottom: 0;
   @include breakpoint(medium){
+    padding-bottom: rem-calc(40);
     padding-top: rem-calc(100);
     min-width: rem-calc(350);
   }
@@ -8,21 +12,23 @@
     padding-top: rem-calc(200);
   }
 
+  footer{
+    @include breakpoint(medium){
+      position: absolute;
+      bottom: 0;
+      height: $footer-height;
+      margin-top: 0;
+    }
+  }
+
   h1{
     text-align: center;
     border-bottom: 0;
   }
 
-  .section-contact {
-    font-size: rem-calc(30);
-    text-align: center;
-
+  .section-contact{
     .fa-stack-1x {
       color: #f9a31c;
-    }
-
-    @include breakpoint(medium){
-      font-size: rem-calc(40);
     }
   }
 
