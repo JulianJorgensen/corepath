@@ -11,25 +11,11 @@ class: home
 
   <div class="visibleNearby">
     <div id="marquee-slider" class="royalSlider rsDefault">
-      <a class="rsImg" href="/_assets/images/slider/cut-cyl.jpg"></a>
-      <a class="rsImg" href="/_assets/images/slider/welding-art-1.jpg"></a>
-      <a class="rsImg" href="/_assets/images/slider/interface_ninja.png"></a>
-      <a class="rsImg" href="/_assets/images/slider/scanning_object_1.png"></a>
-      <a class="rsImg" href="/_assets/images/slider/flow-CAD-CAM-CP-Robot.png"></a>
-      <a class="rsImg" href="/_assets/images/slider/PhotoFunia-1463953502.jpg"></a>
-      <a class="rsImg" href="/_assets/images/slider/PhotoFunia-1463953827.jpg"></a>
-      <a class="rsImg" href="/_assets/images/slider/PhotoFunia-1463956300.jpg"></a>
-      <a class="rsImg" href="/_assets/images/slider/PhotoFunia-1463956343.jpg"></a>
-      <a class="rsImg" href="/_assets/images/slider/PhotoFunia-1463956409.jpg"></a>
-      <a class="rsImg" href="/_assets/images/slider/PhotoFunia-1463956451.jpg"></a>
-      <a class="rsImg" href="/_assets/images/slider/PhotoFunia-1463956984.jpg"></a>
-      <a class="rsImg" href="/_assets/images/slider/PhotoFunia-1463957223.jpg"></a>
-      <a class="rsImg" href="/_assets/images/slider/PhotoFunia-1463957515.jpg"></a>
-      <a class="rsImg" href="/_assets/images/slider/PhotoFunia-1463996663.jpg"></a>
-      <a class="rsImg" href="/_assets/images/slider/PhotoFunia-1463996873.jpg"></a>
-      <a class="rsImg" href="/_assets/images/slider/PhotoFunia-1463996971.jpg"></a>
-      <a class="rsImg" href="/_assets/images/slider/PhotoFunia-1463997021.jpg"></a>
-      <a class="rsImg" href="/_assets/images/slider/PhotoFunia-1463997062.jpg"></a>
+      <a class="rsImg" href="/_assets/images/slider/Industrial-Grinding.jpg"></a>
+      <a class="rsImg" href="/_assets/images/slider/Industrial-Polishing.jpg"></a>
+      <a class="rsImg" href="/_assets/images/slider/photofunia-1463956409.jpg"></a>
+      <a class="rsImg" href="/_assets/images/slider/photofunia-1463996971.jpg"></a>
+      <a class="rsImg" href="/_assets/images/slider/photofunia-1463997021.jpg"></a>
       <a class="rsImg" href="/_assets/images/slider/PhotoFunia-1463997114.jpg"></a>
     </div>
   </div>
@@ -117,71 +103,52 @@ class: home
 
   <section class="section-default">
 
-    <h1 class="editable">Our team</h1>
+    <h1 class="editable">Our team<br /><small>(click to read more)</small></h1>
 
-    <div class="row">
-      <!-- Profile Jimmy -->
-      <div class="small-12 medium-6 columns text-center">
-        <img src="/_assets/images/jimmy-profile-face-small.jpg">
-        <h5 class="margin-none editable"><b>Jimmy Alison Jørgensen</b></h5>
-        <h6 class="editable">CEO, Director</h6>
-        <p class="editable">Jimmy has over 11 years of experience within advanced robotics control, modelling, simulation and programming. He furthermore has experience in project management and application writing both from his time as researcher and self-employed consultant at JAR Tech. Jimmy holds a PhD in Robotics Systems Engineering from the University of Southern Denmark. </p>
+    <div class="row team-members align-center">
+      {% assign team = site.team | sort: "order" | where: "staff_member", "true" %}
+      {% for member in team %}
+      <div class="small-12 medium-6 large-4 columns text-center team-member">
+        <a data-open="{{ member.name | replace: " ", "-" }}"><img class="editable" src="{{ member.image }}" /></a>
+        <h5 class="margin-none editable"><b>{{ member.name }}</b></h5>
+        <h6 class="editable">{{ member.job_title }}</h6>
+        <!-- <p class="editable">{{ member.description }}</p> -->
       </div>
 
-      <!-- Profile Sabina -->
-      <div class="small-6 medium-6 columns text-center">
-        <img src="/_assets/images/sabinakethelz1_vingette.jpg">
-        <h5 class="margin-none editable"><b>Sabina Kethelz</b></h5>
-        <h6 class="editable">Business Developer Officer</h6>
+      <div class="reveal" id="{{ member.name | replace: " ", "-" }}" data-reveal>
+        <img class="float-right" src="{{ member.image }}" />
+        <h4 class="popup-name">{{ member.name }}</h4>
+        <h6>{{ member.job_title }}</h6>
+        <p>{{ member.description }}</p>
       </div>
-
-      <!-- Profile Julian -->
-      <div class="small-6 medium-4 columns text-center">
-        <img src="/_assets/images/julian-portrait.jpg">
-        <h5 class="margin-none editable"><b>Julian Jørgensen</b></h5>
-        <h6 class="editable">UX Designer</h6>
-        <!-- <p>Julian has over 10 years of experience growing startups; specializing in marketing, web development and e-commerce. He thrills to creatively communicate the essence of CorePath Robotics.</p> -->
-      </div>
-
-      <!-- Profile Jeshith -->
-      <div class="small-6 medium-4 columns text-center">
-        <img src="/_assets/images/jeshith3_round.jpg">
-        <h5 class="margin-none editable"><b>Jeshith Damsbo Anandasubramaniam</b></h5>
-        <h6 class="editable">Robotics Software Engineer</h6>
-      </div>
-
-      <!-- Profile Morten -->
-      <div class="small-6 medium-4 columns text-center">
-        <img src="/_assets/images/morten_agerbak_riber_round.jpg">
-        <h5 class="margin-none editable"><b>Morten Agerbæk Riber</b></h5>
-        <h6 class="editable">Communications Consultant</h6>
-      </div>
+      {% endfor %}
 
     </div>
 
     <div class="row margin-top-xlarge">
       <div class="small-12 column">
-        <h2 class="text-center editable">Board of Directors</h2>
+        <h2 class="text-center editable">Board of Directors<br /><small>(click to read more)</small></h2>
       </div>
     </div>
 
-    <div class="row">
-      <div class="small-4 columns text-center">
-        <img src="/_assets/images/gustaf-profil.jpg">
+    <div class="row team-members align-center">
+      {% assign team = site.team | sort: "order" | where: "board_member", "true" %}
+      {% for member in team %}
+      <div class="small-12 medium-6 large-4 columns text-center team-member">
+        <a data-open="{{ member.name | replace: " ", "-" }}"><img class="editable" src="{{ member.image }}" /></a>
+        <h5 class="margin-none editable"><b>{{ member.name }}</b></h5>
+        <h6 class="editable">{{ member.job_title }}</h6>
+        <!-- <p class="editable">{{ member.description }}</p> -->
       </div>
-      <div class="small-8 columns">
-        <h5 class="editable"><b>Gustaf Iuel-Brockdorff</b>, Chairman, Co-Founder, SDTI </h5>
-    	  <p class="editable">Gustaf has been working in SDTI since October 2004. For several years he worked at "Forskningsrådenes Instrument Tjeneste" where he purchased scientific equipment, primarily via the EU licensing rounds. Gustaf started his career at the patent bureau IPB. </p>
+
+      <div class="reveal" id="{{ member.name | replace: " ", "-" }}" data-reveal>
+        <img class="float-right" src="{{ member.image }}" />
+        <h4 class="popup-name">{{ member.name }}</h4>
+        <h6>{{ member.job_title }}</h6>
+        <p>{{ member.description }}</p>
       </div>
-    </div>
-    <div class="row">
-      <div class="small-4 columns text-center">
-        <img src="/_assets/images/jens-kristian-profil.jpg">
-      </div>
-      <div class="small-8 columns">
-        <h5 class="editable"><b>Jens Kristian Damsgaard</b>, Co-Founder, Director, scienceventures</h5>
-    	  <p class="editable">Jens Kristian Damsgaard has been involved in business development and the supply of capital for several companies with roots in the University of Southern Denmark, Odense University Hospital, Denmark’s  Technological University, Risø National Laboratory. He has negotiated several licence agreements between research institutions and companies - both at home and abroad</p>
-      </div>
+      {% endfor %}
+
     </div>
 
   </section>

@@ -36,7 +36,6 @@ typekit_id: 'tvw4jri'
 # Conversion
 incremental: true
 
-
 # Collections
 collections:
   news:
@@ -45,6 +44,9 @@ collections:
     output: true
   stories:
     output: true
+  team:
+    output: false
+    _hide_content: true
 
 defaults:
   -

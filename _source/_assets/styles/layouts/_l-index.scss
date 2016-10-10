@@ -38,4 +38,19 @@ $footer-height: rem-calc(80);
     height: rem-calc(600) !important;
     width: 100% !important;
   }
+
+  .team-members{
+    .team-member{
+      cursor: pointer;
+      margin-bottom: rem-calc(15);
+      img{
+        margin-bottom: rem-calc(10);
+      }
+    }
+  }
+}
+
+.popup-name{
+  line-height: rem-calc(25);
+  margin-bottom: rem-calc(5);
 }
