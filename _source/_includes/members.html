@@ -1,0 +1,29 @@
+<div class="row team-members align-center">
+  {% if include.filter_type == "staff_member" %}
+    {% assign team = site.team | sort: "order" | where: "staff_member", "true" %}
+  {% elsif include.filter_type == "board_member" %}
+    {% assign team = site.team | sort: "order" | where: "board_member", "true" %}
+  {% elsif include.filter_type == "spokesperson" %}
+    {% assign team = site.team | sort: "order" | where: "spokesperson", "true" %}
+  {% endif %}
+
+  {% for member in team %}
+  <div class="small-12 medium-6 large-4 columns text-center team-member">
+    <a data-open="{{ member.name | replace: " ", "-" }}"><img class="editable" src="{{ member.image }}" /></a>
+    <h5 class="margin-none editable"><b>{{ member.name }}</b></h5>
+    <h6 class="editable">{{ member.job_title }}</h6>
+    <!-- <p class="editable">{{ member.description }}</p> -->
+    {% if include.filter_type == "spokesperson" %}
+      <h6 class="editable"><a data-email-protector="{{ member.email | replace: "@", "|" }}">{{ member.email }}</a></h6>
+      <h6 class="editable"><phone>{{ member.phone}}</phone></h6>
+    {% endif %}
+  </div>
+
+  <div class="reveal" id="{{ member.name | replace: " ", "-" }}" data-reveal>
+    <img class="float-right" src="{{ member.image }}" />
+    <h4 class="popup-name">{{ member.name }}</h4>
+    <h6>{{ member.job_title }}</h6>
+    <p>{{ member.description }}</p>
+  </div>
+  {% endfor %}
+</div>

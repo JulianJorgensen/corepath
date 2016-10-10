@@ -105,25 +105,7 @@ class: home
 
     <h1 class="editable">Our team<br /><small>(click to read more)</small></h1>
 
-    <div class="row team-members align-center">
-      {% assign team = site.team | sort: "order" | where: "staff_member", "true" %}
-      {% for member in team %}
-      <div class="small-12 medium-6 large-4 columns text-center team-member">
-        <a data-open="{{ member.name | replace: " ", "-" }}"><img class="editable" src="{{ member.image }}" /></a>
-        <h5 class="margin-none editable"><b>{{ member.name }}</b></h5>
-        <h6 class="editable">{{ member.job_title }}</h6>
-        <!-- <p class="editable">{{ member.description }}</p> -->
-      </div>
-
-      <div class="reveal" id="{{ member.name | replace: " ", "-" }}" data-reveal>
-        <img class="float-right" src="{{ member.image }}" />
-        <h4 class="popup-name">{{ member.name }}</h4>
-        <h6>{{ member.job_title }}</h6>
-        <p>{{ member.description }}</p>
-      </div>
-      {% endfor %}
-
-    </div>
+    {% include members.html filter_type="staff_member" %}
 
     <div class="row margin-top-xlarge">
       <div class="small-12 column">
@@ -131,25 +113,7 @@ class: home
       </div>
     </div>
 
-    <div class="row team-members align-center">
-      {% assign team = site.team | sort: "order" | where: "board_member", "true" %}
-      {% for member in team %}
-      <div class="small-12 medium-6 large-4 columns text-center team-member">
-        <a data-open="{{ member.name | replace: " ", "-" }}"><img class="editable" src="{{ member.image }}" /></a>
-        <h5 class="margin-none editable"><b>{{ member.name }}</b></h5>
-        <h6 class="editable">{{ member.job_title }}</h6>
-        <!-- <p class="editable">{{ member.description }}</p> -->
-      </div>
-
-      <div class="reveal" id="{{ member.name | replace: " ", "-" }}" data-reveal>
-        <img class="float-right" src="{{ member.image }}" />
-        <h4 class="popup-name">{{ member.name }}</h4>
-        <h6>{{ member.job_title }}</h6>
-        <p>{{ member.description }}</p>
-      </div>
-      {% endfor %}
-
-    </div>
+    {% include members.html filter_type="board_member" %}
 
   </section>
 

@@ -7,5 +7,5 @@ description: |
 order: 6
 staff_member: true
 board_member: false
-spokesperson: true
+spokesperson: false
 ---

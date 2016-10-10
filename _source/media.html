@@ -8,34 +8,34 @@ layout: subpage
   <div class="editable">
     <div class="row">
       <div class="small-12 medium-6 columns editable">
-        <p class="lead">We welcome journalists and other media agencies to contact us to learn more about our cutting edge robot technology. Below you can find more information about CP Robotics, press photos as well as our newest press releases.</p>
+        <p>We welcome journalists and other media agencies to contact us to learn more about our cutting edge robot technology. Below you can find more information about CP Robotics, press photos as well as our newest press releases.</p>
       </div>
       <div class="small-12 medium-6 columns editable">
-        <h2>Press photos</h2>
-        <h4><a href="/_assets/images/Jimmy-ved-PC-optimeret.jpg" target="new">Photo of CEO Jimmy Alison Jørgensen</a></h4>
-        <h4 class="margin-top-medium"><a href="https://drive.google.com/open?id=0B1W_WcBqzf9-aUxHMEg2bGJtYkE" target="new">Company logo</a></h4>
-        <h4 class="margin-top-medium"><a href="https://drive.google.com/open?id=1uoOQBql7siQMv7l1UuzJF9rYUxmCmyOdjpBaAiWFug" target="new">Information about CP Robotics</a></h4>
+        <h3>Press photos</h3>
+        <h5><a href="/_assets/images/Jimmy-ved-PC-optimeret.jpg" target="new">Photo of CEO Jimmy Alison Jørgensen</a></h5>
+        <h5 class="margin-top-medium"><a href="https://drive.google.com/open?id=0B1W_WcBqzf9-aUxHMEg2bGJtYkE" target="new">Company logo</a></h5>
+        <h5 class="margin-top-medium"><a href="https://drive.google.com/open?id=1uoOQBql7siQMv7l1UuzJF9rYUxmCmyOdjpBaAiWFug" target="new">Information about CP Robotics</a></h5>
       </div>
     </div>
   </div>
 
   <div class="row margin-top-medium">
     <div class="small-12 medium-6 columns">
-      <h2>Highlighted stories</h2>
+      <h3>Highlighted stories</h3>
       {% for article in site.stories %}
         <article class="article">
           <date class="article-date">{{ article.date | date: '%B %d, %Y' }}</date>
-          <h4 class="article-title"><a href="{{ article.url }}" target="new">{{ article.title }}</a></h4>
+          <h5 class="article-title"><a href="{{ article.url }}" target="new">{{ article.title }}</a></h5>
           <div class="article-excerpt">{{ article.excerpt }}</div>
         </article>
       {% endfor %}
     </div>
     <div class="small-12 medium-6 columns">
-      <h2>Press releases</h2>
+      <h3>Press releases</h3>
       {% for article in site.press-releases %}
         <article class="article">
           <date class="article-date">{{ article.date | date: '%B %d, %Y' }}</date>
-          <h4 class="article-title"><a href="{{ article.url }}" target="new">{{ article.title }}</a></h4>
+          <h5 class="article-title"><a href="{{ article.url }}" target="new">{{ article.title }}</a></h5>
           <div class="article-excerpt">{{ article.excerpt }}</div>
         </article>
       {% endfor %}
@@ -43,6 +43,6 @@ layout: subpage
   </div>
 
 
-  <h2 class="margin-top-medium">Spokespersons</h2>
-  {% include spokespeople.html %}
+  <h3 class="margin-top-medium text-center">Spokespersons</h3>
+  {% include members.html filter_type="spokesperson" %}
 </div>
