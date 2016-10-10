@@ -2,22 +2,6 @@
 // SITE.JS
 // --------------------------------------------------
 
-// SMOOTH SCROLLING
-// $(function() {
-//   $('a[href*=\\#]:not([href=\\#])').click(function() {
-//     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-//       var target = $(this.hash);
-//       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-//       if (target.length) {
-//         $('html,body').animate({
-//           scrollTop: target.offset().top
-//         }, 1000);
-//         return false;
-//       }
-//     }
-//   });
-// });
-
 // initialize skrollr
 $(function () {
   // initialize skrollr if the window width is large enough
@@ -64,15 +48,15 @@ $(document).ready(function(){
 
 
   // initialize headroom menu (disappear on scroll)
-  $("[data-headroom]").headroom({
+  $(".top-bar").headroom({
     // vertical offset in px before element is first unpinned
-    offset : 80,
+    offset : 60,
     // scroll tolerance in px before state changes
     tolerance : 0,
     // or you can specify tolerance individually for up/down scroll
     tolerance : {
         up : 0,
-        down : 15
+        down : 25
     }
   });
 
