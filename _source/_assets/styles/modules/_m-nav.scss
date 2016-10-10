@@ -49,6 +49,10 @@
         background-color: $primary-color;
       }
 
+      .dropdown.menu > li.is-dropdown-submenu-parent > a::after{
+        border-color: $black transparent transparent;
+      }
+
       .nav-logo img{
         filter: brightness(0%);
       }
