@@ -15,13 +15,3 @@ legend{
   line-height: 1.8;
   font-weight: $global-weight-bold;
 }
-
-
-.reveal{
-  .close-button{
-    font-size: rem-calc(100);
-    color: $black;
-  }
-}
-body.is-reveal-open{
-}

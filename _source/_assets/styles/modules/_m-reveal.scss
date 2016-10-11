@@ -1,0 +1,20 @@
+body.is-reveal-open{
+}
+
+.reveal{
+  .close-button{
+    font-size: rem-calc(100);
+    color: $black;
+    top: rem-calc(60);
+    line-height: rem-calc(10);
+
+    @include breakpoint(medium){
+      top: rem-calc(15);
+    }
+  }
+  .member-image{
+    @include breakpoint(medium){
+      float: right;
+    }
+  }
+}

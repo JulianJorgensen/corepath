@@ -50,9 +50,12 @@
       z-index: 9999;
       left: 0;
       top: 0;
-      height: rem-calc(64);
       padding-top: rem-calc(10);
       padding-bottom: rem-calc(10);
+
+      @include breakpoint(medium){
+        height: rem-calc(64);
+      }
 
       .submenu{
         background-color: $primary-color;
