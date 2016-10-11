@@ -50,6 +50,7 @@ timeline_types:
   fa-group: Pitch
   fa-newspaper-o: Media
   fa-line-chart: Growth
+  fa-plane: Travel
 
 # Collections
 collections:
