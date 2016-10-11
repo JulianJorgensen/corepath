@@ -1,13 +1,43 @@
 ---
 layout: subpage
+custom_js:
+  - "timeline.js"
 ---
 
 <div class="container">
   <h1 class="editable">About</h1>
 
-  <div class="editable">
-    <p>At CP Robotics we believe in making robot solutions available for everyone. We have developed a software technology that makes the handling of robots easy and flexible. Especially small and medium sized enterprises will benefit greatly from our technology.</p>
-    <p>We are an industry 4.0 company. That means we deliver intelligent solutions where each unit: robot, sensor and computer are connected in a cloud-based system that can both share and calculate tasks.</p>
-    <p>In the time to come we hope that many repetitive, straining and hazardous tasks in small and medium sized enterprises will be handled by robots in collaboration with the shop floor personnel. This will not only increase productivity but also raise the overall well-being of the workers and boost morale.</p>
+  <div class="row">
+    <div class="small-12 medium-6 column">
+      <p>At CP Robotics we believe in making robot solutions available for everyone. We have developed a software technology that makes the handling of robots easy and flexible. Especially small and medium sized enterprises will benefit greatly from our technology.</p>
+      <p>We are an industry 4.0 company. That means we deliver intelligent solutions where each unit: robot, sensor and computer are connected in a cloud-based system that can both share and calculate tasks.</p>
+    </div>
+    <div class="small-12 medium-6 column">
+      <p>In the time to come we hope that many repetitive, straining and hazardous tasks in small and medium sized enterprises will be handled by robots in collaboration with the shop floor personnel. This will not only increase productivity but also raise the overall well-being of the workers and boost morale.</p>
+    </div>
   </div>
+
+
+  {% assign timeline = site.timeline | reverse %}
+  <section id="cd-timeline" class="cd-container">
+    {% for timeline in timeline %}
+        <div class="cd-timeline-block">
+    			<div class="cd-timeline-img">
+    				<div class="cd-timeline-icon">
+              {% assign timeline_icon = timeline.timeline_type[0] %}
+              <i class="fa {{timeline_icon }}"></i>
+            </div>
+    			</div> <!-- cd-timeline-img -->
+
+    			<div class="cd-timeline-content">
+    				<h3>{{ timeline.title }}</h3>
+    				<p>{{ timeline.description }}</p>
+    				<!-- <a href="#0" class="cd-read-more">Read more</a> -->
+    				<span class="cd-date">{{ timeline.date | date: '%B %Y' }}</span>
+    			</div> <!-- cd-timeline-content -->
+    		</div> <!-- cd-timeline-block -->
+
+    {% endfor %}
+  </section>
+
 </div>

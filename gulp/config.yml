@@ -71,6 +71,7 @@ javascript:
 
     - "_source/_assets/js/vendor/headroom.min.js"
     - "_source/_assets/js/vendor/jquery.headroom.js"
+    - "_source/_assets/js/vendor/timeline.js"
 
     # Paths to your own project code are here
     # All the files in this list are concatenated into app.js

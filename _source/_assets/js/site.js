@@ -23,7 +23,10 @@ $(document).ready(function(){
   // Email protector
   $('a[data-email-protector]').emailProtector()
 
-  // INITIALIZE SLIDERS
+  // Fade in top bar menu
+  $('.top-bar.nav .menu').removeClass('hidden');
+
+  // Nav classes (add fixed on homepage)
   var nav = $(".nav");
   if ($("body").hasClass("page-home")){
     $(window).on("scroll", function(e) {
@@ -37,6 +40,7 @@ $(document).ready(function(){
     });
   }
 
+  // INITIALIZE SLIDERS
   var marqueeSlider = $('#marquee-slider').royalSlider({
     addActiveClass: true,
     autoScaleSlider: true,

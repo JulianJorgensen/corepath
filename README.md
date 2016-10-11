@@ -1,4 +1,4 @@
-# CorePath Robotics website
+# CP Robotics website
 
 ## 1. Technologies
 
@@ -21,11 +21,11 @@ Front-end frameworks:
 
 ## 2. Getting Started
 
-The very first thing you'll need to do is to fork the [Github project](https://github.com/JulianJorgensen/corepath).
+The very first thing you'll need to do is to fork the [Github project](https://github.com/JulianJorgensen/cprobotics).
 
 Clone your fork and add the upstream:
 
-`git remote add upstream https://github.com/JulianJorgensen/corepath`
+`git remote add upstream https://github.com/JulianJorgensen/cprobotics`
 
 
 ### 2.1 Steps to install

@@ -31,6 +31,14 @@
       }
     }
 
+    .menu{
+      opacity: 1;
+      @include transition(opacity 0.1s);
+      &.hidden{
+        opacity: 0;
+      }
+    }
+
     .submenu{
       border: 0;
       background-color: $white;
@@ -42,6 +50,7 @@
       z-index: 9999;
       left: 0;
       top: 0;
+      height: rem-calc(64);
       padding-top: rem-calc(10);
       padding-bottom: rem-calc(10);
 

@@ -36,6 +36,16 @@ typekit_id: 'tvw4jri'
 # Conversion
 incremental: true
 
+# Collection options
+timeline_types:
+  fa-user-plus: New Member
+  fa-dollar: Funding
+  fa-building-o: Space
+  fa-file-text-o: Legal
+  fa-group: Pitch
+  fa-newspaper-o: media
+  fa-line-chart: Growth
+
 # Collections
 collections:
   news:
@@ -45,6 +55,9 @@ collections:
   stories:
     output: true
   team:
+    output: false
+    _hide_content: true
+  timeline:
     output: false
     _hide_content: true
 
