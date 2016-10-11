@@ -1,7 +1,6 @@
 ---
-title: "First 2 employees"
-date: "01-12-2015"
-timeline_type:
-description: |
-  First two employees are hired: Jeshith Damsbo Anandasubramaniam (engineering) and Morten Agerbæk Riber (communications).
+title: First 2 employees
+date: 2015-01-12 08:00:00
+timeline_type: fa-user-plus
+description: 'First two employees are hired: Jeshith Damsbo Anandasubramaniam (engineering) and Morten Agerbæk Riber (communications).'
 ---
