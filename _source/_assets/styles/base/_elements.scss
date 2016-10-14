@@ -31,9 +31,12 @@ quote {
     font-size: rem-calc(24);
     margin: rem-calc(0 20 20);
     font-weight: bold;
-    min-height: rem-calc(220);
-    min-width: rem-calc(220);
     @include transition(box-shadow 0.2s);
+
+    @include breakpoint(medium){
+      min-height: rem-calc(220);
+      min-width: rem-calc(220);
+    }
 
     .circle-bg{
       border: 10px solid $primary-color;
