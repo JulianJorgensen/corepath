@@ -23,7 +23,7 @@ quote {
   .circle{
     @include flex();
     @include flex-align(center, middle);
-    @include flex-grid-column(2);
+    @include flex-grid-column(12);
     box-shadow: inset 0 0 0 12px $primary-color;
     border-radius: 50%;
     line-height: rem-calc(30);
@@ -32,10 +32,11 @@ quote {
     margin: rem-calc(0 20 20);
     font-weight: bold;
     @include transition(box-shadow 0.2s);
+    min-height: rem-calc(220);
+    min-width: rem-calc(220);
 
     @include breakpoint(medium){
-      min-height: rem-calc(220);
-      min-width: rem-calc(220);
+      @include flex-grid-column(2);
     }
 
     .circle-bg{
