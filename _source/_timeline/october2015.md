@@ -1,6 +1,6 @@
 ---
 title: Wide media coverage
-date: 2015-01-10 08:00:00
+date: 2015-10-01 08:00:00
 timeline_type: fa-newspaper-o
 description: CP Robotics enjoys wide media coverage after a press release about the company is issued.
 ---
