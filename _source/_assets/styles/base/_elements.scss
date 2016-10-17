@@ -36,7 +36,11 @@ quote {
     min-width: rem-calc(220);
 
     @include breakpoint(medium){
-      @include flex-grid-column(2);
+      @include flex-grid-column(4);
+    }
+
+    @include breakpoint(xlarge){
+      @include flex-grid-column(3);
     }
 
     .circle-bg{
