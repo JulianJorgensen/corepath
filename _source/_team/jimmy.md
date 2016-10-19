@@ -1,6 +1,6 @@
 ---
 name: Jimmy Alison Jørgensen
-job_title: 'CEO, Director'
+job_title: 'CEO, Director <br /> <a href="mailto:"jimmy@corepath.net>E-mail</a>'
 image: /_assets/images/jimmy-profile-face-small.jpg
 email: jimmy@corepath.net
 phone: +45 2025 2435
