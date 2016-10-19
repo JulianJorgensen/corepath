@@ -13,8 +13,8 @@
     <h5 class="margin-none editable"><b>{{ member.name }}</b></h5>
     <h6 class="editable">{{ member.job_title }}</h6>
     <!-- <p class="editable">{{ member.description }}</p> -->
-    {% if member.email != blank %}<h6 class="editable"><a data-email-protector="{{ member.email | replace: "@", "|" }}">{{ member.email }}</a></h6>{% endif %}
-    {% if member.phone != blank %}<h6 class="editable"><phone>{{ member.phone}}</phone></h6>{% endif %}
+    {% if member.email != '' %}<h6 class="editable"><a data-email-protector="{{ member.email | replace: "@", "|" }}">{{ member.email }}</a></h6>{% endif %}
+    {% if member.phone != '' %}<h6 class="editable"><phone>{{ member.phone}}</phone></h6>{% endif %}
   </div>
 
   <div class="reveal" id="{{ member.name | replace: " ", "-" }}" data-reveal>
