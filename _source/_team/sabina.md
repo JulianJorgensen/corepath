@@ -3,8 +3,8 @@ name: Sabina Kethelz
 job_title: 'Business Developer Officer <br /> <a href="mailto:"sabina@corepath.net>sabina@corepath.net</a>  <br /> +45 4272 6697'
 image: /_assets/images/sabinakethelz1_vingette.jpg
 description: 'Sabina is specialised in commercialising early stage robotic technologies by establishing solid, collaborative relations to early adopter customers in new markets. She has more than 10 years of experience in working with start-ups, entrepreneurship and on how to initiate new sustainable commercial activities with mutual benefits to a wide range of stakeholders. On top of being in charge of the commercialisation of different robotic technologies, Sabina has worked with startups and open innovation initiatives in Denmark, Europe and South America.'
-email: sabina@corepath.net
-phone: +45 4272 6697
+email:
+phone:
 order: 2
 staff_member: true
 board_member: false
