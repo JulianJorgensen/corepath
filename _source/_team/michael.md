@@ -1,6 +1,6 @@
 ---
 name: Michael Lundholm
-job_title: Software developer
+job_title: "Software developer \nmichael@corepath.net"
 image: /_assets/images/Michael-Lundholm.jpg
 description: Software developer with a background in philosophy and start-ups.
 order: 4
