@@ -1,6 +1,6 @@
 ---
 name: Jeshith Damsbo Anandasubramaniam
-job_title: Robotics Software Engineer
+job_title: 'Robotics Software Engineer <br /> <a href="mailto:"jeshith@corepath.net>jeshith@corepath.net'
 image: /_assets/images/jeshith3_round.jpg
 description: 'Jeshith holds a Master of Science in Robotics from SDU with specialty in vision and artificial intelligence. After his graduation, Jeshith has been working at CP Robotics focusing on integrating vision cameras and further developing the vision software.'
 order: 5
