@@ -1,6 +1,6 @@
 ---
 name: Michael Lundholm
-job_title: "Software developer \n<br />\n<a href=\"mailto:\"michael@corepath.net>E-mail</a>"
+job_title: Software developer
 image: /_assets/images/Michael-Lundholm.jpg
 description: Software developer with a background in philosophy and start-ups.
 order: 4
