@@ -1,5 +1,5 @@
 ---
 title: Samarbejde med EAL
-date:
-excerpt:
+date: ''
+excerpt: ''
 ---
