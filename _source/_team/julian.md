@@ -5,7 +5,7 @@ image: /_assets/images/julian-portrait.jpg
 description: >-
   Julian has over 10 years of experience growing startups; specialising in
   marketing, web development and e-commerce. He thrills to creatively communicate
-  the essence of CorePath Robotics.
+  the essence of CP Robotics.
 
   <p>Read more on <a href="http://julianjorgensen.com"
   target="new">JulianJorgensen.com</a></p>
