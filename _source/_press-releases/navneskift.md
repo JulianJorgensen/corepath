@@ -1,5 +1,0 @@
----
-title: navneskift
-date:
-excerpt:
----
