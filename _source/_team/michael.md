@@ -3,7 +3,7 @@ name: Michael Lundholm
 job_title: Software developer
 image: /_assets/images/Michael-Lundholm.jpg
 description: Software developer with a background in philosophy and start-ups.
-email: michael@corepath.net
+email: michael@cprobotics.dk
 phone:
 order: 4
 staff_member: true
