@@ -1,7 +1,9 @@
 ---
 title: New CEO
-date:
+date: 2017-01-01 00:00:00
 source:
 url:
-excerpt:
+excerpt: Sabina Kethelz has been appointed as new CEO of CP Robotics
 ---
+
+
