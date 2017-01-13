@@ -9,7 +9,7 @@ description: >-
 
   <p>Read more on <a href="http://julianjorgensen.com"
   target="new">JulianJorgensen.com</a></p>
-email: julian@corepath.net
+email: julian@cprobotics
 phone:
 order: 6
 staff_member: true
