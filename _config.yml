@@ -54,7 +54,7 @@ defaults:
     description: ''
 - scope:
     path: ''
-    type: timeline
+    type: team
   values:
     name: ''
     job_title: ''
