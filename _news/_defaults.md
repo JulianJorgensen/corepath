@@ -1,7 +1,0 @@
----
-title: ''
-source: ''
-url: ''
-excerpt: ''
----
-

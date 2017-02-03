@@ -31,16 +31,46 @@ defaults:
     type: news
   values:
     layout: post
+    title: ''
+    source: ''
+    url: ''
+    excerpt: ''
 - scope:
     path: ''
     type: press-releases
   values:
     layout: post
+    title: ''
+    excerpt: ''
 - scope:
     path: ''
     type: stories
   values:
     layout: post
+    title: ''
+    source: ''
+    url: ''
+    excerpt: ''
+- scope:
+    path: ''
+    type: timeline
+  values:
+    title: ''
+    timeline_type:
+    description: ''
+- scope:
+    path: ''
+    type: timeline
+  values:
+    name: ''
+    job_title: ''
+    image: ''
+    description: ''
+    email: ''
+    phone: ''
+    staff_member: true
+    board_member: false
+    spokesperson: true
 default_title: Flexible Industrial Automation | CP Robotics
 default_description: Automation of industrial processes such as welding, milling and
   cutting by using Danish robotic technology.
