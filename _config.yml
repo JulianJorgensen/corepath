@@ -56,7 +56,7 @@ defaults:
     type: timeline
   values:
     title: ''
-    timeline_type:
+    timeline_type: 
     description: ''
 - scope:
     path: ''
