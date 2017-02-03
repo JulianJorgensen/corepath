@@ -1,7 +1,7 @@
 ---
-title: ""
-date: ""
-source: ""
-url: ""
-excerpt: |
+title: ''
+source: ''
+url: ''
+excerpt: ''
 ---
+

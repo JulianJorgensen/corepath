@@ -1,6 +1,6 @@
 ---
-title: ""
-date: ""
-timeline_type:
-description: |
+title: ''
+timeline_type: 
+description: ''
 ---
+

@@ -1,5 +1,5 @@
 ---
-title: ""
-date: ""
-excerpt: |
+title: ''
+excerpt: ''
 ---
+
