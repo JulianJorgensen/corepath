@@ -20,7 +20,7 @@ collections:
   timeline:
     title: Timeline
     output: false
-  timeline_types:
+  timelinetypes:
     title: Timeline types
     output: false
   uploads:
@@ -54,7 +54,7 @@ defaults:
     type: timeline
   values:
     story:
-    timeline_type: 
+    timelinetype:
     description: ''
 - scope:
     path: ''
