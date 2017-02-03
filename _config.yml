@@ -31,7 +31,6 @@ defaults:
     type: news
   values:
     layout: post
-    title: ''
     source: ''
     url: ''
     excerpt: ''
@@ -40,14 +39,12 @@ defaults:
     type: press-releases
   values:
     layout: post
-    title: ''
     excerpt: ''
 - scope:
     path: ''
     type: stories
   values:
     layout: post
-    title: ''
     source: ''
     url: ''
     excerpt: ''
@@ -55,7 +52,6 @@ defaults:
     path: ''
     type: timeline
   values:
-    title: ''
     timeline_type:
     description: ''
 - scope:
