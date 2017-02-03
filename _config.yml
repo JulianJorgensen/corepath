@@ -1,47 +1,78 @@
 ---
-# Meta tags stuff
-default_title: "Flexible Industrial Automation | CP Robotics"
-default_description: "Automation of industrial processes such as welding, milling and cutting by using Danish robotic technology."
-
-# default environment
+title: Cprobotics
+timezone: UTC
+collections:
+  news:
+    title: News
+    output: true
+  posts:
+    title: Posts
+    output: true
+  press-releases:
+    title: Press Releases
+    output: true
+  stories:
+    title: Stories
+    output: true
+  team:
+    title: Team
+    output: false
+    _hide_content: true
+  timeline:
+    title: Timeline
+    output: false
+    _hide_content: true
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: news
+  values:
+    layout: post
+- scope:
+    path: ''
+    type: press-releases
+  values:
+    layout: post
+- scope:
+    path: ''
+    type: stories
+  values:
+    layout: post
+default_title: Flexible Industrial Automation | CP Robotics
+default_description: Automation of industrial processes such as welding, milling and
+  cutting by using Danish robotic technology.
 env: development
-
 exclude:
-- "_assets/vendor"
-- "_assets/styles/base"
-- "_assets/styles/helpers"
-- "_assets/styles/layouts"
-- "_assets/styles/modules"
-- "_assets/styles/states"
-- "_assets/styles/vendor"
-- "_assets/styles/app.scss"
-- "_assets/js"
-
-- "gulp"
-- "bower.json"
-- "Gemfile"
-- "Gemfile.lock"
-- "gulpfile.js"
-- "gulp"
-- "npm-debug.log"
-- "package.json"
-- "rev-manifest.json"
-- "README.md"
-- "node_modules"
-
-
-include: [_assets]
-
+- _assets/vendor
+- _assets/styles/base
+- _assets/styles/helpers
+- _assets/styles/layouts
+- _assets/styles/modules
+- _assets/styles/states
+- _assets/styles/vendor
+- _assets/styles/app.scss
+- _assets/js
+- gulp
+- bower.json
+- Gemfile
+- Gemfile.lock
+- gulpfile.js
+- gulp
+- npm-debug.log
+- package.json
+- rev-manifest.json
+- README.md
+- node_modules
+include:
+- _assets
 permalink: pretty
-source: ./_source
-baseurl: /
-
-typekit_id: 'tvw4jri'
-
-# Conversion
+source: "./_source"
+baseurl: "/"
+typekit_id: tvw4jri
 incremental: true
-
-# Collection options
 timeline_types:
   fa-user-plus: New Member(s)
   fa-dollar: Funding
@@ -51,42 +82,5 @@ timeline_types:
   fa-newspaper-o: Media
   fa-line-chart: Growth
   fa-plane: Travel
-
-# Collections
-collections:
-  news:
-    output: true
-  press-releases:
-    output: true
-  stories:
-    output: true
-  team:
-    output: false
-    _hide_content: true
-  timeline:
-    output: false
-    _hide_content: true
-
-defaults:
-  -
-    scope:
-      path: ""
-      type: "news"
-    values:
-      layout: "post"
-  -
-    scope:
-      path: ""
-      type: "press-releases"
-    values:
-      layout: "post"
-  -
-    scope:
-      path: ""
-      type: "stories"
-    values:
-      layout: "post"
-
-# sass
 sass:
-    style: :compressed
+  style: :compressed

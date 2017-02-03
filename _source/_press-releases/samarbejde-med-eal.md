@@ -1,5 +1,6 @@
 ---
 title: Samarbejde med EAL
-date: '09/11/2016'
+date: 2016-11-09 00:00:00 Z
 excerpt: ''
 ---
+

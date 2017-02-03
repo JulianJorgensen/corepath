@@ -1,7 +1,8 @@
 ---
-title: "Flere robotter indtager Odense"
-date: "07/10/2015"
-source: "Tv2"
-url: "http://www.tv2fyn.dk/artikel/flere-robotter-indtager-odense"
-excerpt: |
+title: Flere robotter indtager Odense
+date: 2015-10-07 00:00:00 Z
+source: Tv2
+url: http://www.tv2fyn.dk/artikel/flere-robotter-indtager-odense
+excerpt: ''
 ---
+
