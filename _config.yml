@@ -17,11 +17,9 @@ collections:
   team:
     title: Team
     output: false
-    _hide_content: true
   timeline:
     title: Timeline
     output: false
-    _hide_content: true
   uploads:
     title: Uploads
     output: true
