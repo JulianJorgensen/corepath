@@ -16,7 +16,7 @@ jekyll:
   notificationIncremental: "Running jekyll incremental"
 
 javascript:
-  dest: "_source/_assets/"
+  dest: "_assets/"
   siteDest: "_site/_assets/"
   # preload filename to output
   filenamePreload: "app-preload.js"
@@ -24,61 +24,61 @@ javascript:
   filename: "app.js"
   # notification message
   notification: "Running JavaScript"
-  independentJS: "_source/_assets/js/independent/**/*"
+  independentJS: "_assets/js/independent/**/*"
   src:
-    - "_source/_assets/vendor/jquery/dist/jquery.js"
+    - "_assets/vendor/jquery/dist/jquery.js"
 
     # Core Foundation files, all Foundation components need this!
-    - "_source/_assets/vendor/foundation-sites/js/foundation.core.js"
+    - "_assets/vendor/foundation-sites/js/foundation.core.js"
 
     # Individual Foundation components
-    - "_source/_assets/vendor/foundation-sites/js/foundation.dropdownMenu.js"
+    - "_assets/vendor/foundation-sites/js/foundation.dropdownMenu.js"
 
     # Libraries requried by Foundation
-    - "_source/_assets/vendor/what-input/what-input.js"
+    - "_assets/vendor/what-input/what-input.js"
 
     # Individual Foundation components
     # If you aren't using a component, just remove it from the list
-    - "_source/_assets/vendor/foundation-sites/js/foundation.abide.js"
-    - "_source/_assets/vendor/foundation-sites/js/foundation.accordion.js"
-    # - "_source/_assets/vendor/foundation-sites/js/foundation.accordionMenu.js"
-    # - "_source/_assets/vendor/foundation-sites/js/foundation.drilldown.js"
-    # - "_source/_assets/vendor/foundation-sites/js/foundation.dropdown.js"
-    # - "_source/_assets/vendor/foundation-sites/js/foundation.equalizer.js"
-    # - "_source/_assets/vendor/foundation-sites/js/foundation.interchange.js"
-    # - "_source/_assets/vendor/foundation-sites/js/foundation.magellan.js"
-    # - "_source/_assets/vendor/foundation-sites/js/foundation.offcanvas.js"
-    # - "_source/_assets/vendor/foundation-sites/js/foundation.orbit.js"
-    # - "_source/_assets/vendor/foundation-sites/js/foundation.responsiveMenu.js"
-    # - "_source/_assets/vendor/foundation-sites/js/foundation.responsiveToggle.js"
-    - "_source/_assets/vendor/foundation-sites/js/foundation.reveal.js"
-    # - "_source/_assets/vendor/foundation-sites/js/foundation.slider.js"
-    - "_source/_assets/vendor/foundation-sites/js/foundation.sticky.js"
-    - "_source/_assets/vendor/foundation-sites/js/foundation.tabs.js"
-    # - "_source/_assets/vendor/foundation-sites/js/foundation.toggler.js"
-    - "_source/_assets/vendor/foundation-sites/js/foundation.tooltip.js"
-    - "_source/_assets/vendor/foundation-sites/js/foundation.util.box.js"
-    - "_source/_assets/vendor/foundation-sites/js/foundation.util.keyboard.js"
-    - "_source/_assets/vendor/foundation-sites/js/foundation.util.mediaQuery.js"
-    - "_source/_assets/vendor/foundation-sites/js/foundation.util.motion.js"
-    - "_source/_assets/vendor/foundation-sites/js/foundation.util.nest.js"
-    - "_source/_assets/vendor/foundation-sites/js/foundation.util.timerAndImageLoader.js"
-    # - "_source/_assets/vendor/foundation-sites/js/foundation.util.touch.js"
-    - "_source/_assets/vendor/foundation-sites/js/foundation.util.triggers.js"
+    - "_assets/vendor/foundation-sites/js/foundation.abide.js"
+    - "_assets/vendor/foundation-sites/js/foundation.accordion.js"
+    # - "_assets/vendor/foundation-sites/js/foundation.accordionMenu.js"
+    # - "_assets/vendor/foundation-sites/js/foundation.drilldown.js"
+    # - "_assets/vendor/foundation-sites/js/foundation.dropdown.js"
+    # - "_assets/vendor/foundation-sites/js/foundation.equalizer.js"
+    # - "_assets/vendor/foundation-sites/js/foundation.interchange.js"
+    # - "_assets/vendor/foundation-sites/js/foundation.magellan.js"
+    # - "_assets/vendor/foundation-sites/js/foundation.offcanvas.js"
+    # - "_assets/vendor/foundation-sites/js/foundation.orbit.js"
+    # - "_assets/vendor/foundation-sites/js/foundation.responsiveMenu.js"
+    # - "_assets/vendor/foundation-sites/js/foundation.responsiveToggle.js"
+    - "_assets/vendor/foundation-sites/js/foundation.reveal.js"
+    # - "_assets/vendor/foundation-sites/js/foundation.slider.js"
+    - "_assets/vendor/foundation-sites/js/foundation.sticky.js"
+    - "_assets/vendor/foundation-sites/js/foundation.tabs.js"
+    # - "_assets/vendor/foundation-sites/js/foundation.toggler.js"
+    - "_assets/vendor/foundation-sites/js/foundation.tooltip.js"
+    - "_assets/vendor/foundation-sites/js/foundation.util.box.js"
+    - "_assets/vendor/foundation-sites/js/foundation.util.keyboard.js"
+    - "_assets/vendor/foundation-sites/js/foundation.util.mediaQuery.js"
+    - "_assets/vendor/foundation-sites/js/foundation.util.motion.js"
+    - "_assets/vendor/foundation-sites/js/foundation.util.nest.js"
+    - "_assets/vendor/foundation-sites/js/foundation.util.timerAndImageLoader.js"
+    # - "_assets/vendor/foundation-sites/js/foundation.util.touch.js"
+    - "_assets/vendor/foundation-sites/js/foundation.util.triggers.js"
 
     # Paths to other vendor plugins
-    - "_source/_assets/js/vendor/jquery.email-protector.js"
+    - "_assets/js/vendor/jquery.email-protector.js"
 
-    - "_source/_assets/js/vendor/headroom.min.js"
-    - "_source/_assets/js/vendor/jquery.headroom.js"
-    - "_source/_assets/js/vendor/timeline.js"
+    - "_assets/js/vendor/headroom.min.js"
+    - "_assets/js/vendor/jquery.headroom.js"
+    - "_assets/js/vendor/timeline.js"
 
     # Paths to your own project code are here
     # All the files in this list are concatenated into app.js
-    - "_source/_assets/js/**/*"
+    - "_assets/js/**/*"
 
     # exclude these files/folders
-    - "!_source/_assets/js/independent/**/*"
+    - "!_assets/js/independent/**/*"
 
 sass:
   # Autoprefixer will make sure your CSS works with these browsers
@@ -86,25 +86,24 @@ sass:
     - "ie >= 9"
     - "safari >= 7"
     - "ios >= 8"
-  dest: "_source/_assets/"
+  dest: "_assets/"
   siteDest: "_site/_assets/"
   notification: "Running Sass"
-  src: "_source/_assets/styles/*.scss"
+  src: "_assets/styles/*.scss"
 
 images:
-  src: "_source/_assets/images/**/*"
-  dest: "_source/_assets/images/"
+  src: "_assets/images/**/*"
+  dest: "_assets/images/"
 
 watch:
-  images: "_source/_assets/images/**/*"
-  javascript: "_source/_assets/js/**/*"
-  sass: "_source/_assets/styles/**/*"
-  data: "_source/{_data,_posts}/**/*.{yml,xml}"
+  images: "_assets/images/**/*"
+  javascript: "_assets/js/**/*"
+  sass: "_assets/styles/**/*"
+  data: "{_data,_posts}/**/*.{yml,xml}"
   pages:
-    - "_source/**/*.{md,html,yml,xml}"
-    - "_source/{_includes,_layouts,_pages,_posts}/**/*.{md,html,yml,xml}"
+    - "**/*.{md,html,yml,xml}"
+    - "{_includes,_layouts,_pages,_posts}/**/*.{md,html,yml,xml}"
     - "!_site/**/*.*"
-    - "!_source/_assets/**/*.*"
 
 revision:
   revision:
@@ -112,9 +111,9 @@ revision:
     manifest:
       dest: "./"
     src:
-      - "_source/_assets/app.css"
-      - "_source/_assets/app.js"
-      - "_source/_assets/images/**"
+      - "_assets/app.css"
+      - "_assets/app.js"
+      - "_assets/images/**"
   collect:
     dest: "_site"
     src:

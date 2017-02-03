@@ -33,7 +33,7 @@ exclude:
 include: [_assets]
 
 permalink: pretty
-source: ./_source
+source: ./
 baseurl: /
 
 typekit_id: 'tvw4jri'
