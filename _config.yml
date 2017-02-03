@@ -20,12 +20,12 @@ collections:
   timeline:
     title: Timeline
     output: false
-  uploads:
-    title: Uploads
-    output: true
   timeline_types:
     title: Timeline types
     output: false
+  uploads:
+    title: Uploads
+    output: true
 defaults:
 - scope:
     path: ''
@@ -53,7 +53,7 @@ defaults:
     path: ''
     type: timeline
   values:
-    timeline_type:
+    timeline_type: 
     description: ''
 - scope:
     path: ''
