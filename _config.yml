@@ -53,7 +53,8 @@ defaults:
     path: ''
     type: timeline
   values:
-    story: 
+    story:
+    timeline_type: 
     description: ''
 - scope:
     path: ''
