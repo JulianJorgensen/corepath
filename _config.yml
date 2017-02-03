@@ -21,7 +21,7 @@ collections:
     title: Timeline
     output: false
   timelinetypes:
-    title: Timeline types
+    title: Timeline Types
     output: false
   uploads:
     title: Uploads
@@ -49,6 +49,11 @@ defaults:
     source: ''
     url: ''
     excerpt: ''
+- scope:
+    path: ''
+    type: timelinetype
+  values:
+    fa_icon: ''
 - scope:
     path: ''
     type: timeline
