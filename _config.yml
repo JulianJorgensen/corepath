@@ -58,7 +58,7 @@ defaults:
     path: ''
     type: timeline
   values:
-    timelinetype:
+    timelinetype: 
     description: ''
 - scope:
     path: ''
