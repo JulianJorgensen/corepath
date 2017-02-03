@@ -1,4 +1,5 @@
 ---
+title: Michael
 name: Michael Lundholm
 job_title: Software developer
 image: "/_assets/images/Michael-Lundholm.jpg"

@@ -1,4 +1,5 @@
 ---
+title: Julian
 name: Julian Jørgensen
 job_title: UX Designer
 image: "/_assets/images/julian-portrait.jpg"
