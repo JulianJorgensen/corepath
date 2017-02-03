@@ -20,8 +20,8 @@ collections:
   timeline:
     title: Timeline
     output: false
-  timelinetypes:
-    title: Timeline Types
+  timeline-types:
+    title: Timeline-Types
     output: false
   uploads:
     title: Uploads
@@ -51,14 +51,14 @@ defaults:
     excerpt: ''
 - scope:
     path: ''
-    type: timelinetype
+    type: timeline-type
   values:
     fa_icon: ''
 - scope:
     path: ''
     type: timeline
   values:
-    timelinetype: 
+    timeline-type:
     description: ''
 - scope:
     path: ''
