@@ -23,6 +23,9 @@ collections:
   uploads:
     title: Uploads
     output: true
+  timeline_types:
+    title: Timeline types
+    output: false
 defaults:
 - scope:
     path: ''
@@ -50,7 +53,7 @@ defaults:
     path: ''
     type: timeline
   values:
-    timeline_type: 
+    timeline_type:
     description: ''
 - scope:
     path: ''
@@ -96,14 +99,5 @@ permalink: pretty
 baseurl: "/"
 typekit_id: tvw4jri
 incremental: true
-timeline_types:
-  fa-user-plus: New Member(s)
-  fa-dollar: Funding
-  fa-building-o: Space
-  fa-file-text-o: Legal
-  fa-group: Pitch
-  fa-newspaper-o: Media
-  fa-line-chart: Growth
-  fa-plane: Travel
 sass:
   style: :compressed
