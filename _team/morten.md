@@ -1,4 +1,5 @@
 ---
+title: Morten
 name: Morten Agerbæk Riber
 job_title: Communications Consultant
 image: "/_assets/images/morten_agerbak_riber_round.jpg"

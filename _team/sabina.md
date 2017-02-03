@@ -1,4 +1,5 @@
 ---
+title: Sabina
 name: Sabina Kethelz
 job_title: CEO
 image: "/_assets/images/sabinakethelz1_vingette.jpg"
