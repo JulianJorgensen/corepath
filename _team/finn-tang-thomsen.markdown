@@ -14,6 +14,5 @@ description: Finn Tang Thomsen has been involved in software development for aut
   from 2006 to 2014.
 email: finn@cprobotics.dk
 spokesperson: false
-Order: 2
 ---
 
