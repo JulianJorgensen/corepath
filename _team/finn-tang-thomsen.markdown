@@ -3,7 +3,7 @@ title: Finn
 date: 2017-02-06 09:22:00 Z
 name: Finn Tang Thomsen
 job_title: Technical Advisor
-image: "/uploads/Finn%20Tang%20Thomsen,%20vignette.jpg"
+image: "/uploads/finn,%20hjemmeside.jpg"
 description: Finn Tang Thomsen has been involved in software development for automation
   solutions including CAD/CAM systems, CNC machines and robots in the last 45 years.
   His software solutions have been used by many companies in Denmark and abroad, such
