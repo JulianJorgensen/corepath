@@ -109,7 +109,7 @@ meta_description: CP Robotics develops extremely easy to use robot-software that
     </div>
   </div>
 
-  <div class="row">
+  <!-- <div class="row">
     <div class="small-12 large-6 columns margin-top-large">
       <h2 class="large editable">MECHANICAL <strong>PLATFORMS</strong></h2>
       <img src="/_assets/images/brochure/mechanical-platforms-header.png" class="float-right editable" />
@@ -201,7 +201,7 @@ meta_description: CP Robotics develops extremely easy to use robot-software that
     </div>
   </div>
 
-</div>
+</div> -->
 
 <div class="row margin-top-xlarge">
   <div class="small-12 large-6 columns section-orange padding-top-large padding-bottom-large">

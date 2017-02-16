@@ -13,7 +13,8 @@ meta_description: We welcome journalists and other media agencies to contact us 
   <div class="row margin-top-medium">
     <div class="small-12 medium-6 columns">
       <h3>Highlighted stories</h3>
-      {% for article in site.stories %}
+      {% assign stories = site.stories | sort: "date" | reverse %}
+      {% for article in stories %}
         <article class="article">
           <date class="article-date">{{ article.date | date: '%B %d, %Y' }}</date>
           <h5 class="article-title"><a href="{{ article.url }}" target="new">{{ article.title }}</a></h5>
@@ -23,7 +24,8 @@ meta_description: We welcome journalists and other media agencies to contact us 
     </div>
     <div class="small-12 medium-6 columns">
       <h3>Press releases</h3>
-      {% for article in site.press-releases %}
+      {% assign pressreleases = site.press-releases | sort: "date" | reverse %}
+      {% for article in pressreleases %}
         <article class="article">
           <date class="article-date">{{ article.date | date: '%B %d, %Y' }}</date>
           <h5 class="article-title"><a href="{{ article.url }}" target="new">{{ article.title }}</a></h5>
