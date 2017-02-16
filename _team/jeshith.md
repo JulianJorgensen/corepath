@@ -9,8 +9,9 @@ description: Jeshith holds a Master of Science in Robotics from SDU with special
   at CP Robotics focusing on integrating vision cameras and further developing the
   vision software.
 email: jeshith@cprobotics.dk
-phone:
+phone: 
 staff_member: true
 board_member: false
 spokesperson: false
 ---
+
