@@ -41,6 +41,7 @@ defaults:
   values:
     layout: post
     excerpt: ''
+    url: ''
 - scope:
     path: ''
     type: stories
@@ -58,7 +59,7 @@ defaults:
     path: ''
     type: timeline
   values:
-    timeline-type: 
+    timeline-type:
     description: ''
 - scope:
     path: ''
