@@ -1,6 +1,6 @@
 ---
 title: Jeshith
-position: 3
+position: 5
 name: Jeshith Damsbo Anandasubramaniam
 job_title: Robotics Software Engineer
 image: "/_assets/images/jeshith3_round.jpg"
@@ -9,10 +9,8 @@ description: Jeshith holds a Master of Science in Robotics from SDU with special
   at CP Robotics focusing on integrating vision cameras and further developing the
   vision software.
 email: jeshith@cprobotics.dk
-phone: 
-order: 5
+phone:
 staff_member: true
 board_member: false
 spokesperson: false
 ---
-

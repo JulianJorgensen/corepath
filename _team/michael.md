@@ -1,6 +1,5 @@
 ---
 title: Michael
-position: 0
 name: Michael Lundholm
 job_title: Senior software developer
 image: "/_assets/images/Michael-Lundholm.jpg"
@@ -9,6 +8,5 @@ email: michael@cprobotics.dk
 staff_member: true
 board_member: false
 spokesperson: false
-order: 4
+position: 4
 ---
-

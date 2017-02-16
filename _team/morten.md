@@ -1,6 +1,6 @@
 ---
 title: Morten
-position: 6
+position: 3
 name: Morten Agerbæk Riber
 job_title: Executive Management Assistant
 image: "/_assets/images/morten_agerbak_riber_round.jpg"
@@ -13,6 +13,4 @@ phone: "+45 5182 8495"
 staff_member: true
 board_member: false
 spokesperson: true
-order: 3
 ---
-

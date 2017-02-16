@@ -1,6 +1,6 @@
 ---
 title: Sabina
-position: 5
+position: 1
 name: Sabina Kethelz
 job_title: CEO
 image: "/_assets/images/sabinakethelz1_vingette.jpg"
@@ -13,9 +13,7 @@ description: Sabina is specialised in commercialising early stage robotic techno
   initiatives in Denmark, Europe and South America.
 email: sabina@cprobotics.dk
 phone: "+45 4272 6697"
-order: 1
 staff_member: true
 board_member: false
 spokesperson: true
 ---
-

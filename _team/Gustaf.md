@@ -12,9 +12,7 @@ description: 'Gustaf has been working in SDTI since October 2004. For several ye
 '
 email: ''
 phone: ''
-order: 1
 staff_member: false
 board_member: true
 spokesperson: false
 ---
-

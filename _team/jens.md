@@ -13,9 +13,7 @@ description: 'Jens Kristian Damsgaard has been involved in business development 
 '
 email: ''
 phone: ''
-order: 2
 staff_member: false
 board_member: true
 spokesperson: false
 ---
-
