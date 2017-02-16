@@ -1,5 +1,6 @@
 ---
 title: Gustaf
+position: 1
 name: Gustaf Iuel-Brockdorff
 job_title: Chairman, Co-Founder, SDTI
 image: "/_assets/images/gustaf-profil.jpg"

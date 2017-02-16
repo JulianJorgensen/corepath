@@ -1,5 +1,6 @@
 ---
 title: Morten
+position: 6
 name: Morten Agerbæk Riber
 job_title: Executive Management Assistant
 image: "/_assets/images/morten_agerbak_riber_round.jpg"

@@ -1,5 +1,6 @@
 ---
 title: Sabina
+position: 5
 name: Sabina Kethelz
 job_title: CEO
 image: "/_assets/images/sabinakethelz1_vingette.jpg"
