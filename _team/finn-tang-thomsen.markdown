@@ -3,7 +3,7 @@ title: Finn
 date: 2017-02-06 09:22:00 Z
 position: 7
 name: Finn Tang Thomsen
-job_title: Board Member and Technical Advisor
+job_title: Technical Advisor and Board Member
 image: "/uploads/finn,%20hjemmeside.jpg"
 description: Finn Tang Thomsen has been involved in software development for automation
   solutions including CAD/CAM systems, CNC machines and robots in the last 45 years.
