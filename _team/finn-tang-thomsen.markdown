@@ -14,7 +14,7 @@ description: Finn Tang Thomsen has been involved in software development for aut
   of the Department for Robot Technology in Odense, where he was executive manager
   from 2006 to 2014.
 email: finn@cprobotics.dk
-phone: "+45 30 59 44 27"
+phone: "+45 3059 4427"
 staff_member: true
 board_member: false
 spokesperson: false
