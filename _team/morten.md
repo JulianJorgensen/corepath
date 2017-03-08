@@ -3,7 +3,7 @@ title: Morten
 position: 3
 name: Morten Agerbæk Riber
 job_title: Executive Management Assistant
-image: "/_assets/images/morten_agerbak_riber_round.jpg"
+image: "/uploads/Morten%20Agerb%C3%A6k%20Riber.jpg"
 description: Morten is experienced in digital communication and PR and holds a master’s
   degree in International Business Communication from SDU. When he is not working
   on assisting the management or promoting CP Robotics, he runs the bureau, Adnetics,
