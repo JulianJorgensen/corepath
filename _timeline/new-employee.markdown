@@ -2,6 +2,6 @@
 title: New employee
 date: 2017-03-06 12:20:00 Z
 timeline-type: New Member
+description: Teit Silberling is hired as Chief Commercial Officer
 ---
 
-Teit Silberling is hired as Chief Commercial Officer
