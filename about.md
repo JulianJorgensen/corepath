@@ -13,7 +13,7 @@ layout: subpage
 
   <div class="row">
     <div class="small-12 medium-6 column">
-      <p>At CP Robotics we believe in making robot solutions available for everyone. We have developed a software technology that makes the handling of robots easy and flexible. Especially small and medium sized enterprises that use e.g. polishing, grinding or milling in their prodctuon will benefit greatly from our technology.</p>
+      <p>At CP Robotics we believe in making robot solutions available for everyone. We have developed a software technology that makes the handling of robots easy and flexible for shopfloor personnel. Small production series are thereby made cost-effective to automate in many productions. Especially small and medium sized enterprises that use e.g. polishing, grinding or milling in their prodctuon will benefit greatly from our technology.</p>
       <p>Our technology is industry 4.0 ready. That means we deliver intelligent solutions where each part: robot, sensor and computer are connected in a cloud-based system that can both share and calculate tasks.</p>
     </div>
     <div class="small-12 medium-6 column">
