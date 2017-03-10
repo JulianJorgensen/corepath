@@ -1,6 +1,6 @@
 ---
 title: Teit
-position: 6
+position: 4
 name: Teit Silberling
 job_title: Chief Commercial Officer
 image: "/uploads/Teit%20Silberling-df221d.jpg"

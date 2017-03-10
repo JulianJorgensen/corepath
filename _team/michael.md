@@ -1,6 +1,6 @@
 ---
 title: Michael
-position: 4
+position: 5
 name: Michael Lundholm
 job_title: Senior Software Developer
 image: "/uploads/Michael-Lundholm-d83a1a.jpg"
