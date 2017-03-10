@@ -1,6 +1,6 @@
 ---
 title: Jeshith
-position: 6
+position: 7
 name: Jeshith Damsbo Anandasubramaniam
 job_title: Robotics Software Engineer
 image: "/uploads/jeshith%20anandasubramaniam-6b95c9.jpg"

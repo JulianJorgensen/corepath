@@ -1,7 +1,7 @@
 ---
 title: Finn
 date: 2017-02-06 09:22:00 Z
-position: 7
+position: 4
 name: Finn Tang Thomsen
 job_title: Technical Advisor and Board Member
 image: "/uploads/finn%20tang%20thomsen.jpg"
