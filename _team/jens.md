@@ -3,7 +3,7 @@ title: Jens
 position: 2
 name: Jens Kristian Damsgaard
 job_title: Co-Founder, Director, scienceventures
-image: "/_assets/images/jens-kristian-profil.jpg"
+image: "/uploads/Jens%20Kristian%20Damsgaard-08632f.jpg"
 description: 'Jens Kristian Damsgaard has been involved in business development and
   the supply of capital for several companies with roots in the University of Southern
   Denmark, Odense University Hospital, Denmark’s  Technological University, Risø National
@@ -11,8 +11,6 @@ description: 'Jens Kristian Damsgaard has been involved in business development 
   and companies - both at home and abroad.
 
 '
-email: ''
-phone: ''
 staff_member: false
 board_member: true
 spokesperson: false

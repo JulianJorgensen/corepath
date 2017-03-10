@@ -1,10 +1,10 @@
 ---
 title: Finn
 date: 2017-02-06 09:22:00 Z
-position: 7
+position: 4
 name: Finn Tang Thomsen
-job_title: Technical Advisor
-image: "/uploads/finn,%20hjemmeside.jpg"
+job_title: Technical Advisor and Board Member
+image: "/uploads/finn%20tang%20thomsen.jpg"
 description: Finn Tang Thomsen has been involved in software development for automation
   solutions including CAD/CAM systems, CNC machines and robots in the last 45 years.
   His software solutions have been used by many companies in Denmark and abroad, such
@@ -14,7 +14,9 @@ description: Finn Tang Thomsen has been involved in software development for aut
   of the Department for Robot Technology in Odense, where he was executive manager
   from 2006 to 2014.
 email: finn@cprobotics.dk
-phone: "+45 30 59 44 27"
+phone: "+45 3059 4427"
+staff_member: true
+board_member: false
 spokesperson: false
 ---
 

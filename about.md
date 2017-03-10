@@ -1,10 +1,11 @@
 ---
-layout: subpage
+title: About
 meta_title: About CP Robotics
 meta_description: At CP Robotics we believe in making robot solutions available for
   everyone through easy to use and intuitive robot software.
 custom_js:
 - timeline.js
+layout: subpage
 ---
 
 <div class="container">
@@ -12,8 +13,8 @@ custom_js:
 
   <div class="row">
     <div class="small-12 medium-6 column">
-      <p>At CP Robotics we believe in making robot solutions available for everyone. We have developed a software technology that makes the handling of robots easy and flexible. Especially small and medium sized enterprises will benefit greatly from our technology.</p>
-      <p>We are an industry 4.0 company. That means we deliver intelligent solutions where each unit: robot, sensor and computer are connected in a cloud-based system that can both share and calculate tasks.</p>
+      <p>At CP Robotics we believe in making robot solutions available for everyone. We have developed a software technology that makes the handling of robots easy and flexible for shopfloor personnel. Many small production series are thereby made cost-effective to automate. Especially small and medium sized enterprises that use e.g. polishing, grinding or milling in their production will benefit greatly from our technology.</p>
+      <p>Our technology is industry 4.0 ready. That means we deliver intelligent solutions where each part: robot, sensor and computer are connected in a cloud-based system that can both share and calculate tasks.</p>
     </div>
     <div class="small-12 medium-6 column">
       <p>In the time to come we hope that many repetitive, straining and hazardous tasks in small and medium sized enterprises will be handled by robots in collaboration with the shop floor personnel. This will not only increase productivity but also raise the overall well-being of the workers and boost morale.</p>
