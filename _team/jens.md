@@ -1,6 +1,6 @@
 ---
 title: Jens
-position: 2
+position: 3
 name: Jens Kristian Damsgaard
 job_title: Co-Founder, Director, scienceventures
 image: "/uploads/Jens%20Kristian%20Damsgaard-08632f.jpg"
