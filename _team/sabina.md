@@ -2,7 +2,7 @@
 title: Sabina
 position: 1
 name: Sabina Kethelz
-job_title: CEO (on maternity leave)
+job_title: CEO  - (on maternity leave)
 image: "/_assets/images/sabinakethelz1_vingette.jpg"
 description: Sabina is specialised in commercialising early stage robotic technologies
   by establishing solid, collaborative relations to early adopter customers in new
