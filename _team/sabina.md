@@ -13,6 +13,6 @@ description: Sabina is specialised in commercialising early stage robotic techno
   initiatives in Denmark, Europe and South America.
 staff_member: true
 board_member: false
-spokesperson: true
+spokesperson: false
 ---
 
