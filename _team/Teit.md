@@ -8,6 +8,6 @@ email: teit@cprobotics.dk
 phone: "+45 2117 2752"
 staff_member: true
 board_member: false
-spokesperson: false
+spokesperson: true
 ---
 
