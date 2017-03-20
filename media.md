@@ -5,7 +5,7 @@ meta_description: We welcome journalists and other media agencies to contact us 
   learn more about CP Robotics’ cutting edge robot technology.
 intro_text: We welcome journalists and other media agencies to contact us to learn
   more about our cutting edge robot technology. Below you can find more information
-  about CP Robotics, press photos as well as our newest press releases..
+  about CP Robotics, press photos as well as our newest press releases.
 layout: subpage
 ---
 
