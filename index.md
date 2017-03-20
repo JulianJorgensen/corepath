@@ -95,15 +95,15 @@ layout: default
 <section class="section-default">
 
     <h1 class="editable">Our team<br /><small>(click to read more)</small></h1>
-    
+
     {% include members.html filter_type="staff_member" %}
-    
+
     <div class="row margin-top-xlarge">
       <div class="small-12 column">
         <h2 class="text-center editable">Board of Directors<br /><small>(click to read more)</small></h2>
       </div>
     </div>
-    
+
     {% include members.html filter_type="board_member" %}
 
 </section>
@@ -123,7 +123,7 @@ layout: default
     <div class="row">
       <div class="small-12 medium-6 columns">
         {% assign news = site.news | sort_by: date | reverse %}
-        {% for article in news %}
+        {% for article in news | limit: 5 %}
           <date class="article-date">{{ article.date | date: '%B %d, %Y' }}</date>
           <h3 class="editable">{{ article.title }}</h3>
           <p class="editable">{{ article.excerpt }} {% if article.url != "" %}<a href="{{ article.url }}">Read more »</a>{% endif %}</p>

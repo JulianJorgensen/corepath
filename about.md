@@ -28,7 +28,8 @@ layout: subpage
         <div class="cd-timeline-block">
     			<div class="cd-timeline-img">
     				<div class="cd-timeline-icon">
-              <i class="fa {{ timeline.timeline_type }}"></i>
+              {% assign timeline_type = site.timeline-types | where: 'title': timeline.timeline-type | first %}
+              <i class="fa {{ timeline_type.fa_icon }}"></i>
             </div>
     			</div> <!-- cd-timeline-img -->
 
