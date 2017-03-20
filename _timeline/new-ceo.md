@@ -6,3 +6,4 @@ description: Sabina Kethelz is appointed as new CEO of CP Robotics after former 
   the first woman in Denmark to be in charge of a robot company!
 timeline-type: Legal
 ---
+

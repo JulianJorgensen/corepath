@@ -6,3 +6,4 @@ description: CP Robotics is founded as a spinout from the University of Southern
   with Science Ventures Denmark A/S and Syddansk Innovation A/S as investors. Jimmy
   Alison Jørgensen is appointed as CEO.
 ---
+
