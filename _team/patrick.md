@@ -3,7 +3,7 @@ title: Patrick
 position: 7
 name: Patrick Mohr Bender
 job_title: Robotics Software Engineer
-image: "/uploads/Patrick%20Mohr%20Bender-866484.jpg"
+image: "/uploads/Patrick%20Mohr%20Bender2.jpg"
 email: patrick@cprobotics.dk
 staff_member: true
 board_member: false
