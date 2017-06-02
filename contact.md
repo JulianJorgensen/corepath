@@ -2,7 +2,7 @@
 title: Contact
 meta_title: Contact information | CP Robotics
 meta_description: We would love to get in touch with you.
-address: 'Forskerparken 10, 5230 Odense C, Denmark<br />CVR-number: 37031674'
+address: 'Forskerparken 10, 5230 Odense M, Denmark<br />CVR-number: 37031674'
 layout: subpage
 ---
 
