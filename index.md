@@ -46,7 +46,7 @@ layout: default
 <section class="section-default">
 <div class="row">
 <div class="small-12 column">
-<h1 class="editable">Our solution</h1>
+<h1 class="editable">How it works</h1>
 </div>
 </div>
 
