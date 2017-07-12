@@ -10,7 +10,7 @@ layout: default
 <div class="content-wrapper">
 
 <div class="container">
-<h1 class="editable">Powerful robot software that enables easy automation of processes</h1>
+<h1 class="editable">Powerful robot software that enables easy automation of various processes</h1>
 </div>
 
 <div class="visibleNearby">
