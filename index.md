@@ -27,10 +27,10 @@ layout: default
 <section class="section-default the-problem">
 <div class="row">
 <div class="small-12 medium-5 columns">
-<quote>"Changing or reconfiguring a robotics installation is expensive and time consuming"</quote>
+<quote>"Changing or reconfiguring a robotics installation was often expensive and time consuming"</quote>
 </div>
 <div class="small-12 medium-7 columns editable"><p>Industrial processes have successfully been automated in the last 20 years (think of the car industry). However, the success is limited to companies that benefit from many-of-a-kind production. 
-</p><p>The reason is simple: Changing or reconfiguring a robotics installation were often expensive and time consuming. Either you needed on-site expertise in robotics, CAD/CAM and automation, or you needed subcontractors with that expertise. Both limited the feasibility of current automation solutions for few-of-a-kind productions until now. </p><p> With our robot software, it is now possible to automate processes, such as milling, grinding and deburring, on few-of-a-kind series. 
+</p><p>The reason is simple: Changing or reconfiguring a robotics installation was often expensive and time consuming. Either you needed on-site expertise in robotics, CAD/CAM and automation, or you needed subcontractors with that expertise. Both limited the feasibility of succesfully automating few-of-a-kind series until now. </p><p> With our robot software, it is now possible to automate processes, such as milling, grinding and deburring, on few-of-a-kind series. 
 </p></div>
 </div>
 </section>
