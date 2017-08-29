@@ -1,5 +1,5 @@
 ---
-title: Lenna
+title: lenna
 position: 0
 name: Lenna Maria Boe Broberg
 job_title: Chairman, Investment Manager, SDI
