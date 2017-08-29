@@ -3,7 +3,7 @@ title: Lenna
 position: 0
 name: Lenna Maria Boe Broberg
 job_title: Chairman, Investment Manager, SDTI
-image: "/uploads/Lenna%20Maria%20Boe%20Broberg,%20vignette2.jpg"
+image: "/uploads/Lenna%20Maria%20Boe%20Broberg,%20vignette2-b556c8.jpg"
 description: "Lenna has worked at SDI as Investment Manager since 2016. She has previously
   worked with commercial development projects and with internal lean optimizations
   at Fazer Food Services. Additionally, Lenna has worked with IT and cloud solutions
