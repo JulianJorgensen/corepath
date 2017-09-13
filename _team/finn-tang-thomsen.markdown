@@ -13,7 +13,6 @@ description: Finn Tang Thomsen has been involved in software development for aut
   many positions, both in Copenhagen and in Odense. The latest is as one of the founders
   of the Department for Robot Technology in Odense, where he was executive manager
   from 2006 to 2014.
-email: finn@cprobotics.dk
 staff_member: false
 board_member: true
 spokesperson: false
