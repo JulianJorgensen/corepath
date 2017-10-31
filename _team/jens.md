@@ -12,6 +12,7 @@ description: 'Jens Kristian Damsgaard has been involved in business development 
 
 '
 email: jkd@scienceventures.dk
+phone: "+45 31 78 77 80"
 staff_member: true
 board_member: false
 spokesperson: true
