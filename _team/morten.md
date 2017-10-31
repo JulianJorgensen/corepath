@@ -9,8 +9,8 @@ description: Morten is experienced in digital communication and PR and holds a m
   on assisting the management or promoting CP Robotics, he runs the bureau, Adnetics,
   that focus on digital marketing.
 email: morten@cprobotics.dk
-staff_member: true
+staff_member: false
 board_member: false
-spokesperson: true
+spokesperson: false
 ---
 
