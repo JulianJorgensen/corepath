@@ -13,7 +13,7 @@ description: Sabina is specialised in commercialising early stage robotic techno
   initiatives in Denmark, Europe and South America.
 email: sabina@cprobotics.dk
 phone: 42 72 66 97
-staff_member: true
+staff_member: false
 board_member: false
 spokesperson: false
 ---
