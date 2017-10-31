@@ -17,9 +17,6 @@ layout: subpage
 <p>{{ page.intro_text }}</p>
 </div>
 <div class="small-12 medium-6 columns">
-<h3>Press material</h3>
-<h5><a target="new" href="/_assets/images/Sabina-Kethelz.jpg">Photo of CEO </a><a href="https://drive.google.com/file/d/0B1W_WcBqzf9-R3RRZ1JodGJTbHc/view?usp=sharing">Sabina Kethelz</a></h5>
-<h5 class="margin-top-medium"><a target="new" href="https://drive.google.com/file/d/0B1W_WcBqzf9-TUZSQkRzZWczbW8/view?usp=sharing">Company logo</a></h5>
 <h5 class="margin-top-medium"></h5>
 </div>
 </div>
