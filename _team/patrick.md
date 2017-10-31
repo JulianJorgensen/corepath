@@ -9,7 +9,7 @@ description: Patrick holds a Master of Science in Robotics from SDU with special
   focus on robots used for rehabilitation and training. He has also worked at MiR
   (fast growing robot company in Odense) as a Robotics Engineer.
 email: patrick@cprobotics.dk
-staff_member: true
+staff_member: false
 board_member: false
 spokesperson: false
 ---
