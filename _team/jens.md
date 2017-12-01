@@ -2,7 +2,7 @@
 title: Jens
 position: 3
 name: Jens Kristian Damsgaard
-job_title: Main Contact Person for CP Robotics, Director, scienceventures
+job_title: CEO & Director of Scienceventures
 image: "/uploads/Jens%20Kristian%20Damsgaard-08632f-d54faf.jpg"
 description: 'Jens Kristian Damsgaard has been involved in business development and
   the supply of capital for several companies with roots in the University of Southern
